@@ -1,0 +1,11 @@
+# mode
+#set editing-mode vi
+
+# completion
+set show-all-if-ambiguous on
+set completion-ignore-case on
+
+# history
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
