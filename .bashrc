@@ -225,6 +225,10 @@ function setup_login_shell()
    fi
    alias ..="cd .."
 
+   # ----- git ----
+   alias pubgit="git --git-dir=$HOME/.git-public --work-tree=$HOME"
+   alias prvgit="git --git-dir=$HOME/.git-private-universal --work-tree=$HOME"
+
    # ----- less ------
    alias more="less"
 
