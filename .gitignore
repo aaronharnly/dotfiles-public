@@ -1,9 +1,24 @@
-.DS_Store
-[A-Za-z]*
-.*_history
-.Xauthority
+# ignore non-dotfiles in the root directory
+/[^.]*
 
-.fontconfig
-.lesshst
-.viminfo
-.parallels_settings
+# ignore these files in any directory
+.DS_Store
+*.swp
+
+# ignore these dotfiles in the root directory
+/.*_history
+/.Trash
+/.Xauthority
+/.cups
+/.fontconfig
+/.git-private-universal
+/.git-public
+/.inkscape
+/.inkscape-etc
+/.lesshst
+/.parallels_settings
+/.viminfo
+
+# ignore these files in subdirs
+/.ssh/config
+
