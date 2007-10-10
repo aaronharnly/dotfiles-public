@@ -4,6 +4,7 @@
 .bash_completion_svn
 .bashrc
 .dir_colors
+.git-public.files
 .gitignore
 .gitk
 .inputrc
