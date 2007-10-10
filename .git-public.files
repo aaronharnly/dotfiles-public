@@ -1,0 +1,16 @@
+.CFUserTextEncoding
+.bash-functions.sh
+.bash_completion
+.bash_completion_svn
+.bashrc
+.dir_colors
+.gitignore
+.gitk
+.inputrc
+.irbrc
+.profile
+.pydistutils.cfg
+.screenrc
+.screenrc-common
+.vim
+.vimrc
