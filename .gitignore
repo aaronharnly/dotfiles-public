@@ -1,1 +1,8 @@
 .DS_Store
+[A-Za-z]*
+.*_history
+.Xauthority
+
+.fontconfig
+.lesshst
+.viminfo
