@@ -43,6 +43,7 @@ function set_env_vars_general()
    export SVN_PRIVATE="svn+ssh://aaronharnly@harnly.net/home/aaronharnly/svn/aaron-private"
 
    # What terminal are we under?
+   export LAUNCHING_APP="An unknown terminal"
    if [ "$OS" = "Darwin" -a 0 ]; then
    	# find out which app launched this terminal
    	if [ ! -z "$TERM_PROGRAM" ]; then
@@ -50,8 +51,10 @@ function set_env_vars_general()
    	elif [ ! -z "$PATH_FINDER" ]; then
    		export LAUNCHING_APP="Path Finder"
    	else
-#   	export LAUNCHING_APP=$(osascript "$HOME/software/$PLATFORM/share/scripts/get_frontmost_app.scpt")
-         echo "Hmm, where am I?"
+   	   frontmost_script="$HOME/software/$PLATFORM/applescripts/get_frontmost_application.scpt"
+   	   if [ -f "$frontmost_script" ]; then
+   	      export LAUNCHING_APP=$(osascript "$frontmost_script")
+   	   fi
    	fi
    fi
 
@@ -328,7 +331,7 @@ function setup_login_shell()
    	SSH_REMOTE_HOST="$(host $SSH_REMOTE_IP | awk '/name pointer/ {print $5} /NXDOMAIN/ {print '$SSH_REMOTE_IP' }')"
    	LOCALNESS="via ssh from $SSH_REMOTE_HOST"
    else
-   	LOCALNESS="locally."
+   	LOCALNESS="locally on $LAUNCHING_APP."
    fi
 
    # print info about the shell environment
