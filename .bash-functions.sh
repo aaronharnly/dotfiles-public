@@ -174,15 +174,13 @@ function lf()
 #   for every directory.
 function mycd()
 {
-	# this 
-	# echo $PWD
 	history -w # write current history file
 	builtin cd "$@"  # do actual cd
-	local HISTDIR="$HOME/.aaron_bash_history$PWD" # use nested folders for history
+	local HISTDIR="$HOME/.dir_bash_history$PWD" # use nested folders for history
 	if [ ! -d "$HISTDIR" ]; then # create folder if needed
 		mkdir -p "$HISTDIR"
 	fi
-	export HISTFILE="$HISTDIR/aaron_bash_history.txt" # set new history file
+	export HISTFILE="$HISTDIR/$USER_bash_history.txt" # set new history file
 	history -c  # clear memory
 	history -r #read from current histfile
 

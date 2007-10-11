@@ -222,7 +222,7 @@ function setup_login_shell()
    # Alphabetical by the underlying command
 
    # ----- cd -----
-   alias cd="mycd" ; export HISTFILE="$HOME/.aaron_bash_history$PWD/aaron_bash_history.txt"
+   alias cd="mycd" ; export HISTFILE="$HOME/.dir_bash_history$PWD/$USER_bash_history.txt"
    if [ ! -z "$WD" ]; then
    	alias cdg="cd $WD"
    fi
