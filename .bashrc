@@ -300,7 +300,8 @@ function setup_login_shell()
    	# if we're within a 'screen' environment, then update the window name
    	# 	with the name of the current dir
    	#export PROMPT_COMMAND='echo -ne "\033k$(basename $PWD)\033\134"'
-   	export PROMPT_COMMAND='echo -ne "\033k$(basename $PWD)\033\134\033]0..2;$PWD"'
+#   	export PROMPT_COMMAND='echo -ne "\033k$(basename $PWD)\033\134\033]0..2;$PWD"'
+	export PROMPT_COMMAND="$PROMPT_COMMAND"
    fi
    if [ ! -z "$LAUNCHING_APP" ]; then
    	if [ "$LAUNCHING_APP" = "Path Finder" ]; then
