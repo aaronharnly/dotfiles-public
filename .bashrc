@@ -93,14 +93,17 @@ function set_env_vars_general()
 
    # Apps I've installed or written
    # first, look for bootstrap apps if present
-   path_prepend $HOME/bootstrap
+   path_prepend "$HOME/bootstrap"
 
-   path_prepend $HOME/software/crossplatform/bin
-   path_prepend $HOME/software/$PLATFORM/bin
+   path_prepend "$HOME/software/crossplatform/bin"
+   path_prepend "$HOME/software/$PLATFORM/bin"
 
-   path_prepend $HOME/external-software/crossplatform/bin
-   path_prepend $HOME/external-software/$PLATFORM/bin
-   path_prepend $HOME/external-software/$PLATFORM/usr/bin
+   path_prepend "$HOME/private-software/crossplatform/bin"
+   path_prepend "$HOME/software/$PLATFORM/bin"
+
+   path_prepend "$HOME/external-software/crossplatform/bin"
+   path_prepend "$HOME/external-software/$PLATFORM/bin"
+   path_prepend "$HOME/external-software/$PLATFORM/usr/bin"
 
 }
 
