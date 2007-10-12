@@ -18,14 +18,17 @@
 #     (if [variable] is not supplied, defaults to PATH)
 path_append()
 {
+   local target="$1"
 	if [ -z $2 ]; then
-		pathvar=PATH
+		local pathvar=PATH
 	else
-		pathvar=$2
+		local pathvar=$2
 	fi
 
-	if [ -e $1 ]; then
-		eval export ${pathvar}=\${$pathvar}:$1
+	if [ -e "$target" ]; then
+	   if [[ ! $(eval echo \${$pathvar}) == *$target* ]]; then
+		   eval export ${pathvar}=\${$pathvar}:$target
+		fi
 	fi
 }
 
@@ -34,14 +37,17 @@ path_append()
 #     (if [variable] is not supplied, defaults to PATH)
 path_prepend()
 {
+   local target="$1"
 	if [ -z $2 ]; then
-		pathvar=PATH
+		local pathvar=PATH
 	else
-		pathvar=$2
+		local pathvar=$2
 	fi
 
-	if [ -e $1 ]; then
-		eval export ${pathvar}=$1:\${$pathvar}
+	if [ -e "$target" ]; then
+	   if [[ ! $(eval echo \${$pathvar}) == *$target* ]]; then
+		   eval export ${pathvar}=$target:\${$pathvar}
+		fi
 	fi
 }
 
