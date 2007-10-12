@@ -329,16 +329,18 @@ function setup_login_shell()
    SSH_COMBO="$SSH_CONNECTION$SSH_CLIENT"
    if [ ! -z "$SSH_COMBO" ]; then
    	SSH_REMOTE_IP="${SSH_COMBO%% *}"
-   	SSH_REMOTE_HOST="$(host $SSH_REMOTE_IP | awk '/name pointer/ {print $5} /NXDOMAIN/ {print '$SSH_REMOTE_IP' }')"
+   	SSH_REMOTE_HOST=$(host $SSH_REMOTE_IP | awk '/name pointer/ {print $5} /NXDOMAIN/ {print "$SSH_REMOTE_IP" }')   	
+   	if [ -z "$SSH_REMOTE_HOST" ]; then
+   	  SSH_REMOTE_HOST="$SSH_REMOTE_IP" 
+	   fi
    	LOCALNESS="via ssh from $SSH_REMOTE_HOST"
    else
-   	LOCALNESS="locally on $LAUNCHING_APP."
+   	LOCALNESS="locally on $LAUNCHING_APP"
    fi
 
    # print info about the shell environment
    if [ -z "$SHOWED_CONNECTION_INFO" ]; then
-   	local login_msg="Connected to $HOST $LOCALNESS Platform: $PLATFORM"
-   	display_boxed "$login_msg"
+   	display_boxed --centered "Connected to $HOST $LOCALNESS." "Platform is $PLATFORM."
    	export SHOWED_CONNECTION_INFO="yes"
    fi
 	
@@ -364,6 +366,7 @@ function setup_login_shell()
 # Only change ENV variables if they haven't already,
 # but, can force a var change by unsetting this flag variable,
 # or by calling the function set_env_vars.
+unset BASHRC_CHANGED_ENV_VARS
 if [ -z "$BASHRC_CHANGED_ENV_VARS" ]; then
 	export BASHRC_CHANGED_ENV_VARS="yes"
    setup_env_vars
