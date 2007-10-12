@@ -161,6 +161,7 @@ function set_env_vars_apps()
    # Ruby
    export RUBYOPT=rubygems
    path_append "$HOME/software/crossplatform/lib/ruby" RUBYLIB
+   path_prepend "$HOME/external-software/$PLATFORM/stow/ruby-1.8.6-p110/bin"
 
    # Scala
    export SCALA_HOME="$HOME/external-software/crossplatform/share/scala"
