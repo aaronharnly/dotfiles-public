@@ -71,7 +71,7 @@ function set_env_vars_general()
       cp "$HOME/.ssh/config.microsoft" "$HOME/.ssh/config"
    else
       # curl
-      export http_proxy=""
+      unset http_proxy
       # ssh
       cp "$HOME/.ssh/config.default" "$HOME/.ssh/config"
    fi
