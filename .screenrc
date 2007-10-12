@@ -1,14 +1,61 @@
-# standard screens
-screen 1 #bash -c "export CHILD_SCREEN_INDEX=1; bash"
-screen 2 #bash -c "export CHILD_SCREEN_INDEX=2; bash"
-screen 3 #bash -c "export CHILD_SCREEN_INDEX=3; bash"
-screen 4 #bash -c "export CHILD_SCREEN_INDEX=4; bash"
-screen 5 #bash -c "export CHILD_SCREEN_INDEX=5; bash"
-screen 6 #bash -c "export CHILD_SCREEN_INDEX=6; bash"
+######### standard screens
+screen 1
+screen 2
+screen 3
+screen 4
+screen 5
+screen 6
 screen 0
 
-# get everything else from the common
-source $HOME/.screenrc-common
+######### basics
+autodetach on
+startup_message off
 
-# source an architecture-specific screenrc
-#source $HOME/external-software/$PLATFORM/etc/screenrc
+######### UI
+# start with visual bell as default
+# vbell on
+# vbell_msg "bell on %t (%n)"
+
+# caption + hardstatus
+# these settings create a two-line statusbar,
+#  where the top line shows the host and current directory,
+#  and the bottom line shows a list of windows on the left, then the host and a clock
+#
+# coral1: ~/src
+# 0 aaron  1 scripts  2 scripts  3 bin  4 data  5 work            @coral1  Tue, Jul 27  2:04:26pm
+#
+#
+backtick 1 86400 86400 echo "$USER"
+backtick 2 86400 86400 echo "$PLATFORM"
+caption always "%{= bb}%{+b W}%h %="
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{.kW}%-w%{+b bW}%n %t%{-}%+w %=%{..G} %1`@%H [%2`] %{..Y} %D, %M %d %C:%s%a "
+
+######### keybindings
+# set the escape character
+
+# set other handy shortcuts
+bind \\ quit
+bind ^\ quit
+bind n next
+bind ^n next
+bind h prev
+bind ^h prev
+bind p screen -t 'pine' bash -c "export TERM=ansi; pine"
+bind ^p screen -t 'pine' bash -c "export TERM=ansi; pine"
+bind s screen -t '@coral.cs' ssh -X aaron@coral.cs.columbia.edu
+bind ^s screen -t '@coral.cs' ssh -X aaron@coral.cs.columbia.edu
+
+######### other behaviors
+altscreen on # use altscreen capability
+defscrollback 5000 # default: 100
+defencoding utf8 # default encoding is UTF-8
+# termcapinfo xterm "ks=E[?1lE:kuE[A:kd=E[B:kl=E[D:kr=E[C:kh=E[5~:kH=E[F"
+# Prepend/append register [/] to the paste if ^a^] is pressed.
+# This lets me have autoindent mode in vi.
+register [ "\033:se noai\015a"
+register ] "\033:se ai\015a"
+bind ^] paste [.]
+
+
