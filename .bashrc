@@ -31,16 +31,12 @@ function set_env_vars_general()
    export EMAIL="aaron@cs.columbia.edu"
    export PAGER="less"
    export LANG="en_US.UTF-8"
-   export LC_CTYPE=en_US.UTF-8
+   export LC_CTYPE="en_US.UTF-8"
 
    # X11
    if [ -z $DISPLAY ]; then
    	export DISPLAY=:0.0
    fi
-
-   # svn repositories
-   export SVN_PUBLIC="svn+ssh://aaronharnly@harnly.net/home/aaronharnly/svn/aaron-public"
-   export SVN_PRIVATE="svn+ssh://aaronharnly@harnly.net/home/aaronharnly/svn/aaron-private"
 
    # What terminal are we under?
    export LAUNCHING_APP="An unknown terminal"
