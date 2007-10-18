@@ -190,15 +190,15 @@ function setup_login_shell()
    # Alphabetical by the underlying command
 
    # ----- cd -----
-   alias cd="mycd" ; export HISTFILE="$HOME/.dir_bash_history$PWD/$USER_bash_history.txt"
+   alias cd="mycd" ; export HISTFILE="$HOME/.dir_bash_history$PWD/${USER}_bash_history.txt"
    if [ ! -z "$WD" ]; then
    	alias cdg="cd $WD"
    fi
    alias ..="cd .."
 
    # ----- git ----
-   alias pubgit="git --git-dir=$HOME/.git-public --work-tree=$HOME"
-   alias prvgit="git --git-dir=$HOME/.git-private-universal --work-tree=$HOME"
+   alias pubgit="git --git-dir=$HOME/.public.git --work-tree=$HOME"
+   alias prvgit="git --git-dir=$HOME/.private.git --work-tree=$HOME"
 
    # ----- less ------
    alias more="less"
