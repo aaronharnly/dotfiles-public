@@ -144,20 +144,9 @@ function set_env_vars_apps()
    # Subversion
    path_append "/usr/local/subversion/bin"
    
-   # SVK
-   if [ "$OS" = "Darwin" ]; then
-      export SVKMERGE="FileMerge"
-      export SVKDIFF="$HOME/external-software/$PLATFORM/bin/svndiffshim.py"   	
-   fi
-
-   # txt2pdf
-   path_append "$HOME/external-software/crossplatform/stow/txt2pdf-9.1"
-
-   # UIMA
-   path_set "$HOME/external-software/$PLATFORM/stow/uimaj-2.1.0-incubating" UIMA_HOME
-
    # XCode
    path_append "/Developer/Tools"
+   path_append "/Volumes/MacBookPro/3rdPartyStuff/Developer-Leopard/Tools"
 
    # -----------------------------------
 
