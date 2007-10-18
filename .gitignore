@@ -11,8 +11,8 @@
 /.Xauthority
 /.cups
 /.fontconfig
-/.git-private-universal
-/.git-public
+/.private.git
+/.public.git
 /.inkscape
 /.inkscape-etc
 /.lesshst
