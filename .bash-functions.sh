@@ -186,7 +186,7 @@ function mycd()
 	if [ ! -d "$HISTDIR" ]; then # create folder if needed
 		mkdir -p "$HISTDIR"
 	fi
-	export HISTFILE="$HISTDIR/$USER_bash_history.txt" # set new history file
+	export HISTFILE="$HISTDIR/${USER}_bash_history.txt" # set new history file
 	history -c  # clear memory
 	history -r #read from current histfile
 
