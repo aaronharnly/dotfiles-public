@@ -90,20 +90,17 @@ function set_env_vars_general()
    	. /sw/bin/init.sh
    fi
 
-   # Apps I've installed or written
-   # first, look for bootstrap apps if present
-   path_prepend "$HOME/bootstrap"
+   # External apps
+   path_prepend "$HOME/external-software/crossplatform/bin"
+   path_prepend "$HOME/external-software/$PLATFORM/bin"
 
+   # My own scripts and such
    path_prepend "$HOME/software/crossplatform/bin"
    path_prepend "$HOME/software/$PLATFORM/bin"
 
+   # Private scripts and such
    path_prepend "$HOME/private-software/crossplatform/bin"
-   path_prepend "$HOME/software/$PLATFORM/bin"
-
-   path_prepend "$HOME/external-software/crossplatform/bin"
-   path_prepend "$HOME/external-software/$PLATFORM/bin"
-   path_prepend "$HOME/external-software/$PLATFORM/usr/bin"
-
+   path_prepend "$HOME/private-software/$PLATFORM/bin"
 }
 
 function set_env_vars_apps()
@@ -113,9 +110,6 @@ function set_env_vars_apps()
    #
    #  maintained in roughly alphabetic order by appname
 
-   # Apache
-   path_prepend "$HOME/external-software/$PLATFORM/stow/apache2-2.0.54/bin"
-
    # GCC
    path_prepend "$HOME/external-software/$PLATFORM/lib" LD_LIBRARY_PATH	
 
@@ -123,24 +117,11 @@ function set_env_vars_apps()
    export LESSCHARSET="utf-8"
 
    # Lynx	
-   path_set "$HOME/external-software/crossplatform/etc/lynx.cfg" LYNX_CFG	
+   path_set "$HOME/software/crossplatform/etc/lynx.cfg" LYNX_CFG	
 
    # Java
    path_set "/usr/local/java/java1.5" JAVA_HOME
    path_prepend "/usr/local/java/java1.5/bin"
-
-   # JRuby
-   path_set "$HOME/external-software/crossplatform/stow/jruby-trunk" JRUBY_HOME
-   path_append "$JRUBY_HOME/bin"
-
-   # LaTeX
-   export TEXINPUTS=.:$HOME/software/crossplatform/etc/texmf::
-
-   # Matlab
-   path_append "/Applications/3rdPartyApps/Productivity/MATLAB_SV13/bin"
-   
-   # Mercurial
-   path_append "$HOME/external-software/$PLATFORM/stow/mercurial-0.9.4/lib/python2.5/site-packages" PYTHONPATH
 
    # MySQL
    path_append "/usr/local/mysql/bin"
@@ -148,8 +129,6 @@ function set_env_vars_apps()
    # Perl
    path_append "$HOME/software/crossplatform/lib/site_perl" PERL5LIB
    path_append "$HOME/external-software/crossplatform/lib/site_perl" PERL5LIB
-   #	path_append /proj/nlpusers/aaron/motif/work/arch/common/lib/perl5/site_perl PERL5LIB
-   #	path_append /proj/nlpusers/aaron/motif/work/arch/common/lib/aaron.harnly.perl PERL5LIB
 
    # Python
    path_append "$HOME/external-software/crossplatform/common/etc/python" 
