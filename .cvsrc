@@ -1,0 +1,9 @@
+# recommended CVS config file from pkgsrc guide 
+# http://www.netbsd.org/docs/pkgsrc/getting.html
+#
+checkout -P
+update -dP
+release -d
+diff -upN
+cvs -q -z3
+rdiff -u
