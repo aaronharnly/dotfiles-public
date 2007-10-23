@@ -314,17 +314,19 @@ function setup_login_shell()
 	
    # if we're not already in screen, offer the opportunity
    #  to reattach to detached screens:
-   if [ -z "$RUNNING_SCREEN" ]; then
-   	detached_screens=$(screen -list | awk '/Detached/ {print $1}' )
-   	if [ ! -z "$detached_screens" ]; then
-   		head1="Detached screens available: "
-   		head2=" "
-   		tail1=" "
-   		tail2=" Type 'screen -r <name>' to reattach."
-   		display_boxed  --centered "$head1" "$head2" $detached_screens "$tail1" "$tail2"
-   	fi
+   local screen_path=$(which screen)
+   if [ ! -z "$screen_path" ]; then
+      if [ -z "$RUNNING_SCREEN" ]; then
+      	detached_screens=$(screen -list | awk '/Detached/ {print $1}' )
+      	if [ ! -z "$detached_screens" ]; then
+      		head1="Detached screens available: "
+      		head2=" "
+      		tail1=" "
+      		tail2=" Type 'screen -r <name>' to reattach."
+      		display_boxed  --centered "$head1" "$head2" $detached_screens "$tail1" "$tail2"
+      	fi
+      fi
    fi
-
 
 }
 
