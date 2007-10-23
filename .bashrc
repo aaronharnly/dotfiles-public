@@ -221,6 +221,9 @@ function setup_login_shell()
    # ---- mate ----
 #   alias mate_wait="mate --wait"
 
+   # ---- rsync ---
+   alias scpr="rsync --partial --progress --rsh=ssh --archive"
+
    # ----- Scala -----
    alias rscala="rlwrap scala"
 
