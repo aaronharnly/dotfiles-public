@@ -9,14 +9,18 @@
 /.*_history
 /.Trash
 /.Xauthority
+/.aap
 /.cups
 /.fontconfig
+/.gdbinit
 /.private.git
 /.public.git
 /.inkscape
 /.inkscape-etc
 /.lesshst
+/.neverball
 /.parallels_settings
+/.rnd
 /.viminfo
 
 # ignore these files in subdirs
