@@ -122,6 +122,7 @@ function set_env_vars_apps()
    # Java
    path_set "/usr/local/java/java1.5" JAVA_HOME
    path_prepend "/usr/local/java/java1.5/bin"
+   export JAVA_OPTS="-Xmx1024m"
 
    # MySQL
    path_append "/usr/local/mysql/bin"
@@ -140,13 +141,14 @@ function set_env_vars_apps()
 
    # Scala
    export SCALA_HOME="$HOME/external-software/crossplatform/share/scala"
+   path_append "$SCALA_HOME/lib/scala-library.jar" CLASSPATH
 
    # Subversion
    path_append "/usr/local/subversion/bin"
    
    # XCode
    path_append "/Developer/Tools"
-   path_append "/Volumes/MacBookPro/3rdPartyStuff/Developer-Leopard/Tools"
+   path_append "/Volumes/MacBookPro/3rdPartyStuff/Developer-10.5/Tools"
 
    # -----------------------------------
 
@@ -169,6 +171,15 @@ function set_env_vars_projects()
    if [ -f "$PROJECT_INIT" ]; then
    	source "$PROJECT_INIT"
    fi
+   
+   ######################### Scala/Java projects -----------------------
+   # Add build directories to our classpath
+   for proj in "$HOME/git/public"/* "$HOME/git/private"/* "$HOME/git/research"/*
+   do
+      if [ -f "$proj/build.xml" -a -d "$proj/build" ]; then
+        path_append "$proj/build" CLASSPATH
+      fi
+   done
 
    # GALE
    path_set "/proj/gale-safe/system/distill" GALE_HOME
