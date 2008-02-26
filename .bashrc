@@ -134,13 +134,16 @@ function set_env_vars_apps()
    # Python
    path_append "$HOME/external-software/crossplatform/common/etc/python" 
 
+	# R
+	path_set "/Library/Frameworks/R.framework/Versions/Current/Resources" R_HOME
+
    # Ruby
    export RUBYOPT=rubygems
    path_append "$HOME/software/crossplatform/lib/ruby" RUBYLIB
    path_prepend "$HOME/external-software/$PLATFORM/stow/ruby-1.8.6-p110/bin"
 
    # Scala
-   export SCALA_HOME="$HOME/external-software/crossplatform/share/scala"
+   path_set "$HOME/external-software/crossplatform/stow/scala-2.7.0-RC2" SCALA_HOME
    path_append "$SCALA_HOME/lib/scala-library.jar" CLASSPATH
 
    # Subversion
@@ -179,6 +182,12 @@ function set_env_vars_projects()
       if [ -f "$proj/build.xml" -a -d "$proj/build" ]; then
         path_append "$proj/build" CLASSPATH
       fi
+		if [ -d "$proj/lib" ]; then
+			for lib in $(ls "$proj/lib"/*.jar 2>/dev/null)
+			do
+				path_append "$lib" CLASSPATH
+			done
+		fi
    done
 
    # GALE
