@@ -61,9 +61,13 @@ path_set()
 	thepath="$1"
 	varname="$2"
 	
+#	echo "Evaluating: $thepath for $varname"
+	
 	if [ -e "$thepath" ]; then
+#		echo "Path found. Setting $varname to $thepath"
 		eval export ${varname}=${thepath}
 	fi
+#	eval echo "$varname is \${$varname}"
 }
 
 path_set_if_empty()
@@ -75,6 +79,13 @@ path_set_if_empty()
    if [ -z "$varvalue" ]; then
       path_set "$thepath" "$varname"
    fi
+}
+
+path_print()
+{
+	varname="$1"
+	echo "${varname}="
+	eval echo -e \$\{$varname//:/\\\\n\}
 }
 
 
