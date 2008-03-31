@@ -75,8 +75,16 @@ function set_env_vars_general()
    #
    # ---------------- General Paths ---------------------
    #
+	# Reset path --------------
+	unset PATH
+
    # Generic useful paths -----------------
+   path_prepend /bin
+   path_prepend /sbin
+   path_prepend /usr/bin
+   path_prepend /usr/sbin
    path_prepend /usr/X11R6/bin
+   path_prepend /usr/X11/bin
    path_prepend /usr/local/bin
    path_prepend /usr/local/bin/perl/bin
    path_prepend /usr/ucb
@@ -120,6 +128,7 @@ function set_env_vars_apps()
    path_set "$HOME/software/crossplatform/etc/lynx.cfg" LYNX_CFG	
 
    # Java
+	unset CLASSPATH
    path_set "/usr/local/java/java1.5" JAVA_HOME
    path_prepend "/usr/local/java/java1.5/bin"
    export JAVA_OPTS="-Xmx1024m"
@@ -128,6 +137,7 @@ function set_env_vars_apps()
    path_append "/usr/local/mysql/bin"
 
    # Perl
+	unset PERL5LIB
    path_append "$HOME/software/crossplatform/lib/site_perl" PERL5LIB
    path_append "$HOME/external-software/crossplatform/lib/site_perl" PERL5LIB
 
@@ -138,13 +148,15 @@ function set_env_vars_apps()
 	path_set "/Library/Frameworks/R.framework/Versions/Current/Resources" R_HOME
 
    # Ruby
+	unset RUBYLIB
    export RUBYOPT=rubygems
    path_append "$HOME/software/crossplatform/lib/ruby" RUBYLIB
    path_prepend "$HOME/external-software/$PLATFORM/stow/ruby-1.8.6-p110/bin"
 
    # Scala
-   path_set "$HOME/external-software/crossplatform/stow/scala-2.7.0-RC2" SCALA_HOME
+   path_set "$HOME/external-software/crossplatform/stow/scala-2.7.0-latest" SCALA_HOME
    path_append "$SCALA_HOME/lib/scala-library.jar" CLASSPATH
+	export ANT_OPTS="$ANT_OPTS -Dscala.home=$SCALA_HOME"
 
    # Subversion
    path_append "/usr/local/subversion/bin"
@@ -167,13 +179,15 @@ function set_env_vars_projects()
    do
    	if [ -f "$proj/tools/util/project_init.sh" ]; then
    		PROJECT_INIT="$proj/tools/util/project_init.sh"
-   		source "$PROJECT_INIT"
+#			echo "Sourcing $PROJECT_INIT"
+ #  		source "$PROJECT_INIT"
    	fi
    done
-   PROJECT_INIT="$PROJECTS_DIR/enron/subprojects/syntax/tools/util/project_init.sh"
-   if [ -f "$PROJECT_INIT" ]; then
-   	source "$PROJECT_INIT"
-   fi
+#   PROJECT_INIT="$PROJECTS_DIR/enron/subprojects/syntax/tools/util/project_init.sh"
+#   if [ -f "$PROJECT_INIT" ]; then
+#		echo "Sourcing $PROJECT_INIT"
+#   	source "$PROJECT_INIT"
+#   fi
    
    ######################### Scala/Java projects -----------------------
    # Add build directories to our classpath
@@ -181,6 +195,9 @@ function set_env_vars_projects()
    do
       if [ -f "$proj/build.xml" -a -d "$proj/build" ]; then
         path_append "$proj/build" CLASSPATH
+      fi
+      if [ -f "$proj/pom.xml" -a -d "$proj/target/classes" ]; then
+        path_append "$proj/target/classes" CLASSPATH
       fi
 		if [ -d "$proj/lib" ]; then
 			for lib in $(ls "$proj/lib"/*.jar 2>/dev/null)
@@ -216,6 +233,17 @@ function setup_login_shell()
    fi
    alias ..="cd .."
 
+	alias s1="cd $HOME/git/public/scala-utilities"
+	alias s2="cd $HOME/git/public/scala-media"
+	alias s3="cd $HOME/git/public/scala-tympani"
+	alias s4="cd $HOME/git/public/scala-dendron"
+
+	alias e1="cd $HOME/projects/enron/tools/src/feature-extraction/language/lexico-syntactic-redux"
+	alias e2="cd $HOME/projects/enron/tools/src/feature-extraction/language/lexico-syntactic-redux/scripts"
+	alias e3="cd $HOME/projects/enron/tools/src/feature-extraction/organizational/dendron"
+	alias e4="cd $HOME/projects/enron/tools/src/feature-extraction/organizational/dendron/scripts"
+	alias e5="cd $HOME/projects/enron/tools/src/objectmodel"
+
    # ----- git ----
    alias pubgit="git --git-dir=$HOME/.public.git --work-tree=$HOME"
    alias prvgit="git --git-dir=$HOME/.private.git --work-tree=$HOME"
@@ -245,7 +273,7 @@ function setup_login_shell()
    alias scpr="rsync --partial --progress --rsh=ssh --archive"
 
    # ----- Scala -----
-   alias rscala="rlwrap scala"
+   alias rscala="rlwrap scala -Xnojline"
 
    # ----- ssh -----
    if [ "$OS" = "Darwin" ]; then
