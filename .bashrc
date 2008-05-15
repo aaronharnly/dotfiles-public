@@ -132,6 +132,7 @@ function set_env_vars_apps()
    path_set "/usr/local/java/java1.5" JAVA_HOME
    path_prepend "/usr/local/java/java1.5/bin"
    export JAVA_OPTS="-Xmx1024m"
+	
 
    # MySQL
    path_append "/usr/local/mysql/bin"
@@ -154,10 +155,14 @@ function set_env_vars_apps()
    path_prepend "$HOME/external-software/$PLATFORM/stow/ruby-1.8.6-p110/bin"
 
    # Scala
-   path_set "$HOME/external-software/crossplatform/stow/scala-2.7.0-latest" SCALA_HOME
+   path_set "$HOME/external-software/crossplatform/stow/scala-2.7.1.final" SCALA_HOME
    path_append "$SCALA_HOME/lib/scala-library.jar" CLASSPATH
 	export ANT_OPTS="$ANT_OPTS -Dscala.home=$SCALA_HOME"
-
+	# some particular items for classpath
+	local mvn_repo="$HOME/.m2/repository"
+	path_append "$mvn_repo/org/scalacheck/scalacheck/1.2/scalacheck-1.2.jar" CLASSPATH
+	path_append "$mvn_repo/org/specs/specs/1.2.5/specs-1.2.5.jar" CLASSPATH
+	path_append "$mvn_repo/junit/junit/4.4/junit-4.4.jar" CLASSPATH
    # Subversion
    path_append "/usr/local/subversion/bin"
    
@@ -177,11 +182,14 @@ function set_env_vars_projects()
    PROJECTS_DIR="$HOME/projects"
    for proj in "$PROJECTS_DIR"/*
    do
-   	if [ -f "$proj/tools/util/project_init.sh" ]; then
-   		PROJECT_INIT="$proj/tools/util/project_init.sh"
+		proj_name=$(basename "$proj")
+		proj__name_cap=$(echo "$proj_name" | perl -pe 's/\s+//g; s/([a-z])/\u\1/g; s/-/_/g')
+		eval export ${proj__name_cap}_DIR="$proj"
+		if [ -d "$proj/data" ]; then
+			eval export ${proj__name_cap}_DATA="$proj/data"
+		fi
 #			echo "Sourcing $PROJECT_INIT"
  #  		source "$PROJECT_INIT"
-   	fi
    done
 #   PROJECT_INIT="$PROJECTS_DIR/enron/subprojects/syntax/tools/util/project_init.sh"
 #   if [ -f "$PROJECT_INIT" ]; then
@@ -191,7 +199,7 @@ function set_env_vars_projects()
    
    ######################### Scala/Java projects -----------------------
    # Add build directories to our classpath
-   for proj in "$HOME/git/public"/* "$HOME/git/private"/* "$HOME/git/research"/*
+   for proj in "$HOME/git/public"/* "$HOME/git/private"/* "$HOME/git/research"/* "$HOME/projects"/*
    do
       if [ -f "$proj/build.xml" -a -d "$proj/build" ]; then
         path_append "$proj/build" CLASSPATH
@@ -237,12 +245,14 @@ function setup_login_shell()
 	alias s2="cd $HOME/git/public/scala-media"
 	alias s3="cd $HOME/git/public/scala-tympani"
 	alias s4="cd $HOME/git/public/scala-dendron"
+	alias s5="cd $HOME/git/public/scala-orient"
+	alias s6="cd $HOME/git/public/scala-tabula"
 
-	alias e1="cd $HOME/projects/enron/tools/src/feature-extraction/language/lexico-syntactic-redux"
-	alias e2="cd $HOME/projects/enron/tools/src/feature-extraction/language/lexico-syntactic-redux/scripts"
-	alias e3="cd $HOME/projects/enron/tools/src/feature-extraction/organizational/dendron"
-	alias e4="cd $HOME/projects/enron/tools/src/feature-extraction/organizational/dendron/scripts"
-	alias e5="cd $HOME/projects/enron/tools/src/objectmodel"
+	alias e1="cd $HOME/projects/objectmodel"
+	alias e2="cd $HOME/projects/lexico-syntactic"
+	alias e3="cd $HOME/projects/dendron"
+
+	alias d1="cd $HOME/projects/enron/data"
 
    # ----- git ----
    alias pubgit="git --git-dir=$HOME/.public.git --work-tree=$HOME"
@@ -274,6 +284,8 @@ function setup_login_shell()
 
    # ----- Scala -----
    alias rscala="rlwrap scala -Xnojline"
+	alias rconsole="rlwrap mvn scala:console"
+	export SCALA_OPTS="-Xnojline"
 
    # ----- ssh -----
    if [ "$OS" = "Darwin" ]; then
