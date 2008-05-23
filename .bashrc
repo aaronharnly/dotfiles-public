@@ -130,6 +130,7 @@ function set_env_vars_apps()
    # Java
 	unset CLASSPATH
    path_set "/usr/local/java/java1.5" JAVA_HOME
+	path_set "$HOME/external-software/$PLATFORM/stow/jdk" JAVA_HOME
    path_prepend "/usr/local/java/java1.5/bin"
    export JAVA_OPTS="-Xmx1024m"
 	
