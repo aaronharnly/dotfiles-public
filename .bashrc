@@ -258,6 +258,15 @@ function setup_login_shell()
    # ----- git ----
    alias pubgit="git --git-dir=$HOME/.public.git --work-tree=$HOME"
    alias prvgit="git --git-dir=$HOME/.private.git --work-tree=$HOME"
+	function git_setup()
+	{
+		git-config branch.master.remote origin
+		git-config branch.master.merge refs/heads/master
+
+		relative_path=${PWD#$HOME/}
+		git-config remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
+		git-config remote.origin.url aaron@harnly.net@harnly.net:${relative_path}
+	}
 
    # ----- less ------
    alias more="less"
