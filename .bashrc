@@ -141,6 +141,7 @@ function set_env_vars_apps()
 	unset PERL5LIB
    path_append "$HOME/software/crossplatform/lib/site_perl" PERL5LIB
    path_append "$HOME/external-software/crossplatform/lib/site_perl" PERL5LIB
+	export PERL_UNICODE="SDA"
 
    # Python
    path_append "$HOME/external-software/crossplatform/common/etc/python" 
@@ -284,7 +285,7 @@ function setup_login_shell()
 
    # ----- Scala -----
    alias rscala="rlwrap scala -Xnojline"
-	alias rconsole="rlwrap mvn scala:console"
+	alias rconsole="rlwrap mvn -Djava.awt.headless=true scala:console"
 	export SCALA_OPTS="-Xnojline"
 
    # ----- ssh -----
