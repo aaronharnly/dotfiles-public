@@ -191,6 +191,10 @@ function set_env_vars_projects()
 		if [ -d "$proj/data" ]; then
 			eval export ${proj__name_cap}_DATA="$proj/data"
 		fi
+		PROJECT_INIT="$proj/tools/util/project_init.sh"
+		if [ -f "$PROJECT_INIT" ]; then
+			source "$PROJECT_INIT"
+		fi
 #			echo "Sourcing $PROJECT_INIT"
  #  		source "$PROJECT_INIT"
    done
