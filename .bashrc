@@ -183,21 +183,23 @@ function set_env_vars_projects()
    ######################### Projects -----------------------
    # initialize the paths of any projects we find 
    PROJECTS_DIR="$HOME/projects"
-   for proj in "$PROJECTS_DIR"/*
-   do
-		proj_name=$(basename "$proj")
-		proj__name_cap=$(echo "$proj_name" | perl -pe 's/\s+//g; s/([a-z])/\u\1/g; s/-/_/g')
-		eval export ${proj__name_cap}_DIR="$proj"
-		if [ -d "$proj/data" ]; then
-			eval export ${proj__name_cap}_DATA="$proj/data"
-		fi
-		PROJECT_INIT="$proj/tools/util/project_init.sh"
-		if [ -f "$PROJECT_INIT" ]; then
-			source "$PROJECT_INIT"
-		fi
-#			echo "Sourcing $PROJECT_INIT"
- #  		source "$PROJECT_INIT"
-   done
+   if [ -d "$PROJECTS_DIR" ]; then
+	   for proj in "$PROJECTS_DIR"/*
+	   do
+			proj_name=$(basename "$proj")
+			proj__name_cap=$(echo "$proj_name" | perl -pe 's/\s+//g; s/([a-z])/\u\1/g; s/-/_/g')
+			eval export ${proj__name_cap}_DIR="$proj"
+			if [ -d "$proj/data" ]; then
+				eval export ${proj__name_cap}_DATA="$proj/data"
+			fi
+			PROJECT_INIT="$proj/tools/util/project_init.sh"
+			if [ -f "$PROJECT_INIT" ]; then
+				source "$PROJECT_INIT"
+			fi
+	#			echo "Sourcing $PROJECT_INIT"
+	 #  		source "$PROJECT_INIT"
+	   done
+	fi
 #   PROJECT_INIT="$PROJECTS_DIR/enron/subprojects/syntax/tools/util/project_init.sh"
 #   if [ -f "$PROJECT_INIT" ]; then
 #		echo "Sourcing $PROJECT_INIT"
