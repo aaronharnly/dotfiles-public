@@ -34,6 +34,7 @@ hardstatus string "%{.kW}%-w%{+b bW}%n %t%{-}%+w %=%{..G} %1`@%H [%2`] %{..Y} %D
 
 ######### keybindings
 # set the escape character
+escape ^Tt
 
 # set other handy shortcuts
 bind \\ quit
@@ -46,6 +47,9 @@ bind p screen -t 'pine' bash -c "export TERM=ansi; pine"
 bind ^p screen -t 'pine' bash -c "export TERM=ansi; pine"
 bind s screen -t '@coral.cs' ssh -X aaron@coral.cs.columbia.edu
 bind ^s screen -t '@coral.cs' ssh -X aaron@coral.cs.columbia.edu
+
+bindkey "^[[5D" prev
+bindkey "^[[5C" next
 
 ######### other behaviors
 altscreen on # use altscreen capability

@@ -75,8 +75,16 @@ function set_env_vars_general()
    #
    # ---------------- General Paths ---------------------
    #
+	# Reset path --------------
+	unset PATH
+
    # Generic useful paths -----------------
+   path_prepend /bin
+   path_prepend /sbin
+   path_prepend /usr/bin
+   path_prepend /usr/sbin
    path_prepend /usr/X11R6/bin
+   path_prepend /usr/X11/bin
    path_prepend /usr/local/bin
    path_prepend /usr/local/bin/perl/bin
    path_prepend /usr/ucb
@@ -120,33 +128,50 @@ function set_env_vars_apps()
    path_set "$HOME/software/crossplatform/etc/lynx.cfg" LYNX_CFG	
 
    # Java
+	unset CLASSPATH
    path_set "/usr/local/java/java1.5" JAVA_HOME
+   path_set "$HOME/external-software/$PLATFORM/stow/jdk" JAVA_HOME
+   path_set "$HOME/external-software/$PLATFORM/stow/jdk1.6.0_04" JAVA_HOME
    path_prepend "/usr/local/java/java1.5/bin"
+   export JAVA_OPTS="-Xmx1024m"
+	
 
    # MySQL
    path_append "/usr/local/mysql/bin"
 
    # Perl
+	unset PERL5LIB
    path_append "$HOME/software/crossplatform/lib/site_perl" PERL5LIB
    path_append "$HOME/external-software/crossplatform/lib/site_perl" PERL5LIB
+	export PERL_UNICODE="SDA"
 
    # Python
    path_append "$HOME/external-software/crossplatform/common/etc/python" 
 
+	# R
+	path_set "/Library/Frameworks/R.framework/Versions/Current/Resources" R_HOME
+
    # Ruby
+   unset RUBYLIB
    #export RUBYOPT=rubygems
    #path_append "$HOME/software/crossplatform/lib/ruby" RUBYLIB
    #path_prepend "$HOME/external-software/$PLATFORM/stow/ruby-1.8.6-p110/bin"
 
    # Scala
-   export SCALA_HOME="$HOME/external-software/crossplatform/share/scala"
-
+   path_set "$HOME/external-software/crossplatform/stow/scala-2.7.1.final" SCALA_HOME
+   path_append "$SCALA_HOME/lib/scala-library.jar" CLASSPATH
+	export ANT_OPTS="$ANT_OPTS -Dscala.home=$SCALA_HOME"
+	# some particular items for classpath
+	local mvn_repo="$HOME/.m2/repository"
+	path_append "$mvn_repo/org/scalacheck/scalacheck/1.2/scalacheck-1.2.jar" CLASSPATH
+	path_append "$mvn_repo/org/specs/specs/1.2.5/specs-1.2.5.jar" CLASSPATH
+	path_append "$mvn_repo/junit/junit/4.4/junit-4.4.jar" CLASSPATH
    # Subversion
    path_append "/usr/local/subversion/bin"
    
    # XCode
    path_append "/Developer/Tools"
-   path_append "/Volumes/MacBookPro/3rdPartyStuff/Developer-Leopard/Tools"
+   path_append "/Volumes/MacBookPro/3rdPartyStuff/Developer-10.5/Tools"
 
    # -----------------------------------
 
@@ -158,17 +183,46 @@ function set_env_vars_projects()
    ######################### Projects -----------------------
    # initialize the paths of any projects we find 
    PROJECTS_DIR="$HOME/projects"
-   for proj in "$PROJECTS_DIR"/*
+   if [ -d "$PROJECTS_DIR" ]; then
+	   for proj in "$PROJECTS_DIR"/*
+	   do
+			proj_name=$(basename "$proj")
+			proj__name_cap=$(echo "$proj_name" | perl -pe 's/\s+//g; s/([a-z])/\u\1/g; s/-/_/g')
+			eval export ${proj__name_cap}_DIR="$proj"
+			if [ -d "$proj/data" ]; then
+				eval export ${proj__name_cap}_DATA="$proj/data"
+			fi
+			PROJECT_INIT="$proj/tools/util/project_init.sh"
+			if [ -f "$PROJECT_INIT" ]; then
+				source "$PROJECT_INIT"
+			fi
+	#			echo "Sourcing $PROJECT_INIT"
+	 #  		source "$PROJECT_INIT"
+	   done
+	fi
+#   PROJECT_INIT="$PROJECTS_DIR/enron/subprojects/syntax/tools/util/project_init.sh"
+#   if [ -f "$PROJECT_INIT" ]; then
+#		echo "Sourcing $PROJECT_INIT"
+#   	source "$PROJECT_INIT"
+#   fi
+   
+   ######################### Scala/Java projects -----------------------
+   # Add build directories to our classpath
+   for proj in "$HOME/git/public"/* "$HOME/git/private"/* "$HOME/git/research"/* "$HOME/projects"/*
    do
-   	if [ -f "$proj/tools/util/project_init.sh" ]; then
-   		PROJECT_INIT="$proj/tools/util/project_init.sh"
-   		source "$PROJECT_INIT"
-   	fi
+      if [ -f "$proj/build.xml" -a -d "$proj/build" ]; then
+        path_append "$proj/build" CLASSPATH
+      fi
+      if [ -f "$proj/pom.xml" -a -d "$proj/target/classes" ]; then
+        path_append "$proj/target/classes" CLASSPATH
+      fi
+		if [ -d "$proj/lib" ]; then
+			for lib in $(ls "$proj/lib"/*.jar 2>/dev/null)
+			do
+				path_append "$lib" CLASSPATH
+			done
+		fi
    done
-   PROJECT_INIT="$PROJECTS_DIR/enron/subprojects/syntax/tools/util/project_init.sh"
-   if [ -f "$PROJECT_INIT" ]; then
-   	source "$PROJECT_INIT"
-   fi
 
    # GALE
    path_set "/proj/gale-safe/system/distill" GALE_HOME
@@ -196,9 +250,31 @@ function setup_login_shell()
    fi
    alias ..="cd .."
 
+	alias s1="cd $HOME/git/public/scala-utilities"
+	alias s2="cd $HOME/git/public/scala-media"
+	alias s3="cd $HOME/git/public/scala-tympani"
+	alias s4="cd $HOME/git/public/scala-dendron"
+	alias s5="cd $HOME/git/public/scala-orient"
+	alias s6="cd $HOME/git/public/scala-tabula"
+
+	alias e1="cd $HOME/projects/objectmodel"
+	alias e2="cd $HOME/projects/lexico-syntactic"
+	alias e3="cd $HOME/projects/dendron"
+
+	alias d1="cd $HOME/projects/enron/data"
+
    # ----- git ----
    alias pubgit="git --git-dir=$HOME/.public.git --work-tree=$HOME"
    alias prvgit="git --git-dir=$HOME/.private.git --work-tree=$HOME"
+	function git_setup()
+	{
+		git-config branch.master.remote origin
+		git-config branch.master.merge refs/heads/master
+
+		relative_path=${PWD#$HOME/}
+		git-config remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
+		git-config remote.origin.url aaron@harnly.net@harnly.net:${relative_path}
+	}
 
    # ----- less ------
    alias more="less"
@@ -225,7 +301,9 @@ function setup_login_shell()
    alias scpr="rsync --partial --progress --rsh=ssh --archive"
 
    # ----- Scala -----
-   alias rscala="rlwrap scala"
+   alias rscala="rlwrap scala -Xnojline"
+	alias rconsole="rlwrap mvn -Djava.awt.headless=true scala:console"
+	export SCALA_OPTS="-Xnojline"
 
    # ----- ssh -----
    if [ "$OS" = "Darwin" ]; then
@@ -264,11 +342,11 @@ function setup_login_shell()
    	#  with 'user' in green
    	export PS1="${XTERM_TITLE}[\[\e[1;33m\]\@ \e[0;32m\]\u\[\e[0m\]@\h: \W] "
    fi
-   if [ "$TERM" = "screen" ]; then
+   if [ "$TERM" = "screen" -a "$OS" = "Darwin" ]; then
    	# if we're within a 'screen' environment, then update the window name
    	# 	with the name of the current dir
    	#export PROMPT_COMMAND='echo -ne "\033k$(basename $PWD)\033\134"'
-#   	export PROMPT_COMMAND='echo -ne "\033k$(basename $PWD)\033\134\033]0..2;$PWD"'
+   	export PROMPT_COMMAND='echo -ne "\033k$(basename $PWD)\033\134\033]0..2;$PWD"'
 	export PROMPT_COMMAND="$PROMPT_COMMAND"
    fi
    if [ ! -z "$LAUNCHING_APP" ]; then
