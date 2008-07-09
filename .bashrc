@@ -168,6 +168,9 @@ function set_env_vars_apps()
 	path_append "$mvn_repo/junit/junit/4.4/junit-4.4.jar" CLASSPATH
    # Subversion
    path_append "/usr/local/subversion/bin"
+
+	# Tetex
+	path_append "/usr/local/texlive/2007/bin/i386-darwin/"
    
    # XCode
    path_append "/Developer/Tools"
@@ -268,6 +271,7 @@ function setup_login_shell()
    alias prvgit="git --git-dir=$HOME/.private.git --work-tree=$HOME"
 	function git_setup()
 	{
+		git-init
 		git-config branch.master.remote origin
 		git-config branch.master.merge refs/heads/master
 

@@ -26,3 +26,5 @@
 # ignore these files in subdirs
 /.ssh/config
 
+/.ssh/id_dsa
+/.ssh/id_dsa.pub
