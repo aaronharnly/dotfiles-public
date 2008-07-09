@@ -26,3 +26,5 @@
 # ignore these files in subdirs
 /.ssh/config
 
+/.mtr
+/.bash_profile
