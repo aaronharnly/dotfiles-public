@@ -299,7 +299,7 @@ function setup_login_shell()
    fi
    
    # ---- mate ----
-#   alias mate_wait="mate --wait"
+   alias mate_wait="mate --wait"
 
    # ---- rsync ---
    alias scpr="rsync --partial --progress --rsh=ssh --archive"
