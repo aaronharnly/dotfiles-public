@@ -28,6 +28,7 @@ doalias()
 	local cmd="$1"
 	shift
 	local expanded=$(alias "$cmd" | perl -ne 'if ( m/.*?=.(.*)./ ) { print $1 }')
+	echo "Expanded alias: $expanded $@"
 	eval $expanded $@
 }
 
