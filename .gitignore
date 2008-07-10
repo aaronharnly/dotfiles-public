@@ -30,3 +30,5 @@
 /.ssh/id_dsa.pub
 /.mtr
 /.bash_profile
+/.macports
+/.m2/repository
