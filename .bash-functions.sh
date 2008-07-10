@@ -21,6 +21,16 @@ source_if()
 	fi
 }
 
+# Usage: doalias <alias> [args]
+# executes an alias
+doalias()
+{
+	local cmd="$1"
+	shift
+	local expanded=$(alias "$cmd" | perl -ne 'if ( m/.*?=.(.*)./ ) { print $1 }')
+	eval $expanded $@
+}
+
 #
 # --------------------- env-var manipulations --------------------------
 #
