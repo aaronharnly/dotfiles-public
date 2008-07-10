@@ -196,9 +196,7 @@ function set_env_vars_projects()
 				eval export ${proj__name_cap}_DATA="$proj/data"
 			fi
 			PROJECT_INIT="$proj/tools/util/project_init.sh"
-			if [ -f "$PROJECT_INIT" ]; then
-				source "$PROJECT_INIT"
-			fi
+			source_if "$PROJECT_INIT"
 	#			echo "Sourcing $PROJECT_INIT"
 	 #  		source "$PROJECT_INIT"
 	   done
@@ -360,15 +358,9 @@ function setup_login_shell()
    fi
 
    # ----------------- Command completion  -----------------
-   if [ -f "$HOME/.bash_completion" ]; then
-   	source "$HOME/.bash_completion"
-   fi
-   if [ -f "$HOME/.bash_completion_svn" ]; then
-   	source "$HOME/.bash_completion_svn"
-   fi
-   if [ -f "$HOME/external-software/crossplatform/etc/bash_completion_svk" ]; then
-   	source "$HOME/external-software/crossplatform/etc/bash_completion_svk"
-   fi
+	source_if "$HOME/.bash_completion"
+	source_if "$HOME/.bash_completion_svn"
+	source_if "$HOME/external-software/crossplatform/etc/bash_completion_svk"
    # ignore .svn directories for path completion
    export FIGNORE=.svn 
    # after the command completion, reset manpath

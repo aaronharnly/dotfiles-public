@@ -9,6 +9,19 @@
 #
 
 #
+# --------------------- Scripting --------------------------
+#
+# Usage: source_if <path>
+#   If a file is present at <path>, it will be sourced into the current script.
+source_if()
+{
+	local path="$1"
+	if [ -f "$path" ]; then
+		source "$path"
+	fi
+}
+
+#
 # --------------------- env-var manipulations --------------------------
 #
 
