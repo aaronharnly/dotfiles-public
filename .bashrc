@@ -231,25 +231,18 @@ function set_env_vars_projects()
 }
 
 #
-# ==================== Login shell setup ====================
+# ==================== Aliases ====================
 #
-
-
-function setup_login_shell()
+function setup_aliases()
 {
-   # ----------------- Shell options ------------------
-   shopt -s histappend
+	# Alphabetical by the underlying command
 
-   # ----------------- Aliases --------------------------
-   #
-   # Alphabetical by the underlying command
-
-   # ----- cd -----
-   alias cd="mycd" ; export HISTFILE="$HOME/.dir_bash_history$PWD/${USER}_bash_history.txt"
-   if [ ! -z "$WD" ]; then
-   	alias cdg="cd $WD"
-   fi
-   alias ..="cd .."
+	# ----- cd -----
+	alias cd="mycd" ; export HISTFILE="$HOME/.dir_bash_history$PWD/${USER}_bash_history.txt"
+	if [ ! -z "$WD" ]; then
+		alias cdg="cd $WD"
+	fi
+	alias ..="cd .."
 
 	alias s1="cd $HOME/git/public/scala-utilities"
 	alias s2="cd $HOME/git/public/scala-media"
@@ -264,9 +257,9 @@ function setup_login_shell()
 
 	alias d1="cd $HOME/projects/enron/data"
 
-   # ----- git ----
-   alias pubgit="git --git-dir=$HOME/.public.git --work-tree=$HOME"
-   alias prvgit="git --git-dir=$HOME/.private.git --work-tree=$HOME"
+	# ----- git ----
+	alias pubgit="git --git-dir=$HOME/.public.git --work-tree=$HOME"
+	alias prvgit="git --git-dir=$HOME/.private.git --work-tree=$HOME"
 	function git_setup()
 	{
 		git-init
@@ -278,47 +271,60 @@ function setup_login_shell()
 		git-config remote.origin.url aaron@harnly.net@harnly.net:${relative_path}
 	}
 
-   # ----- less ------
-   alias more="less"
+	# ----- less ------
+	alias more="less"
 
-   # ----- ls -----
-   if [ "$OS" = "Linux" ]; then
-   	alias ls="ls --color=never"
-   	alias ll="ls -lh --color=never"
-   else
-   	alias ll="ls -lh"
-   fi
-   if [ "$OS" = "Darwin" ]; then
-   	# Spotlight-savvy ls!
-   	myls="$HOME/software/$PLATFORM/bin/spotlightls"
-   	if [ -f "$myls" ]; then
-   		alias ls="$myls"
-   	fi
-   fi
-   
-   # ---- mate ----
-   alias mate_wait="mate --wait"
+	# ----- ls -----
+	if [ "$OS" = "Linux" ]; then
+		alias ls="ls --color=never"
+		alias ll="ls -lh --color=never"
+	else
+		alias ll="ls -lh"
+	fi
+	if [ "$OS" = "Darwin" ]; then
+		# Spotlight-savvy ls!
+		myls="$HOME/software/$PLATFORM/bin/spotlightls"
+		if [ -f "$myls" ]; then
+			alias ls="$myls"
+		fi
+	fi
 
-   # ---- rsync ---
-   alias scpr="rsync --partial --progress --rsh=ssh --archive"
+	# ---- mate ----
+	alias mate_wait="mate --wait"
 
-   # ----- Scala -----
-   alias rscala="rlwrap scala -Xnojline"
+	# ---- rsync ---
+	alias scpr="rsync --partial --progress --rsh=ssh --archive"
+
+	# ----- Scala -----
+	alias rscala="rlwrap scala -Xnojline"
 	alias rconsole="rlwrap mvn -Djava.awt.headless=true scala:console"
 	export SCALA_OPTS="-Xnojline"
 
-   # ----- ssh -----
-   if [ "$OS" = "Darwin" ]; then
-   	alias ssh="ssh -Y"
-   else
-   	alias ssh="ssh -X"
-   fi
-      
-   # ---- top ----
-   alias topu="top -ocpu -R -F -s 2 -n30"
-      
-   # ---- xstow ---
-   alias xstow="xstow -v 3 -ire 'entries|README.txt|format|.svn-base|.svn-work|empty-file'"
+	# ----- ssh -----
+	if [ "$OS" = "Darwin" ]; then
+		alias ssh="ssh -Y"
+	else
+		alias ssh="ssh -X"
+	fi
+	alias renew_authorized_keys="cat \"$HOME/.ssh/keys.pub/\"* > \"$HOME/.ssh/authorized_keys2\""
+   
+	# ---- top ----
+	alias topu="top -ocpu -R -F -s 2 -n30"
+   
+	# ---- xstow ---
+	alias xstow="xstow -v 3 -ire 'entries|README.txt|format|.svn-base|.svn-work|empty-file'"
+	
+}
+
+#
+# ==================== Login shell setup ====================
+#
+
+
+function setup_login_shell()
+{
+   # ----------------- Shell options ------------------
+   shopt -s histappend
 
    # ----------------- Termcap  -----------------
    if [ "$TERM" != "screen" ]; then
@@ -419,7 +425,10 @@ fi # end of ENV variable changes
 
 
 # ----------------- Shell customization  -----------------
-# do this login stuff only for interactive shells:
+# Add aliases for all shells:
+setup_aliases
+
+# do the login stuff only for interactive shells:
 if [ ! -z "$PS1" ]; then
    setup_login_shell
 
