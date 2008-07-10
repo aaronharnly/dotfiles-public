@@ -208,7 +208,7 @@ function append_build_paths_in_subdirs_of()
 	local dir="$1"
 	# Loop through the directories in there
 	if [ -d "$dir" ]; then
-		for proj in "$dir"/*
+		for proj in $(ls "$dir")
 			do
 			if [ -d "$proj" ]; then
 				append_build_paths_in "$proj"
@@ -223,7 +223,7 @@ function set_env_vars_projects()
    # initialize the paths of any projects we find 
    PROJECTS_DIR="$HOME/projects"
    if [ -d "$PROJECTS_DIR" ]; then
-	   for proj in "$PROJECTS_DIR"/*
+	   for proj in $(ls "$PROJECTS_DIR")
 	   do
 			proj_name=$(basename "$proj")
 			proj__name_cap=$(echo "$proj_name" | perl -pe 's/\s+//g; s/([a-z])/\u\1/g; s/-/_/g')
