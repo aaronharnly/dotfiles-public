@@ -28,3 +28,5 @@
 
 /.ssh/id_dsa
 /.ssh/id_dsa.pub
+/.mtr
+/.bash_profile
