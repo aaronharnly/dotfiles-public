@@ -181,6 +181,42 @@ function set_env_vars_apps()
 
 }
 
+function append_build_paths_in()
+{
+	local path="$1"
+	# Ant build paths
+   if [ -f "$path/build.xml" -a -d "$path/build" ]; then
+     path_append "$proj/build" CLASSPATH
+   fi
+
+	# Maven build paths
+   if [ -f "$path/pom.xml" -a -d "$path/target/classes" ]; then
+     path_append "$proj/target/classes" CLASSPATH
+   fi
+
+	# Jars in "lib" folder
+	if [ -d "$path/lib" ]; then
+		for lib in $(ls "$path/lib"/*.jar 2>/dev/null)
+		do
+			path_append "$lib" CLASSPATH
+		done
+	fi
+}
+
+function append_build_paths_in_subdirs_of()
+{
+	local dir="$1"
+	# Loop through the directories in there
+	if [ -d "$dir" ]; then
+		for proj in "$dir"/*
+			do
+			if [ -d "$proj" ]; then
+				append_build_paths_in "$proj"
+			fi
+		done
+	fi
+}
+
 function set_env_vars_projects()
 {
    ######################### Projects -----------------------
@@ -209,20 +245,9 @@ function set_env_vars_projects()
    
    ######################### Scala/Java projects -----------------------
    # Add build directories to our classpath
-   for proj in "$HOME/git/public"/* "$HOME/git/private"/* "$HOME/git/research"/* "$HOME/projects"/*
-   do
-      if [ -f "$proj/build.xml" -a -d "$proj/build" ]; then
-        path_append "$proj/build" CLASSPATH
-      fi
-      if [ -f "$proj/pom.xml" -a -d "$proj/target/classes" ]; then
-        path_append "$proj/target/classes" CLASSPATH
-      fi
-		if [ -d "$proj/lib" ]; then
-			for lib in $(ls "$proj/lib"/*.jar 2>/dev/null)
-			do
-				path_append "$lib" CLASSPATH
-			done
-		fi
+   for parent in "$HOME/git/public" "$HOME/git/private" "$HOME/git/research" "$HOME/projects"
+   	do
+		append_build_paths_in_subdirs_of "$parent"
    done
 
    # GALE
