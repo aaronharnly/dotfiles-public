@@ -227,9 +227,9 @@ function set_env_vars_projects()
 	   do
 			proj_name=$(basename "$proj")
 			proj__name_cap=$(echo "$proj_name" | perl -pe 's/\s+//g; s/([a-z])/\u\1/g; s/-/_/g')
-			eval export ${proj__name_cap}_DIR="$proj"
-			if [ -d "$proj/data" ]; then
-				eval export ${proj__name_cap}_DATA="$proj/data"
+			eval export ${proj__name_cap}_DIR="$PROJECTS_DIR/$proj"
+			if [ -d "$PROJECTS_DIR/$proj/data" ]; then
+				eval export ${proj__name_cap}_DATA="$PROJECTS_DIR/$proj/data"
 			fi
 			PROJECT_INIT="$proj/tools/util/project_init.sh"
 			source_if "$PROJECT_INIT"
