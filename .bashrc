@@ -2,6 +2,7 @@
 # Aaron's .bashrc
 #
 source "$HOME/.bash-functions.sh"
+source_if "$HOME/.bashrc.private"
 
 #
 # ==================== ENV var setup ====================
@@ -16,6 +17,7 @@ function setup_env_vars()
    set_env_vars_general
    set_env_vars_apps
    set_env_vars_projects
+	set_env_vars_private
 }
 
 function set_env_vars_general()
@@ -109,6 +111,10 @@ function set_env_vars_general()
    # Private scripts and such
    path_prepend "$HOME/private-software/crossplatform/bin"
    path_prepend "$HOME/private-software/$PLATFORM/bin"
+
+	# Temporary file path
+	path_set "/tmp" TMP
+	path_set "$HOME/tmp" TMP
 }
 
 function set_env_vars_apps()
@@ -324,6 +330,19 @@ function setup_aliases()
 	alias rscala="rlwrap scala -Xnojline"
 	alias rconsole="rlwrap mvn -Djava.awt.headless=true scala:console"
 	export SCALA_OPTS="-Xnojline"
+	alias strunk="$HOME/external-software/crossplatform/stow/scala-latest/bin/scala"
+	alias strunkc="$HOME/external-software/crossplatform/stow/scala-latest/bin/scalac"
+	alias rstrunk="rlwrap $HOME/external-software/crossplatform/stow/scala-latest/bin/scala -Xnojline"
+
+	function scala_setup()
+	{
+		dirname=$(basename "$PWD")
+		projname=${projname/scala-/}
+		mkdir -p "src/main/scala/net/harnly/$projname"
+		mkdir -p "src/test/scala/net/harnly/$projname"
+		cp "$HOME/software/crossplatform/etc/templates/scala-project/pom.xml" pom.xml
+	}
+
 
 	# ----- ssh -----
 	if [ "$OS" = "Darwin" ]; then
@@ -335,6 +354,9 @@ function setup_aliases()
    
 	# ---- top ----
 	alias topu="top -ocpu -R -F -s 2 -n30"
+
+	# ---- tree ----
+	alias lst="tree -AlCNh --dirsfirst"
    
 	# ---- xstow ---
 	alias xstow="xstow -v 3 -ire 'entries|README.txt|format|.svn-base|.svn-work|empty-file'"
