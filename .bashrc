@@ -152,7 +152,7 @@ function set_env_vars_apps()
 	path_set "/Library/Frameworks/R.framework/Versions/Current/Resources" R_HOME
 
    # Ruby
-   unset RUBYLIB
+#   unset RUBYLIB
    #export RUBYOPT=rubygems
    #path_append "$HOME/software/crossplatform/lib/ruby" RUBYLIB
    #path_prepend "$HOME/external-software/$PLATFORM/stow/ruby-1.8.6-p110/bin"
@@ -452,6 +452,9 @@ fi # end of ENV variable changes
 # ----------------- Shell customization  -----------------
 # Add aliases for all shells:
 setup_aliases
+
+# ----------------- Additional files --------------------
+source_if "$HOME/.bash_profile"
 
 # do the login stuff only for interactive shells:
 if [ ! -z "$PS1" ]; then
