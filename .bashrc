@@ -424,7 +424,7 @@ function setup_login_shell()
    SSH_COMBO="$SSH_CONNECTION$SSH_CLIENT"
    if [ ! -z "$SSH_COMBO" ]; then
    	SSH_REMOTE_IP="${SSH_COMBO%% *}"
-   	SSH_REMOTE_HOST=$(host $SSH_REMOTE_IP | awk '/name pointer/ {print $5} /NXDOMAIN/ {print "$SSH_REMOTE_IP" }')   	
+   	SSH_REMOTE_HOST=$(host $SSH_REMOTE_IP 2>/dev/null | awk '/name pointer/ {print $5} /NXDOMAIN/ {print "$SSH_REMOTE_IP" }')   	
    	if [ -z "$SSH_REMOTE_HOST" ]; then
    	  SSH_REMOTE_HOST="$SSH_REMOTE_IP" 
 	   fi
