@@ -54,6 +54,10 @@ function set_env_vars_general()
    	      export LAUNCHING_APP=$(osascript "$frontmost_script")
    	   fi
    	fi
+   else
+	   if [ "$TERM" = "terminator" ]; then
+		   export LAUNCHING_APP="terminator"
+	   fi
    fi
 
    # In Mac OS X, what network location is set?
@@ -77,9 +81,11 @@ function set_env_vars_general()
    #
    # ---------------- General Paths ---------------------
    #
-	# Reset path --------------
-	unset PATH
-
+   # Reset path --------------
+   # except not on Windows
+   if [ "$OS" != "CYGWIN_NT-5.1" ]; then
+      unset PATH
+   fi
    # Generic useful paths -----------------
    path_prepend /bin
    path_prepend /sbin
@@ -375,7 +381,12 @@ function setup_login_shell()
 
    # ----------------- Termcap  -----------------
    if [ "$TERM" != "screen" ]; then
-	   export TERM="xterm-color"
+	   if [ "$LAUNCHING_APP" = "terminator" ]; then
+		   export TERM="ansi"
+		   export TERMINFO="$HOME/.terminfo"
+	   else
+		   export TERM="xterm-color"
+	   fi
    fi
    # export TERMINFO="$HOME/.terminfo"
    # export TERMCAP="$HOME/software/crossplatform/etc/termcap"
@@ -477,6 +488,9 @@ setup_aliases
 
 # ----------------- Additional files --------------------
 source_if "$HOME/.bash_profile"
+if [ "$HOST" = "aharnley-wks" ]; then
+	source_if "$HOME/.bashrc.wgen"
+fi
 
 # do the login stuff only for interactive shells:
 if [ ! -z "$PS1" ]; then
