@@ -330,9 +330,9 @@ function setup_aliases()
 	alias rscala="rlwrap scala -Xnojline"
 	alias rconsole="rlwrap mvn -Djava.awt.headless=true scala:console"
 	export SCALA_OPTS="-Xnojline"
-	alias strunk="$HOME/external-software/crossplatform/stow/scala-latest/bin/scala"
-	alias strunkc="$HOME/external-software/crossplatform/stow/scala-latest/bin/scalac"
-	alias rstrunk="rlwrap $HOME/external-software/crossplatform/stow/scala-latest/bin/scala -Xnojline"
+	alias scala-latest="$HOME/external-software/crossplatform/stow/scala-latest/bin/scala"
+	alias scalac-latest="$HOME/external-software/crossplatform/stow/scala-latest/bin/scalac"
+	alias rscala-latest="rlwrap $HOME/external-software/crossplatform/stow/scala-latest/bin/scala -Xnojline"
 
 	function scala_setup()
 	{
