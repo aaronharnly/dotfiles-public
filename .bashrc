@@ -138,6 +138,8 @@ function set_env_vars_apps()
    path_set "/usr/local/java/java1.5" JAVA_HOME
    path_set "$HOME/external-software/$PLATFORM/stow/jdk" JAVA_HOME
    path_set "$HOME/external-software/$PLATFORM/stow/jdk1.6.0_04" JAVA_HOME
+   path_set "/usr/local/java" JAVA_HOME
+   path_prepend "/usr/local/java/bin"
    path_prepend "/usr/local/java/java1.5/bin"
    export JAVA_OPTS="-Xmx1024m"
 	
@@ -259,6 +261,9 @@ function set_env_vars_projects()
    # GALE
    path_set "/proj/gale-safe/system/distill" GALE_HOME
    path_set_if_empty "$HOME/projects/galesys" GALE_HOME
+
+   path_set "$HOME/projects/enron/code-repository" ENRON_DIR
+   path_set "$HOME/projects/enron/database-repository" ENRON_DB_DIR
 }
 
 #
