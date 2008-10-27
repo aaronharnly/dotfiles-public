@@ -17,7 +17,7 @@ function setup_env_vars()
    set_env_vars_general
    set_env_vars_apps
    set_env_vars_projects
-	set_env_vars_private
+   set_env_vars_private
 }
 
 function set_env_vars_general()
@@ -129,6 +129,13 @@ function set_env_vars_apps()
    # ---------------- Application-specific vars ---------------------
    #
    #  maintained in roughly alphabetic order by appname
+
+   # Gnu coreutils
+   if [ ! -z $(which dircolors) ]; then
+	   if [ -f "$HOME/.dircolors" ]; then
+		   eval `dircolors "$HOME/.dircolors"`
+	   fi
+   fi
 
    # GCC
    path_prepend "$HOME/external-software/$PLATFORM/lib" LD_LIBRARY_PATH	
@@ -317,19 +324,8 @@ function setup_aliases()
 	alias more="less"
 
 	# ----- ls -----
-	if [ "$OS" = "Linux" ]; then
-		alias ls="ls --color=never"
-		alias ll="ls -lh --color=never"
-	else
-		alias ll="ls -lh"
-	fi
-	if [ "$OS" = "Darwin" ]; then
-		# Spotlight-savvy ls!
-		myls="$HOME/software/$PLATFORM/bin/spotlightls"
-		if [ -f "$myls" ]; then
-			alias ls="$myls"
-		fi
-	fi
+	alias ll="ls -lh --color=auto"
+	alias ls="ls --color=auto"
 
 	# ---- mate ----
 	alias mate_wait="mate --wait"
