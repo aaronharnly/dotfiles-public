@@ -387,7 +387,7 @@ function setup_login_shell()
    else
    	# this makes a prompt of the form: [user@hostname: ~] 
    	#  with 'user' in green
-   	export PS1="\[\e[1;33m\]\@ \e[0;32m\]\u\[\e[0m\]@\h: \W ∞ "
+   	export PS1="\[\e[1;33m\]\@ \[\e[0;32m\]\u\[\e[0m\]@\h: \W ∞ "
    fi
    if [ "$TERM" = "screen" -a "$OS" = "Darwin" ]; then
    	# if we're within a 'screen' environment, then update the window name
