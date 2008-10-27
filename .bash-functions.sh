@@ -307,14 +307,33 @@ function calc()
 # ------------------------ Display ---------------------------------
 function length_of_longest_arg()
 {
-   local max_length=0
-   for arg in "$@"; do
-      arg_len=${#arg}
-      if [ $arg_len -gt $max_length ]; then
-        max_length=$arg_len 
-      fi
-   done
-   echo $max_length
+	local max_length=0
+	for arg in "$@"; do
+		arg_len=${#arg}
+		if [ $arg_len -gt $max_length ]; then
+			max_length=$arg_len 
+		fi
+	done
+	echo $max_length
+}
+
+#
+# Repeats a string the given number of times.
+#
+# Usage: str_repeat "a" "14"
+#
+# produces: aaaaaaaaaaaaaa
+#
+function str_repeat()
+{
+	local str="$1"
+	local n="$2"
+	local spaces=$(printf "%*s" $n "")
+	if [ "$str" = " " ]; then # hack to print spaces. Must be a better way.
+		echo "$spaces"
+	else
+		echo ${spaces// /${str}}
+	fi
 }
 
 #
@@ -325,41 +344,85 @@ function length_of_longest_arg()
 #  passed as the first argument, the lines will be centered
 #  (otherwise, left-justified). Example:
 #
-# +--------------------------------------------+
-# |             asdfasdfasdf fuhe              |
-# |                  zanzibar                  |
-# | fooeee oijef eijfe  efijejfejief efjiefj e |
-# +--------------------------------------------+
+#  display_boxed --centered "the quick brown fox" "jumped over" "the very lazy dog"
+#
+#  in unicode:
+# ┌─────────────────────┐
+# │ the quick brown fox │
+# │     jumped over     │
+# │  the very lazy dog  │
+# └─────────────────────┘
+# 
+#  and in ascii:
+# +---------------------+
+# | the quick brown fox |
+# |     jumped over     |
+# |  the very lazy dog  |
+# +---------------------+
 #
 #
 #
 function display_boxed()
 {
-   local dashes="-----------------------------------------------------------------------------------------------------------------------------"
-   local spaces="                                                                                                                             "
-   local centered=0
-   if [ "$1" = "--centered" ]; then
-      centered=1
-      shift
-   fi
-   
-   maxlen=$(length_of_longest_arg "$@")
-   let innerwidth=maxlen+2
-   longest_dashes=${dashes:0:$innerwidth}
-   box_edges="+${longest_dashes}+"
-   
-   echo $box_edges
-   for line in "$@"; do
-      left_spaces_len=0
-      if [ $centered -eq 1 ]; then
-         let left_spaces_len=(maxlen-${#line})/2
-      fi
-      let right_spaces_len=maxlen-${#line}-left_spaces_len
-      leftspaces=${spaces:0:$left_spaces_len}
-      rightspaces=${spaces:0:$right_spaces_len}
-      echo "| ${leftspaces}${line}${rightspaces} |"
-   done
-   echo $box_edges
+	local top_ascii="+-+"
+	local mid_ascii="| |"
+	local bot_ascii="+-+"
+
+	local top_unicode="┌─┐"
+	local mid_unicode="│ │"
+	local bot_unicode="└─┘"
+
+	# choose character set
+	if [ "$OS" = "Darwin" ]; then
+		local charset="unicode"
+	else
+		local charset="ascii"
+	fi
+
+	local charset_top=$(eval echo \$top_${charset})
+	local charset_mid=$(eval echo \$mid_${charset})
+	local charset_bot=$(eval echo \$bot_${charset})
+
+	local tl=${charset_top:0:1}
+	local tc=${charset_top:1:1}
+	local tr=${charset_top:2:1}
+	local ml=${charset_mid:0:1}
+	local mc=${charset_mid:1:1}
+	local mr=${charset_mid:2:1}
+	local bl=${charset_bot:0:1}
+	local bc=${charset_bot:1:1}
+	local br=${charset_bot:2:1}	
+
+	local centered=0
+	if [ "$1" = "--centered" ]; then
+		centered=1
+		shift
+	fi
+
+	maxlen=$(length_of_longest_arg "$@")
+	let innerwidth=maxlen+2
+	
+	box_top_center=$(str_repeat "$tc" $innerwidth)
+	box_top="${tl}${box_top_center}${tr}"
+
+	box_mid_center=$(str_repeat "$mc" $innerwidth)
+
+	box_bot_center=$(str_repeat "$bc" $innerwidth)
+	box_bot="${bl}${box_bot_center}${br}"
+
+	echo "$box_top"
+	for line in "$@"; do
+		left_spaces_len=0
+		if [ $centered -eq 1 ]; then
+			let left_spaces_len=(maxlen-${#line})/2
+		fi
+		let right_spaces_len=maxlen-${#line}-left_spaces_len
+		leftspaces=${box_mid_center:0:$left_spaces_len}
+		rightspaces=${box_mid_center:0:$right_spaces_len}
+		boxed_line="${ml}${mc}${leftspaces}${line}${rightspaces}${mc}${mr}"
+		echo "$boxed_line"
+	done
+	echo "$box_bot"
 }
 
 
