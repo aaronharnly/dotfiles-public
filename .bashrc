@@ -293,19 +293,6 @@ function setup_aliases()
 	fi
 	alias ..="cd .."
 
-	alias s1="cd $HOME/git/public/scala-utilities"
-	alias s2="cd $HOME/git/public/scala-media"
-	alias s3="cd $HOME/git/public/scala-tympani"
-	alias s4="cd $HOME/git/public/scala-dendron"
-	alias s5="cd $HOME/git/public/scala-orient"
-	alias s6="cd $HOME/git/public/scala-tabula"
-
-	alias e1="cd $HOME/projects/objectmodel"
-	alias e2="cd $HOME/projects/lexico-syntactic"
-	alias e3="cd $HOME/projects/dendron"
-
-	alias d1="cd $HOME/projects/enron/data"
-
 	# ----- git ----
 	alias pubgit="git --git-dir=$HOME/.public.git --work-tree=$HOME"
 	alias prvgit="git --git-dir=$HOME/.private.git --work-tree=$HOME"
@@ -393,21 +380,14 @@ function setup_login_shell()
    # export TERMCAP="$HOME/software/crossplatform/etc/termcap"
 
    # ----------------- Prompt  -----------------
-   # decide whether to include xterm window title code
-   if [ "$TERM" = "xterm" -o "$TERM" = "xterm-color" -o "$TERM" = "ansi" ]; then
-   	# include xterm window title code
-   	XTERM_TITLE="\[\033]0;\h: \w\007\]"
-   else
-   	XTERM_TITLE=""
-   fi
    if [ $UID = 0 ]; then
    	# this makes a prompt of the form: [root@hostname: ~] 
    	#   with 'root' in red
-   	export PS1="${XTERM_TITLE}[\[\e[1;33m\]\@ \e[0;31m\]\u\[\e[0m\]@\h: \W] "
+   	export PS1="[\[\e[1;33m\]\@ \e[0;31m\]\u\[\e[0m\]@\h: \W] "
    else
    	# this makes a prompt of the form: [user@hostname: ~] 
    	#  with 'user' in green
-   	export PS1="${XTERM_TITLE}\[\e[1;33m\]\@ \e[0;32m\]\u\[\e[0m\]@\h: \W ★  "
+   	export PS1="\[\e[1;33m\]\@ \e[0;32m\]\u\[\e[0m\]@\h: \W ★  "
    fi
    if [ "$TERM" = "screen" -a "$OS" = "Darwin" ]; then
    	# if we're within a 'screen' environment, then update the window name
