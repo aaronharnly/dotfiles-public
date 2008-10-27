@@ -469,9 +469,7 @@ setup_aliases
 
 # ----------------- Additional files --------------------
 source_if "$HOME/.bash_profile"
-if [ "$HOST" = "aharnley-wks" ]; then
-	source_if "$HOME/.bashrc.wgen"
-fi
+source_if "$HOME/.bashrc.${HOST}"
 
 # do the login stuff only for interactive shells:
 if [ ! -z "$PS1" ]; then
