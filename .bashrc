@@ -174,7 +174,7 @@ function set_env_vars_apps()
 
    # Ruby
 #   unset RUBYLIB
-   #export RUBYOPT=rubygems
+   export RUBYOPT=rubygems
    #path_append "$HOME/software/crossplatform/lib/ruby" RUBYLIB
    #path_prepend "$HOME/external-software/$PLATFORM/stow/ruby-1.8.6-p110/bin"
 
