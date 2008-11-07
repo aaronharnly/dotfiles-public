@@ -132,8 +132,11 @@ function set_env_vars_apps()
 
    # Gnu coreutils
    if [ ! -z $(which dircolors) ]; then
-	   if [ -f "$HOME/.dircolors" ]; then
+	   local dircolors_ver=$(dircolors --version | grep dircolors)
+	   if [ $(echo $dircolors_ver | grep '6.' | wc -l) = "1" ]; then
+	   	if [ -f "$HOME/.dircolors" ]; then
 		   eval `dircolors "$HOME/.dircolors"`
+		fi
 	   fi
    fi
 
