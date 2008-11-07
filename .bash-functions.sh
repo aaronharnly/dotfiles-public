@@ -114,6 +114,58 @@ path_print()
 
 
 #
+# Sets an env var, by choosing from a key-value list.
+# The key-value list is established simply by defining a series of env vars with a common prefix;
+#   e.g.
+#  WGEN_DB_key1="value1"
+#  WGEN_DB_key2="value2"
+#  ...
+#
+#
+# Usage: choose <var-to-set> <key-prefix> <key> [-q]
+#
+#  e.g. choose DB_OF_MY_DREAMS WGEN_DB_ key2
+#       will perform:
+#       export DB_OF_MY_DREAMS="value2"
+#
+choose()
+{
+	local var_to_set="$1"
+	local key_prefix="$2"
+	local key="$3"
+	local quiet_arg="$4"
+	if [ ! -z "$quiet_arg" ]; then
+		if [ "$quiet_arg" = "-q" -o "$quiet_arg" = "--quiet" ]; then
+			local quiet="YES"
+		else
+			local quiet="NO"
+		fi
+	else
+		local quiet="NO"
+	fi
+	if [ -z "$key" ]; then # list the possibilities for this variable
+		echo "Currently,"
+		echo "	${var_to_set}=$(eval echo \$${var_to_set})"
+		echo " "
+		echo "Available values:"
+		env | perl -ne 'if (m/^'$key_prefix'(\w+)=(.+)/) { printf "%20s: %s\n", $1, $2 }'
+	else
+		# get the value for the key given
+		local value=$(eval echo \$${key_prefix}${key})
+		if [ -z "$value" ]; then
+			# We don't seem to have a value for that key
+			# So we'll just use the key itself as the value
+			local value="$key"
+		fi
+		# set the target variable
+		eval export ${var_to_set}="$value"
+		if [ "$quiet" != "YES" ]; then
+			echo "export ${var_to_set}=$(eval echo \$${var_to_set})"
+		fi
+	fi
+}
+
+#
 # --------------------- filepath manipulations --------------------------
 #
 
