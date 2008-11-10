@@ -319,6 +319,11 @@ function setup_aliases()
 
 	# ---- mate ----
 	alias mate_wait="mate --wait"
+	
+	# ---- open ----
+	if [ "$OS" = "Linux" ]; then
+	  alias open="gnome-open"
+	fi
 
 	# ---- rsync ---
 	alias scpr="rsync --partial --progress --rsh=ssh --archive"
