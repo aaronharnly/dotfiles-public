@@ -20,6 +20,30 @@ function setup_env_vars()
    set_env_vars_private
 }
 
+# Returns the best guess of the terminal program.
+# requires $TERM to be in its original state.
+function get_launching_app()
+{
+  if [ ! -z "$TERM_PROGRAM" ]; then
+    echo $TERM_PROGRAM
+  elif [ ! -z "$PATH_FINDER" ]; then
+    echo "Path Finder"
+  elif [ ! -z "$TERM" -a "$TERM" = "terminator" ]; then
+    echo "Terminator"
+  elif [ ! -z "$COLORTERM" -a "$COLORTERM" = "gnome-terminal" ]; then
+    echo "Gnome Terminal"
+  elif [ "$OS" = "Darwin" ]; then
+    frontmost_script="$HOME/software/$PLATFORM/applescripts/get_frontmost_application.scpt"
+    if [ -f "$frontmost_script" ]; then
+      echo $(osascript "$frontmost_script")
+    else
+      echo "an unknown Mac terminal"
+    fi
+  else
+    echo "an unknown terminal"
+  fi
+}
+
 function set_env_vars_general()
 {
    #
@@ -41,24 +65,21 @@ function set_env_vars_general()
    fi
 
    # What terminal are we under?
-   export LAUNCHING_APP="An unknown terminal"
-   if [ "$OS" = "Darwin" -a 0 ]; then
-   	# find out which app launched this terminal
-   	if [ ! -z "$TERM_PROGRAM" ]; then
-   		export LAUNCHING_APP="$TERM_PROGRAM"
-   	elif [ ! -z "$PATH_FINDER" ]; then
-   		export LAUNCHING_APP="Path Finder"
-   	else
-   	   frontmost_script="$HOME/software/$PLATFORM/applescripts/get_frontmost_application.scpt"
-   	   if [ -f "$frontmost_script" ]; then
-   	      export LAUNCHING_APP=$(osascript "$frontmost_script")
-   	   fi
-   	fi
+   export LAUNCHING_TERM="$TERM"
+   export LAUNCHING_APP=$(get_launching_app)
+
+   # Are we logged in locally, or over ssh?
+   SSH_COMBO="$SSH_CONNECTION$SSH_CLIENT"
+   if [ -z "$SSH_COMBO" ]; then
+     export LOCALNESS="local"
    else
-	   if [ "$TERM" = "terminator" ]; then
-		   export LAUNCHING_APP="terminator"
-	   fi
-   fi
+   	SSH_REMOTE_IP="${SSH_COMBO%% *}"
+   	SSH_REMOTE_HOST=$(host $SSH_REMOTE_IP 2>/dev/null | awk '/name pointer/ {print $5} /NXDOMAIN/ {print "$SSH_REMOTE_IP" }')   	
+   	if [ -z "$SSH_REMOTE_HOST" ]; then
+   	  export SSH_REMOTE_HOST="$SSH_REMOTE_IP" 
+	  fi
+    export LOCALNESS="remote"
+  fi
 
    # In Mac OS X, what network location is set?
    if [ -f "/usr/sbin/scselect" ]; then
@@ -315,6 +336,7 @@ function setup_aliases()
 
 	# ----- ls -----
 	alias ll="ls -lh --color=auto"
+	alias l="ls -lh --color=auto"
 	alias ls="ls --color=auto"
 
 	# ---- mate ----
@@ -420,22 +442,16 @@ function setup_login_shell()
    unset MANPATH
 
    # ----------------- Login greeting  -----------------
-   # notice a few things about our environment
-   SSH_COMBO="$SSH_CONNECTION$SSH_CLIENT"
-   if [ ! -z "$SSH_COMBO" ]; then
-   	SSH_REMOTE_IP="${SSH_COMBO%% *}"
-   	SSH_REMOTE_HOST=$(host $SSH_REMOTE_IP 2>/dev/null | awk '/name pointer/ {print $5} /NXDOMAIN/ {print "$SSH_REMOTE_IP" }')   	
-   	if [ -z "$SSH_REMOTE_HOST" ]; then
-   	  SSH_REMOTE_HOST="$SSH_REMOTE_IP" 
-	   fi
-   	LOCALNESS="via ssh from $SSH_REMOTE_HOST"
+   # Where are we logged in from?
+   if [ "$LOCALNESS" = "local" ]; then
+   	LOCATION_MESSAGE="locally on $LAUNCHING_APP"
    else
-   	LOCALNESS="locally on $LAUNCHING_APP"
+   	LOCATION_MESSAGE="via ssh from $SSH_REMOTE_HOST"
    fi
 
    # print info about the shell environment
    if [ -z "$SHOWED_CONNECTION_INFO" ]; then
-   	display_boxed --centered "Connected to $HOST $LOCALNESS." "Platform is $PLATFORM."
+   	display_boxed --centered "Connected to $HOST $LOCATION_MESSAGE." "Platform is $PLATFORM."
    	export SHOWED_CONNECTION_INFO="yes"
    fi
 	
@@ -477,7 +493,6 @@ setup_aliases
 
 # ----------------- Additional files --------------------
 source_if "$HOME/.bash_profile"
-source_if "$HOME/.bashrc.${HOST}"
 
 # do the login stuff only for interactive shells:
 if [ ! -z "$PS1" ]; then
@@ -492,7 +507,12 @@ if [ ! -z "$PS1" ]; then
 	if [ -e "$custom_shell" -a "$0" != "$custom_shell" -a -z "$SHOWED_CUSTOM_SHELL_MESSAGE" ]; then
 		export SHOWED_CUSTOM_SHELL_MESSAGE="yes"
 		echo "Running custom bash shell from $custom_shell"
+    # Do host-specific changes
+    source_if "$HOME/.bashrc.${HOST}"
 		exec "$custom_shell"
 	fi
 fi
+
+# Do host-specific changes
+source_if "$HOME/.bashrc.${HOST}"
 
