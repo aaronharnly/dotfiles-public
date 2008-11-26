@@ -438,6 +438,8 @@ function setup_login_shell()
 	source_if "$HOME/external-software/crossplatform/etc/bash_completion_svk"
    # ignore .svn directories for path completion
    export FIGNORE=.svn 
+   # ignore CVS directories for path completion
+   export FIGNORE=$FIGNORE:CVS
    # after the command completion, reset manpath
    unset MANPATH
 
