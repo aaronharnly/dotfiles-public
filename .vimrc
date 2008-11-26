@@ -18,6 +18,10 @@ set nomodeline " don't let files override .vimrc
 " *********** Text Formatting - Formats
 filetype on " enable filetype detection
 filetype indent on
+set softtabstop=2
+set tabstop=2
+set shiftwidth=2
+set expandtab
 " autocmd FileType perl set smartindent
 
 " *********** Search & Replace
