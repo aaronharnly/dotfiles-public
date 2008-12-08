@@ -432,7 +432,7 @@ function setup_login_shell()
    else
      TERM_USER_COLOR=${TERM_GREEN}
    fi
-   export PS1="[${TERM_YELLOW}\@ ${TERM_USER_COLOR}\u${TERM_RESET}@\h: \W] "
+   export PS1="[${TERM_YELLOW}\@ ${TERM_USER_COLOR}\u${TERM_RESET}@\h: \w]\n ★  "
    if [ "$TERM" = "screen" -a "$OS" = "Darwin" ]; then
    	# if we're within a 'screen' environment, then update the window name
    	# 	with the name of the current dir
