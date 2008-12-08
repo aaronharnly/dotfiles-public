@@ -13,7 +13,9 @@ set wildmode=list:longest,full " use command-line completion
 
 " misc. UI behavior
 set mouse=a " enable mouse
-set nomodeline " don't let files override .vimrc
+" set nomodeline " don't let files override .vimrc
+set modeline
+set modelines=5
 
 " *********** Text Formatting - Formats
 filetype on " enable filetype detection
