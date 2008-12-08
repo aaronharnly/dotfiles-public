@@ -14,6 +14,7 @@ source_if "$HOME/.bashrc.private"
 function setup_env_vars()
 {
    set_env_vars_basic
+   set_env_vars_colors
    set_env_vars_general
    set_env_vars_apps
    set_env_vars_projects
@@ -42,6 +43,21 @@ function get_launching_app()
   else
     echo "an unknown terminal"
   fi
+}
+
+function set_env_vars_colors()
+{
+  export TERM_BLACK=$(tput setaf 0)
+  export TERM_RED=$(tput setaf 1)
+  export TERM_GREEN=$(tput setaf 2)
+  export TERM_YELLOW=$(tput setaf 3)
+  export TERM_BLUE=$(tput setaf 4)
+  export TERM_PURPLE=$(tput setaf 5)
+  export TERM_CYAN=$(tput setaf 6)
+  export TERM_WHITE=$(tput setaf 7)
+  export TERM_RESET=$(tput sgr0)
+  export TERM_BOLD=$(tput smso)
+  export TERM_BOLD_END=$(tput rmso)
 }
 
 function set_env_vars_general()
@@ -410,15 +426,13 @@ function setup_login_shell()
    # export TERMCAP="$HOME/software/crossplatform/etc/termcap"
 
    # ----------------- Prompt  -----------------
+   # Show 'root' in red
    if [ $UID = 0 ]; then
-   	# this makes a prompt of the form: [root@hostname: ~] 
-   	#   with 'root' in red
-   	export PS1="[\[\e[1;33m\]\@ \e[0;31m\]\u\[\e[0m\]@\h: \W] "
+     TERM_USER_COLOR=${TERM_RED}
    else
-   	# this makes a prompt of the form: [user@hostname: ~] 
-   	#  with 'user' in green
-   	export PS1="[\[\e[1;33m\]\@ \[\e[0;32m\]\u\[\e[0m\]@\h: \W] "
+     TERM_USER_COLOR=${TERM_GREEN}
    fi
+   export PS1="[${TERM_YELLOW}\@ ${TERM_USER_COLOR}\u${TERM_RESET}@\h: \W] "
    if [ "$TERM" = "screen" -a "$OS" = "Darwin" ]; then
    	# if we're within a 'screen' environment, then update the window name
    	# 	with the name of the current dir
