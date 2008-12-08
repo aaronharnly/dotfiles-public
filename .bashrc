@@ -408,6 +408,11 @@ function setup_aliases()
 #
 
 
+function git_info()
+{
+  echo $(aaron-git-info 2>/dev/null)
+}
+
 function setup_login_shell()
 {
    # ----------------- Shell options ------------------
@@ -432,19 +437,9 @@ function setup_login_shell()
    else
      TERM_USER_COLOR=${TERM_GREEN}
    fi
-   export PS1="[${TERM_YELLOW}\@ ${TERM_USER_COLOR}\u${TERM_RESET}@\h: \w]\n ★  "
-   if [ "$TERM" = "screen" -a "$OS" = "Darwin" ]; then
-   	# if we're within a 'screen' environment, then update the window name
-   	# 	with the name of the current dir
-   	#export PROMPT_COMMAND='echo -ne "\033k$(basename $PWD)\033\134"'
-   	export PROMPT_COMMAND='echo -ne "\033k$(basename $PWD)\033\134\033]0..2;$PWD"'
-	export PROMPT_COMMAND="$PROMPT_COMMAND"
-   fi
-   if [ ! -z "$LAUNCHING_APP" ]; then
-   	if [ "$LAUNCHING_APP" = "Path Finder" ]; then
-   		export PROMPT_COMMAND="if [ -z "$DONT_RUN_PFF" ]; then pff; fi; unset DONT_RUN_PFF"
-   	fi
-   fi
+   export PS1="[${TERM_YELLOW}\@ ${TERM_USER_COLOR}\u${TERM_RESET}@\h: \w] $(git_info)\n ★ "
+   export PROMPT_COMMAND='PS1="[${TERM_YELLOW}\@ ${TERM_USER_COLOR}\u${TERM_RESET}@\h: \w] $(git_info)\n ★ "'
+   export PS2=" | "
 
    # ----------------- Command completion  -----------------
 	source_if "$HOME/.bash_completion"
