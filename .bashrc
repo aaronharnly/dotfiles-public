@@ -442,8 +442,8 @@ function setup_login_shell()
    else
      TERM_USER_COLOR=${TERM_GREEN}
    fi
-   export PS1="[${TERM_YELLOW}\@ ${TERM_USER_COLOR}\u${TERM_RESET}@\h: \w] $(git_info)\n ★ "
-   export PROMPT_COMMAND='PS1="[${TERM_YELLOW}\@ ${TERM_USER_COLOR}\u${TERM_RESET}@\h: \w] $(git_info)\n ★ "'
+   export PS1="[${TERM_YELLOW}\@ ${TERM_USER_COLOR}\u${TERM_RESET}@\h:${TERM_YELLOW}\w${TERM_RESET}] $(git_info)\n ★ "
+   export PROMPT_COMMAND='PS1="[${TERM_YELLOW}\@ ${TERM_USER_COLOR}\u${TERM_RESET}@\h:${TERM_YELLOW}\w${TERM_RESET}] $(git_info)\n ★ "'
    export PS2=" | "
 
    # ----------------- Command completion  -----------------
