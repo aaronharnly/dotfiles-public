@@ -59,9 +59,22 @@ function set_env_vars_colors()
   export TERM_PURPLE=$(tput setaf 5)
   export TERM_CYAN=$(tput setaf 6)
   export TERM_WHITE=$(tput setaf 7)
-  export TERM_RESET=$(tput sgr0)
+
+  export TERM_BG_BLACK=$(tput setab 0)
+  export TERM_BG_RED=$(tput setab 1)
+  export TERM_BG_GREEN=$(tput setab 2)
+  export TERM_BG_YELLOW=$(tput setab 3)
+  export TERM_BG_BLUE=$(tput setab 4)
+  export TERM_BG_PURPLE=$(tput setab 5)
+  export TERM_BG_CYAN=$(tput setab 6)
+  export TERM_BG_WHITE=$(tput setab 7)
+
   export TERM_BOLD=$(tput smso)
   export TERM_BOLD_END=$(tput rmso)
+  export TERM_UNDERLINE=$(tput smul)
+  export TERM_UNDERLINE_END=$(tput rmul)
+  export TERM_RESET=$(tput sgr0)
+
   export TERM="$OLD_TERM"
 }
 
@@ -438,13 +451,15 @@ function setup_login_shell()
    # ----------------- Prompt  -----------------
    # Show 'root' in red
    if [ $UID = 0 ]; then
-     TERM_USER_COLOR=${TERM_RED}
+     TERM_BG_COLOR=${TERM_BG_RED}
    else
-     TERM_USER_COLOR=${TERM_GREEN}
+     TERM_BG_COLOR=${TERM_BG_BLUE}
    fi
-   export PS1="[${TERM_YELLOW}\@ ${TERM_USER_COLOR}\u${TERM_RESET}@\h:${TERM_YELLOW}\w${TERM_RESET}] $(git_info)\n ★ "
-   export PROMPT_COMMAND='PS1="[${TERM_YELLOW}\@ ${TERM_USER_COLOR}\u${TERM_RESET}@\H:${TERM_YELLOW}\w${TERM_RESET}] $(git_info)\n ★ "'
-   export PS2=" | "
+   export PS1="# "
+   export ps_time="${TERM_YELLOW}[\@]"
+   export ps_userpath="${TERM_WHITE}\u@\H:\w"
+   export PROMPT_COMMAND='PS1="${TERM_BG_COLOR}${TERM_WHITE}# ${ps_time} ${ps_userpath}   $(git_info)${TERM_RESET}\n# "'
+   export PS2="#| "
 
    # ----------------- Command completion  -----------------
 	source_if "$HOME/.bash_completion"
