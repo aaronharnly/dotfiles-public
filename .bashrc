@@ -47,6 +47,10 @@ function get_launching_app()
 
 function set_env_vars_colors()
 {
+  OLD_TERM="$TERM"
+  if [ -z "$TERM" -o "$TERM" = "dumb" ]; then
+    export TERM=xterm-color
+  fi
   export TERM_BLACK=$(tput setaf 0)
   export TERM_RED=$(tput setaf 1)
   export TERM_GREEN=$(tput setaf 2)
@@ -58,6 +62,7 @@ function set_env_vars_colors()
   export TERM_RESET=$(tput sgr0)
   export TERM_BOLD=$(tput smso)
   export TERM_BOLD_END=$(tput rmso)
+  export TERM="$OLD_TERM"
 }
 
 function set_env_vars_general()
