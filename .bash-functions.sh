@@ -477,11 +477,81 @@ function display_boxed()
 	echo "$box_bot"
 }
 
+# ----------------------------- Git ---------------------------------
+function is_git_dir()
+{
+  status_result=$(git status &>/dev/null; echo $?)
+  if [ $status_result -eq 0 -o $status_result -eq 1 ]; then
+    echo "true"
+  else
+    echo "false"
+  fi
+}
+
+function is_git_dirty()
+{
+  local git_status=$(git diff-index --name-only HEAD 2>/dev/null)
+  if [ -z "$git_status" ]; then
+    echo "false"
+  else
+    echo "true"
+  fi
+}
+
+function git_branch_name()
+{
+  local branch_name=$(git name-rev --name-only HEAD 2>/dev/null)
+  echo $branch_name
+}
+
+function git_dirty_display()
+{
+  local no_control_sequences="$1"
+  local is_dirty=$(is_git_dirty)
+  if [ "$is_dirty" = "true" ]; then
+    if [ ! -z "$no_control_sequences" ]; then
+      echo "(*)"
+    else
+      echo "${TERM_WHITE}(${TERM_RED}*${TERM_WHITE})"
+    fi
+  else
+    if [ ! -z "$no_control_sequences" ]; then
+      echo "( )"
+    else
+      echo "${TERM_WHITE}( )"
+    fi
+  fi
+}
+
+function git_info()
+{
+  local no_control_sequences="$1"
+
+  if [ $(is_git_dir) = "true" ]; then
+    local dirty=$(git_dirty_display $no_control_sequences)
+    local branch=$(git_branch_name)
+    
+    if [ ! -z "$no_control_sequences" ]; then
+      echo "${dirty} ${branch}"
+    else
+      echo "${dirty} ${TERM_GREEN}${branch}"
+    fi
+  else
+    echo ""
+  fi
+}
+
+echo $(git_info)
+
+
+
 
 # ----------------------------- ENV variables -----------------------
 function set_env_vars_basic()
 {
    export PLATFORM=$(uname -s)-$(uname -m | sed 's/ /_/g')
    export OS=$(uname -s)
-   export HOST=`hostname | awk -F\. '{print $1}'`
+   export HOST_LONG=$(hostname)
+   export HOST_SHORT=$(hostname | awk -F\. '{print $1}')
+   export HOST="$HOST_SHORT"
 }
