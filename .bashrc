@@ -426,9 +426,48 @@ function setup_aliases()
 #
 
 
-function git_info()
+function update_prompt()
 {
-  echo $(aaron-git-info 2>/dev/null)
+  # Line 1, left side
+  local now=$(date +'%H:%M %p')
+  local ps_time_clean="[${now}]"
+  local ps_time="${TERM_YELLOW}${ps_time_clean}"
+
+  local userpath="${USER}@${HOST_LONG}:${PWD}"
+  local ps_userpath_clean="${userpath}"
+  local ps_userpath="${TERM_WHITE}${ps_userpath_clean}"
+
+  local prefix="# "
+  local ps_prefix_clean="${prefix}"
+  local ps_prefix="${TERM_BG_COLOR}${TERM_WHITE}${ps_prefix_clean}"
+
+  local line_1_left_clean="${ps_prefix_clean}${ps_time_clean} ${ps_userpath_clean}"
+  local line_1_left="${ps_prefix}${ps_time} ${ps_userpath}"
+
+  # Line 1, right side
+  local git_info_clean=$(git_info clean)
+  local git_info=$(git_info)
+
+  local line_1_right_clean="${git_info_clean}"
+  local line_1_right="${git_info}"
+
+  # Line 1, padding
+  local total_width=$(tput cols)
+  local line_1_left_clean_width=$(length_of_longest_arg "$line_1_left_clean")
+  local line_1_right_clean_width=$(length_of_longest_arg "$line_1_right_clean")
+
+  local line_1_content_width=$(( $line_1_left_clean_width + $line_1_right_clean_width ))
+  local line_1_padding_width=$(( $total_width - $line_1_content_width ))
+  local line_1_padding=$(str_repeat " " $line_1_padding_width)
+
+  # Line 1, combined
+  local line_1="${line_1_left}${line_1_padding}${line_1_right}${TERM_RESET}"
+
+  # Line 2
+  local line_2="${prefix}"
+
+  # Prompt
+  PS1="${line_1}\n${line_2}"
 }
 
 function setup_login_shell()
@@ -456,9 +495,7 @@ function setup_login_shell()
      TERM_BG_COLOR=${TERM_BG_BLUE}
    fi
    export PS1="# "
-   export ps_time="${TERM_YELLOW}[\@]"
-   export ps_userpath="${TERM_WHITE}\u@\H:\w"
-   export PROMPT_COMMAND='PS1="${TERM_BG_COLOR}${TERM_WHITE}# ${ps_time} ${ps_userpath}   $(git_info)${TERM_RESET}\n# "'
+   export PROMPT_COMMAND='update_prompt'
    export PS2="#| "
 
    # ----------------- Command completion  -----------------
