@@ -1,34 +1,33 @@
 " EnhancedCommentify.vim
 " Maintainer:	Meikel Brandmeyer <Brandels_Mikesh@web.de>
-" Version:	2.1
-" Last Change:	Monday, 26th January 2004
+" Version:	2.3
+" Last Change:	Wednesday, February 20th, 2008
 
 " License:
-" Copyright (c) 2002,2003,2004 Meikel Brandmeyer, Kaiserslautern.
+" Copyright (c) 2008 Meikel Brandmeyer, Frankfurt am Main
 " All rights reserved.
-"
-" Redistribution and use in source and binary forms, with or without
-" modification, are permitted provided that the following conditions are met:
-"
-"   * Redistributions of source code must retain the above copyright notice,
-"     this list of conditions and the following disclaimer.
-"   * Redistributions in binary form must reproduce the above copyright notice,
-"     this list of conditions and the following disclaimer in the documentation
-"     and/or other materials provided with the distribution.
-"   * Neither the name of the author nor the names of its contributors may be
-"     used to endorse or promote products derived from this software without
-"     specific prior written permission.
-"
-" THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-" IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-" DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+" 
+" Redistribution and use in source and binary form are permitted provided
+" that the following conditions are met:
+" 
+" 1. Redistribition of source code must retain the above copyright
+"    notice, this list of conditions and the following disclaimer.
+" 
+" 2. Redistributions in binary form must reproduce the above copyright
+"    notice, this list of conditions and the following disclaimer in the
+"    documentation and/or other materials provided with the distribution.
+" 
+" THIS SOFTWARE IS PROVIDED BY THE AUTHORS AND CONTRIBUTORS "AS IS" AND
+" ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+" IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+" ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHORS OR CONTRIBUTORS BE LIABLE
 " FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-" DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-" SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-" CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-" OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-" OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+" DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+" OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+" HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+" LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+" OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+" SUCH DAMAGE.
 
 " Description: 
 " This is a (well... more or less) simple script to comment lines in a program.
@@ -36,11 +35,20 @@
 " language, python, HTML, Perl, LISP, Tex, Shell, CAOS and others.
 
 " Bugfixes:
+"   2.3
+"   Fixed type 'apacha' -> 'apache' (thanks to Brian Neu)
+"   Fixed nested comment escapes strings. (thanks to Samuel Ferencik)
+"   Fixed broken keyboard mappings when wcm was set to <Tab>.
+"					(thanks to xpatriotx)
+"   2.2
+"   Fixed problem with UseSyntax (thanks to Pieter Naaijkens) 
+"   Fixed typo in ParseCommentsOp (commstr -> commStr). 
+"   Fixed support for ocaml (thanks to Zhang Le)
 "   2.1
 "   Fixed problems with alignement when a line contains tabs 
-"   Fixed case sensitive check for overrideEL (thanks to Steve Hall) 
 "   Fixed (resp. cleaned up) issues with overrideEL (thanks to Steve Hall) 
 "   Fixed problems with javascript detection (thanks to Brian Neu) 
+"   Changed Buffer init to BufWinEnter in order to use the modelines. 
 "   2.0
 "   Fixed invalid expression '\'' -> "'" (thanks to Zak Beck)
 "   Setting AltOpen/AltClose to '' (ie. disabling it) would
@@ -59,6 +67,16 @@
 "   made function silent	     (thanks to Mare Ellen Foster)
 
 " Changelog:
+"   2.3
+"   Added support for viki/deplate (thanks to Thomas Link)
+"   Added support for xslt/xsd/mail (thanks to Stefano Zacchiroli)
+"   Added callback-functionality to enable extensions without the
+"   need of modification directly in the script.
+"   2.2
+"   Added possibility to override the modes, in which keybindings are
+"   defined.
+"   Keybindings may be defined local to every buffer now.
+"   If a filetype is unknown, one can turn off the keybindings now. 
 "   2.1
 "   Removed any cursor movement. The script should now be free of
 "   side-effects.
@@ -66,7 +84,6 @@
 "   comment strings. Fallback is still the ugly if-thingy.
 "   Script can now interpret &comments in order to add a middle
 "   string in blocks.
-"   Changed Buffer init to BufWinEnter in order to use the modelines. 
 "   Added EnhancedCommentifySet for use by other scripts. (Necessary?) 
 "   Added MultiPartBlocks for languages with multipart-comments.
 "   Added parsing for comments option if using MultiPartBlocks.
@@ -145,7 +162,7 @@ function s:InitBooleanVariable(confVar, scriptVar, defaultVal)
 	let {a:scriptVar} = a:defaultVal
     endif
 endfunction
-    
+
 "
 " InitStringVariable(confVar, scriptVar, defaultVal)
 "	confVar		-- name of the configuration variable
@@ -213,6 +230,28 @@ function s:InitScriptVariables(nameSpace)
     call s:InitBooleanVariable(ns .":EnhCommentifyRespectIndent",
 		\ lns .":ECrespectIndent", s:ECrespectIndent)
 
+    " Keybindings...
+    call s:InitBooleanVariable(ns .":EnhCommentifyUseAltKeys",
+		\ lns .":ECuseAltKeys", s:ECuseAltKeys)
+    call s:InitBooleanVariable(ns .":EnhCommentifyBindPerBuffer",
+		\ lns .":ECbindPerBuffer", s:ECbindPerBuffer)
+    call s:InitBooleanVariable(ns .":EnhCommentifyBindInNormal",
+		\ lns .":ECbindInNormal", s:ECbindInNormal)
+    call s:InitBooleanVariable(ns .":EnhCommentifyBindInInsert",
+		\ lns .":ECbindInInsert", s:ECbindInInsert)
+    call s:InitBooleanVariable(ns .":EnhCommentifyBindInVisual",
+		\ lns .":ECbindInVisual", s:ECbindInVisual)
+    call s:InitBooleanVariable(ns .":EnhCommentifyUserBindings",
+		\ lns .":ECuserBindings", s:ECuserBindings)
+    call s:InitBooleanVariable(ns .":EnhCommentifyTraditionalMode",
+		\ lns .":ECtraditionalMode", s:ECtraditionalMode)
+    call s:InitBooleanVariable(ns .":EnhCommentifyFirstLineMode",
+		\ lns .":ECfirstLineMode", s:ECfirstLineMode)
+    call s:InitBooleanVariable(ns .":EnhCommentifyUserMode",
+		\ lns .":ECuserMode", s:ECuserMode)
+    call s:InitBooleanVariable(ns .":EnhCommentifyBindUnknown",
+		\ lns .":ECbindUnknown", s:ECbindUnknown)
+
     " Block stuff...
     call s:InitBooleanVariable(ns .":EnhCommentifyAlignRight",
 		\ lns .":ECalignRight", s:ECalignRight)
@@ -244,9 +283,9 @@ function s:InitScriptVariables(nameSpace)
     endif
 
     " Using comments option, doesn't make sense without useMPBlock
-    if lns == 'b' && b:ECuseCommentsOp
-	    let b:ECuseMPBlock = 1
-    endif
+    "if lns == 'b' && b:ECuseCommentsOp
+    "	    let b:ECuseMPBlock = 1
+    "endif
 endfunction
 
 "
@@ -343,6 +382,16 @@ let s:ECalignRight = 0
 let s:ECuseBlockIndent = 0
 let s:ECuseMPBlock = 0
 let s:ECuseCommentsOp = 0
+let s:ECuseAltKeys = 0
+let s:ECbindPerBuffer = 0
+let s:ECbindInNormal = 1
+let s:ECbindInInsert = 1
+let s:ECbindInVisual = 1
+let s:ECuserBindings = 0
+let s:ECtraditionalMode = 0
+let s:ECfirstLineMode = 0
+let s:ECuserMode = 1
+let s:ECbindUnknown = 1
 
 " Now initialise the global defaults with the preferences set
 " by the user in his .vimrc. Settings local to a buffer will be
@@ -367,7 +416,7 @@ let s:maxLen = 0
 function EnhancedCommentifyInitBuffer()
     if !exists("b:ECdidBufferInit")
 	call s:InitScriptVariables("b")
-	
+
 	if !exists("b:EnhCommentifyFallbackTest")
 	    let b:EnhCommentifyFallbackTest = 0
 	endif
@@ -375,7 +424,18 @@ function EnhancedCommentifyInitBuffer()
 	call s:GetFileTypeSettings(&ft)
 	call s:CheckPossibleEmbedding(&ft)
 
+	"
+	" If the filetype is not supported and the user wants us to, we do not
+	" add keybindings.
+	"
+	if s:ECbindPerBuffer
+	    if b:ECcommentOpen != "" || b:ECbindUnknown
+		call s:SetKeybindings("l")
+	    endif
+	endif
+
 	let b:ECdidBufferInit = 1
+	let b:ECsyntax = &ft
     endif
 endfunction
 
@@ -410,24 +470,10 @@ function EnhancedCommentify(overrideEL, action, ...)
     " holds the defaults from the user's .vimrc. In this way the settings
     " can be overriden for single buffers.
     " 
-    " if !exists("b:ECdidBufferInit")
-    "     call s:InitScriptVariables("b")
-    "     
-    "     let b:ECemptyLines = a:overrideEL
-    "     let b:ECsyntax = &ft
-    "     
-    "     if !exists("b:EnhCommentifyFallbackTest")
-    "         let b:EnhCommentifyFallbackTest = 0
-    "     endif
-    " 
-    "     call s:GetFileTypeSettings(&ft)
-    "     call s:CheckPossibleEmbedding(&ft)
-    " 
-    "     let b:ECdidBufferInit = 1
-    " endif
+    " NOTE: Buffer init is done by autocommands now.
+    "
 
     let b:ECemptyLines = a:overrideEL
-    let b:ECsyntax = &ft
 
     " The language is not supported.
     if b:ECcommentOpen == ''
@@ -446,7 +492,6 @@ function EnhancedCommentify(overrideEL, action, ...)
     endif
 
     let lnum = line(".")
-    " let cnum = virtcol(".")
 
     " Now some initialisations...
     let s:Action = a:action
@@ -466,8 +511,6 @@ function EnhancedCommentify(overrideEL, action, ...)
 	let s:startBlock = a:1
 	let s:i = a:1
 	let s:endBlock = a:2
-	" Go to beginning of block!
-	" execute 'normal '. s:startBlock .'G'
 
 	let s:inBlock = 1
     else
@@ -479,7 +522,6 @@ function EnhancedCommentify(overrideEL, action, ...)
     endif
 
     if b:ECuseSyntax && b:ECpossibleEmbedding
-	" execute 'normal ^'
 	let column = indent(s:startBlock) + 1
 	if !&expandtab
 		let rem = column % &tabstop
@@ -537,18 +579,9 @@ function EnhancedCommentify(overrideEL, action, ...)
 	let lineString = s:SpacesToTabs(lineString)
 	call setline(s:i, lineString)
 
-	" Move to the next line of the block.
-	" if s:i < s:endBlock
-	"     execute 'normal j'
-	" endif
-
 	let s:i = s:i + 1
 	let s:firstOfBlock = 0
     endwhile
-
-    " Return to position, where we started.
-    " execute 'normal '. lnum .'G'
-    " execute 'normal '. cnum .'|'
 
     let s:firstOfBlock = 1
 endfunction
@@ -565,7 +598,7 @@ function s:DoBlockComputations(start, end)
     let i = a:start
     let len = 0
     let amount = 100000	    " this should be enough ...
-    
+
     while i <= a:end
 	if b:ECuseBlockIndent && getline(i) !~ '^\s*$'
 	    let cur = indent(i)
@@ -575,9 +608,6 @@ function s:DoBlockComputations(start, end)
 	endif
 
 	if b:ECalignRight
-	    " execute 'normal '. i .'G$'
-	    " let cur = virtcol(".") + strlen(b:EnhCommentifyCommentOpen)
-	    "	\ + strlen(b:ECprettyComments)
 	    let cur = s:GetLineLen(s:TabsToSpaces(getline(i)),
 			\ s:GetLineLen(b:ECcommentOpen, 0)
 			\ + strlen(b:ECprettyComments))
@@ -590,7 +620,7 @@ function s:DoBlockComputations(start, end)
 		let len = cur
 	    endif
 	endif
-	
+
 	let i = i + 1
     endwhile
 
@@ -605,7 +635,6 @@ function s:DoBlockComputations(start, end)
     endif
 
     if b:ECalignRight
-	" execute 'normal '. a:start .'G'
 	let s:maxLen = len
     endif
 endfunction
@@ -640,7 +669,7 @@ function s:CheckSyntax(line, column)
 	    let ft = &ft
 	endif
     endif
-    
+
     " Nothing changed!
     if ft == b:ECsyntax
 	return
@@ -660,12 +689,26 @@ endfunction
 function s:GetFileTypeSettings(ft)
     let fileType = a:ft
 
+    " If we find nothing appropriate this is the default.
+    let b:ECcommentOpen = ''
+    let b:ECcommentClose = ''
+
+    if exists("g:EnhCommentifyCallbackExists")
+	call EnhCommentifyCallback(fileType)
+
+	" Check whether the callback did yield a result.
+	" If so we use it. The user nows, what he's doing.
+	if b:ECcommentOpen != ''
+	    return
+	endif
+    endif
+
     " I learned about the commentstring option. Let's use it.
     " For now we ignore it, if it is "/*%s*/". This is the
     " default. We cannot check wether this is default or C or
     " something other like CSS, etc. We have to wait, until the
     " filetypes adopt this option.
-    if &commentstring != '/*%s*/' && !b:ECuseSyntax
+    if &commentstring != "/*%s*/" && !b:ECuseSyntax
 	let b:ECcommentOpen =
 		    \ substitute(&commentstring, '%s.*', "", "")
 	let b:ECcommentClose =
@@ -676,7 +719,7 @@ function s:GetFileTypeSettings(ft)
 		\ 'strace\|xpm\|yacc\)$'
 	let b:ECcommentOpen = '/*'
 	let b:ECcommentClose = '*/'
-    elseif fileType =~ '^\(html\|xml\|dtd\|sgmllnx\)$'
+    elseif fileType =~ '^\(html\|xhtml\|xml\|xslt\|xsd\|dtd\|sgmllnx\)$'
 	let b:ECcommentOpen = '<!--'
 	let b:ECcommentClose = '-->'
     elseif fileType =~ '^\(sgml\|smil\)$'
@@ -694,7 +737,8 @@ function s:GetFileTypeSettings(ft)
     elseif fileType == 'htmlos'
 	let b:ECcommentOpen = '#'
 	let b:ECcommentClose = '/#'
-    elseif fileType =~ '^\(jgraph\|lotos\|mma\|modula2\|modula3\|pascal\|sml\)$'
+    elseif fileType =~ '^\(jgraph\|lotos\|mma\|modula2\|modula3\|pascal\|'.
+		\ 'ocaml\|sml\)$'
 	let b:ECcommentOpen = '(*'
 	let b:ECcommentClose = '*)'
     elseif fileType == 'jsp'
@@ -728,11 +772,11 @@ function s:GetFileTypeSettings(ft)
 	let b:ECcommentOpen = ';'
 	let b:ECcommentClose = ''
     elseif fileType =~ '^\(python\|perl\|[^w]*sh$\|tcl\|jproperties\|make\|'.
-		\ 'robots\|apacha\|apachestyle\|awk\|bc\|cfg\|cl\|conf\|'.
+		\ 'robots\|apache\|apachestyle\|awk\|bc\|cfg\|cl\|conf\|'.
 		\ 'crontab\|diff\|ecd\|elmfilt\|eterm\|expect\|exports\|'.
 		\ 'fgl\|fvwm\|gdb\|gnuplot\|gtkrc\|hb\|hog\|ia64\|icon\|'.
 		\ 'inittab\|lftp\|lilo\|lout\|lss\|lynx\|maple\|mush\|'.
-		\ 'muttrc\|nsis\|ocaml\|ora\|pcap\|pine\|po\|procmail\|'.
+		\ 'muttrc\|nsis\|ora\|pcap\|pine\|po\|procmail\|'.
 		\ 'psf\|ptcap\|r\|radiance\|ratpoison\|readline\remind\|'.
 		\ 'ruby\|screen\|sed\|sm\|snnsnet\|snnspat\|snnsres\|spec\|'.
 		\ 'squid\|terminfo\|tidy\|tli\|tsscl\|vgrindefs\|vrml\|'.
@@ -750,7 +794,7 @@ function s:GetFileTypeSettings(ft)
 	let b:ECcommentClose = ''
     elseif fileType =~ '^\(tex\|abc\|erlang\|ist\|lprolog\|matlab\|mf\|'.
 		\ 'postscr\|ppd\|prolog\|simula\|slang\|slrnrc\|slrnsc\|'.
-		\ 'texmf\|virata\)$'
+		\ 'texmf\|viki\|virata\)$'
 	let b:ECcommentOpen = '%'
 	let b:ECcommentClose = ''
     elseif fileType =~ '^\(caos\|cterm\|form\|foxpro\|sicad\|snobol4\)$'
@@ -813,8 +857,8 @@ function s:GetFileTypeSettings(ft)
     elseif fileType == 'texinfo'
 	let b:ECcommentOpen = '@c '
 	let b:ECcommentClose = ''
-    else 
-	let b:ECcommentOpen = ''
+    elseif fileType == 'mail'
+	let b:ECcommentOpen = '>'
 	let b:ECcommentClose = ''
     endif
 
@@ -884,7 +928,7 @@ function s:ParseCommentsOp(commentOpen, commentClose)
 	let commStr = strpart(commStr, e)
 	let comma = stridx(commStr, ',')
 	if comma == -1
-	    let comma = strlen(commstr)
+	    let comma = strlen(commStr)
 	endif
 	let ePart = strpart(commStr, 0, comma)
 
@@ -990,21 +1034,6 @@ endfunction
 " you want to change, to the apropriate if-clause.
 "
 function s:CommentEmptyLines(ft)
-    " if (a:ft == 'ox' || a:ft == 'cpp' || a:ft == 'php' || a:ft == 'java'
-    "             \ || a:ft == 'verilog' || a:ft == 'vim' || a:ft == 'python'
-    "             \ || a:ft == 'perl' || a:ft =~ '[^w]*sh$' || a:ft == 'tcl'
-    "             \ || a:ft == 'jproperties' || a:ft == 'make' || a:ft == 'lisp'
-    "             \ || a:ft == 'scheme' || a:ft == 'latte' || a:ft == 'tex'
-    "             \ || a:ft == 'caos' || a:ft == 'm4' || a:ft == 'config'
-    "             \ || a:ft == 'automake' || a:ft == 'vb' || a:ft == 'aspvbs'
-    "             \ || a:ft == 'plsql' || a:ft == 'vhdl' || a:ft == 'ada')
-    "     let b:EnhCommentifyEmptyLines = 'yes'
-    " elseif (a:ft == 'c' || a:ft == 'css' || a:ft == 'html' || a:ft == 'xml')
-    "     let b:EnhCommentifyEmptyLines = 'no'
-    " else " Default behaviour
-    "     let b:EnhCommentifyEmptyLines = 'no'
-    " endif
-
     " FIXME: Quick hack (tm)!
     if 0
 	" Add special filetypes here.
@@ -1110,13 +1139,18 @@ endfunction
 function s:UnEscape(lineString, commentStart, commentEnd)
     let line = a:lineString
 
+    " We translate only the first and the last occurrence
+    " of this resp. escape string. Commenting a line several
+    " times and decommenting it again breaks things.
     if b:ECaltOpen != ''
 	let line = substitute(line, s:EscapeString(b:ECaltOpen),
-		    \ a:commentStart, "g")
+		    \ a:commentStart, "")
     endif
     if b:ECaltClose != ''
-	let line = substitute(line, s:EscapeString(b:ECaltClose),
-		    \ a:commentEnd, "g")
+	let esAltClose = s:EscapeString(b:ECaltClose)
+	let line = substitute(line, esAltClose
+		    \ . "\\(.*" . esAltClose . "\\)\\@!",
+		    \ a:commentEnd, "")
     endif
 
     return line
@@ -1133,9 +1167,6 @@ endfunction
 " comment in the current line.
 "
 function s:Commentify(lineString, commentSymbol, ...)
-    " let rescueHls = &hlsearch  
-    " set nohlsearch
-    
     let line = a:lineString
     let j = 0
 
@@ -1151,7 +1182,7 @@ function s:Commentify(lineString, commentSymbol, ...)
 	    let line = substitute(line, s:LookFor('commentmiddle'),
 			\ s:SubstituteWith('commentmiddle', a:2), "")
 	endif
-	    
+
 	if !b:ECuseMPBlock || (b:ECuseMPBlock && s:i == s:endBlock)
 	    " Align the closing part to the right.
 	    if b:ECalignRight && s:inBlock
@@ -1167,14 +1198,13 @@ function s:Commentify(lineString, commentSymbol, ...)
 			\ s:SubstituteWith('commentend', a:1), "")
 	endif
     endif
-    
+
     " insert the comment symbol
     if !b:ECuseMPBlock || a:0 == 0 || (b:ECuseMPBlock && s:i == s:startBlock) 
 	let line = substitute(line, s:LookFor('commentstart'),
 		    \ s:SubstituteWith('commentstart', a:commentSymbol), "")
     endif
-    
-    " let &hlsearch = rescueHls
+
     return line
 endfunction
 
@@ -1189,9 +1219,6 @@ endfunction
 " comment in the current line.
 "
 function s:UnCommentify(lineString, commentSymbol, ...)
-    " let rescueHls = &hlsearch 
-    " set nohlsearch
-    
     let line = a:lineString
 
     " remove the first comment symbol found on a line
@@ -1226,7 +1253,6 @@ function s:UnCommentify(lineString, commentSymbol, ...)
 	let line = s:UnEscape(line, a:commentSymbol, a:1)
     endif
 
-    " let &hlsearch = rescueHls
     return line
 endfunction
 
@@ -1240,7 +1266,7 @@ endfunction
 function s:GetLineLen(line, offset)
     let len = a:offset
     let i = 0
-    
+
     while a:line[i] != ""
 	if a:line[i] == "\t"
 	    let len = (((len / &tabstop) + 1) * &tabstop)
@@ -1252,7 +1278,7 @@ function s:GetLineLen(line, offset)
 
     return len
 endfunction
-     
+
 "
 " EscapeString(string)
 "	string	    -- string to process
@@ -1286,7 +1312,7 @@ function s:LookFor(what, ...)
     else
 	let handleWhitespace = b:ECsaveWhite
     endif
-	
+
     if a:what == 'checkstart'
 	let regex = '^'. b:ECsaveWhite . s:EscapeString(a:1)
 		    \ . s:EscapeString(b:ECidentFront)
@@ -1339,7 +1365,7 @@ function s:SubstituteWith(what, ...)
 	let handleWhitespace = b:ECrespectWhite . commentSymbol
 		    \ . b:ECignoreWhite
     endif
-	
+
     if a:what == 'commentstart'
 	let regex = handleWhitespace . b:ECidentFront
 		    \ . b:ECprettyComments
@@ -1469,66 +1495,111 @@ noremap <Plug>FirstLine
 
 noremap <Plug>VisualComment
 	    \ <Esc>:call EnhancedCommentify('', 'comment',
-	    \				    line("'<"), line("'>"))<CR>
+	    \   line("'<"), line("'>"))<CR>
 noremap <Plug>VisualDeComment
 	    \ <Esc>:call EnhancedCommentify('', 'decomment',
-	    \				    line("'<"), line("'>"))<CR>
+	    \   line("'<"), line("'>"))<CR>
 noremap <Plug>VisualTraditional
 	    \ <Esc>:call EnhancedCommentify('', 'guess',
-	    \				    line("'<"), line("'>"))<CR>
+	    \   line("'<"), line("'>"))<CR>
 noremap <Plug>VisualFirstLine
 	    \ <Esc>:call EnhancedCommentify('', 'first',
-	    \				    line("'<"), line("'>"))<CR>
+	    \   line("'<"), line("'>"))<CR>
 "
 " Finally set keybindings.
 "
-if exists("g:EnhCommentifyUserBindings")
-	    \ && g:EnhCommentifyUserBindings =~? 'ye*s*'
-    "
-    " *** Put your personal bindings here! ***
-    "
-else
-    if exists("g:EnhCommentifyUseAltKeys")
-	    \ && g:EnhCommentifyUseAltKeys =~? 'ye*s*'
-	let s:c = '<M-c>'
-	let s:x = '<M-x>'
-	let s:C = '<M-v>'
-	let s:X = '<M-y>'
+" SetKeybindings(where)
+"	where	    -- "l" for local to the buffer, "g" for global
+"
+function s:SetKeybindings(where)
+    if a:where == "l"
+	let where = "<buffer>"
+	let ns = "b"
     else
-	let s:c = '<Leader>c'
-	let s:x = '<Leader>x'
-	let s:C = '<Leader>C'
-	let s:X = '<Leader>X'
+	let where = ""
+	let ns = "s"
     endif
 
-    if exists("g:EnhCommentifyTraditionalMode")
-		\ && g:EnhCommentifyTraditionalMode =~? 'ye*s*'
-	let s:Method = 'Traditional'
-    elseif exists("g:EnhCommentifyFirstLineMode")
-		\ && g:EnhCommentifyFirstLineMode =~? 'ye*s*'
-	let s:Method = 'FirstLine'
+    execute "let userBindings = ". ns .":ECuserBindings"
+    execute "let useAltKeys = ". ns .":ECuseAltKeys"
+    execute "let traditionalMode = ". ns .":ECtraditionalMode"
+    execute "let firstLineMode = ". ns .":ECfirstLineMode"
+    execute "let bindInNormal = ". ns .":ECbindInNormal"
+    execute "let bindInInsert = ". ns .":ECbindInInsert"
+    execute "let bindInVisual = ". ns .":ECbindInVisual"
+
+    if userBindings
+	"
+	" *** Put your personal bindings here! ***
+	"
     else
-	let s:Method = 'Comment'
+	if useAltKeys
+	    let s:c = '<M-c>'
+	    let s:x = '<M-x>'
+	    let s:C = '<M-v>'
+	    let s:X = '<M-y>'
+	else
+	    let s:c = '<Leader>c'
+	    let s:x = '<Leader>x'
+	    let s:C = '<Leader>C'
+	    let s:X = '<Leader>X'
+	endif
 
-	" Decomment must be defined here. Everything else is mapped below.
-	execute 'nmap <silent> <unique> '. s:C .' <Plug>DeCommentj'
-	execute 'nmap <silent> <unique> '. s:X .' <Plug>DeComment'
+	if traditionalMode
+	    let s:Method = 'Traditional'
+	elseif firstLineMode
+	    let s:Method = 'FirstLine'
+	else
+	    let s:Method = 'Comment'
 
-	execute 'imap <silent> <unique> '. s:C .' <Esc><Plug>DeCommentji'
-	execute 'imap <silent> <unique> '. s:X .' <Esc><Plug>DeCommenti'
+	    " Decomment must be defined here. Everything else is mapped below.
+	    if bindInNormal 
+		execute 'nmap '. where .' <silent> <unique> '. s:C
+			    \ .' <Plug>DeCommentj'
+		execute 'nmap '. where .' <silent> <unique> '. s:X
+			    \ .' <Plug>DeComment'
+	    endif
 
-	execute 'vmap <silent> <unique> '. s:C .' <Plug>VisualDeCommentj'
-	execute 'vmap <silent> <unique> '. s:X .' <Plug>VisualDeComment'
+	    if bindInInsert
+		execute 'imap '. where .' <silent> <unique> '. s:C
+			    \ .' <Esc><Plug>DeCommentji'
+		execute 'imap '. where .' <silent> <unique> '. s:X
+			    \ .' <Esc><Plug>DeCommenti'
+	    endif
+
+	    if bindInVisual
+		execute 'vmap '. where .' <silent> <unique> '. s:C
+			    \ .' <Plug>VisualDeCommentj'
+		execute 'vmap '. where .' <silent> <unique> '. s:X
+			    \ .' <Plug>VisualDeComment'
+	    endif
+	endif
+
+	if bindInNormal
+	    execute 'nmap '. where .' <silent> <unique> '. s:c
+			\ .' <Plug>'. s:Method .'j'
+	    execute 'nmap '. where .' <silent> <unique> '. s:x
+			\ .' <Plug>'. s:Method
+	endif
+
+	if bindInInsert
+	    execute 'imap '. where .' <silent> <unique> '. s:c
+			\ .' <Esc><Plug>'. s:Method .'ji'
+	    execute 'imap '. where .' <silent> <unique> '. s:x
+			\ .' <Esc><Plug>'. s:Method
+	endif
+
+	if bindInVisual
+	    execute 'vmap <silent> <unique> '. s:c
+			\ .' <Plug>Visual'. s:Method .'j'
+	    execute 'vmap '. where .' <silent> <unique> '. s:x
+			\ .' <Plug>Visual'. s:Method
+	endif
     endif
+endfunction
 
-    execute 'nmap <silent> <unique> '. s:c .' <Plug>'. s:Method .'j'
-    execute 'nmap <silent> <unique> '. s:x .' <Plug>'. s:Method
-
-    execute 'imap <silent> <unique> '. s:c .' <Esc><Plug>'. s:Method .'ji'
-    execute 'imap <silent> <unique> '. s:x .' <Esc><Plug>'. s:Method
-
-    execute 'vmap <silent> <unique> '. s:c .' <Plug>Visual'. s:Method .'j'
-    execute 'vmap <silent> <unique> '. s:x .' <Plug>Visual'. s:Method
+if !s:ECbindPerBuffer
+    call s:SetKeybindings("g")
 endif
 
 let &cpo = s:savedCpo
