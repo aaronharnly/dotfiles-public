@@ -455,9 +455,14 @@ function update_prompt()
 #
 function update_location_vars()
 {
+  PUBGIT_DIR="$HOME/.public.git"
   # in the home dir, show the status of pubgit
   if [ "$PWD" = "$HOME" ]; then
-    export GIT_DIR="$HOME/.public.git"
+    export GIT_DIR="$PUBGIT_DIR"
+  else
+    if [ ! -z "$GIT_DIR" -a "$GIT_DIR" = "$PUBGIT_DIR" ]; then
+      unset GIT_DIR
+    fi
   fi
 }
 
