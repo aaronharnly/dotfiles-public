@@ -1,0 +1,104 @@
+{ "results": [
+       { "measureSid":4
+	   , "resultProbeSid": 69451853
+       , "score":28
+	   , "gradeSidResult":3
+       , "ilaDescriptives":{
+                            "NwfFinalGoalPeriod":"" 
+                          ,"NwfNumConsonantsCorrect":19
+                          ,"NwfFinalGoalScore":50
+                          ,"NwfNumGivenLettersAssessed":"a:0, b:2, c:0, d:1, e:2, f:1, g:0, h:1, i:3, j:2, k:2, l:2, m:1, n:2, o:1, p:0, q:0, r:0, s:1, t:0, u:5, v:1, w:2, x:0, y:0, z:2" 
+                          ,"NwfNumConsonantsAssessed":20
+                          ,"NwfNumLettersCorrect":28
+                          ,"NwfNumLettersAssessed":31
+                          ,"NwfNumSBSWords":6
+                          ,"NwfFinalGoalGrade":"1st Grade" 
+                          ,"NwfNumGivenLettersCorrect":"a:0, b:1, c:0, d:1, e:2, f:1, g:0, h:1, i:3, j:2, k:2, l:2, m:1, n:2, o:1, p:0, q:0, r:0, s:1, t:0, u:3, v:1, w:2, x:0, y:0, z:2" 
+                          ,"NwfNumVowelsCorrect":9
+                          ,"NwfNumVowelsAssessed":11
+                          ,"NwfNumWordsAssessed":11
+                          ,"NwfIsBenchmark":1
+                          ,"NwfNumWordsCorrect":8
+                          ,"NwfNumSBSAndRecodedWords":0
+                          }
+      },
+	  { "measureSid":5
+	   , "resultProbeSid": 69451854
+       , "score":23
+	   , "gradeSidResult":4
+       , "ilaDescriptives":{
+                            "OrfNumRegularWordsMissed":7
+                           ,"OrfIsBenchmark":1
+                           ,"OrfNumRegularWordsAssessed":16
+                           ,"OrfFinalGoalGrade":"2nd Grade" 
+                           ,"OrfNumMultisyllabicWordsAssessed":8
+                           ,"OrfFinalGoalPeriod":"" 
+                           ,"OrfFinalGoalScore":90
+                           ,"OrfNumIrregularWordsMissed":1
+                           ,"OrfNumMonosyllabicWordsAssessed":23
+                           ,"OrfNumIrregularWordsAssessed":15
+                           ,"OrfNumMonosyllabicWordsMissed":4
+                           ,"OrfNumMultisyllabicWordsMissed":4
+                           }
+      },
+	  { "measureSid":2
+       , "resultProbeSid": 69451855
+	   , "score":32
+	   , "gradeSidResult":2
+       , "ilaDescriptives":{
+                            "LnfNumCorrectLetters":32
+                           ,"LnfNumSkippedLines":0
+                           ,"LnfNumAssessedFirstHalfLetters":23
+                           ,"LnfNumCorrectUppercaseLetters":18
+                           ,"LnfNumCorrectFirstHalfLetters":17
+                           ,"LnfNumAssessedLettersFromName":4
+                           ,"LnfNumCorrectLettersFromName":3
+                           }
+       },
+	   { "measureSid":3
+       , "resultProbeSid": 69451856
+	   , "score":44
+	   , "gradeSidResult":2
+       , "ilaDescriptives":{
+                            "PsfNumMissedPhonemes":12
+                           ,"PsfNumSegmentedRimes":6
+                           ,"PsfNumWordsWithSegmentedOnsetAndRime":6
+                           ,"PsfScore":44
+                           ,"PsfNumSegmentedMiddleSounds":11
+                           ,"PsfNumSegmentedInitialSounds":17
+                           ,"PsfNumMissedPhonemesInFinalBlend":2
+                           ,"PsfNumAttemptedWords":17
+                           ,"PsfNumAttemptedMiddleSounds":17
+                           ,"PsfFinalGoalPeriod":"" 
+                           ,"PsfFinalGoalGrade":"Kindergarten" 
+                           ,"PsfNumMissedMiddlePhonemes":6
+                           ,"PsfNumAttemptedFinalSounds":16
+                           ,"PsfNumMissedPhonemesInSegBlendOrRepeat":10
+                           ,"PsfNumMissedPhonemesInBlend":2
+                           ,"PsfIsBenchmark":1
+                           ,"PsfNumRepeatedWords":0
+                           ,"PsfFinalGoalScore":35
+                           ,"PsfNumAttemptedInitialSounds":17
+                           ,"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat":5
+                           ,"PsfNumSegmentedFinalSounds":10
+                           }
+       },
+	   { "measureSid":1
+       , "resultProbeSid": 69451857
+	   , "score":7
+	   , "gradeSidResult":2
+       , "ilaDescriptives":{
+                            "IsfNumResponses":16
+                           ,"IsfNumCorrectResponses":7
+                           ,"IsfFinalGoalGrade":"Kindergarten" 
+                           ,"IsfFinalGoalScore":25
+                           ,"IsfNum123Correct4Incorrect":1
+                           ,"IsfIsBenchmark":1
+                           ,"IsfBenchmarkValue":8
+                           ,"IsfFinalGoalPeriod":"" 
+                           ,"IsfTotalTimeTaken":42
+                           }
+      }
+  ]
+}
+

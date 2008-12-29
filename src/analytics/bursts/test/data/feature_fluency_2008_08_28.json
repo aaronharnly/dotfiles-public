@@ -1,0 +1,5228 @@
+{
+"results": [
+	{
+		"resultProbeSid": 69451868,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 48,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 0,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 9,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 154006699,
+		"gradeSidResult": 2,
+		"score": 11,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451869,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 4,
+			"PsfNumMissedPhonemes": 9,
+			"PsfNumMissedPhonemesInBlend": 2,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 16,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 18,
+			"PsfNumSegmentedMiddleSounds": 23,
+			"PsfNumAttemptedInitialSounds": 18,
+			"PsfNumAttemptedMiddleSounds": 27,
+			"PsfNumAttemptedFinalSounds": 18,
+			"PsfScore": 54,
+			"PsfNumSegmentedInitialSounds": 15,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 2,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154006699,
+		"gradeSidResult": 3,
+		"score": 54,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69451741,
+		"interpretation": 3,
+		"ilaDescriptives": {
+			"LnfNumAssessedLettersFromName": 5,
+			"LnfNumCorrectLettersFromName": 5,
+			"LnfNumAssessedFirstHalfLetters": 18,
+			"LnfNumCorrectUppercaseLetters": 18,
+			"LnfNumSkippedLines": 0,
+			"LnfNumCorrectFirstHalfLetters": 15,
+			"LnfNumCorrectLetters": 35
+		},
+		"eStudentSid": 154006699,
+		"gradeSidResult": 3,
+		"score": 35,
+		"measureSid": 2
+	},
+	{
+		"resultProbeSid": 69451742,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 5,
+			"PsfNumMissedPhonemes": 10,
+			"PsfNumMissedPhonemesInBlend": 0,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 1,
+			"PsfNumSegmentedFinalSounds": 12,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 1,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 1,
+			"PsfNumAttemptedWords": 14,
+			"PsfNumSegmentedMiddleSounds": 10,
+			"PsfNumAttemptedInitialSounds": 14,
+			"PsfNumAttemptedMiddleSounds": 15,
+			"PsfNumAttemptedFinalSounds": 14,
+			"PsfScore": 33,
+			"PsfNumSegmentedInitialSounds": 11,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 0,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154006699,
+		"gradeSidResult": 3,
+		"score": 33,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69451743,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:3, b:3, c:0, d:3, e:5, f:2, g:1, h:0, i:4, j:3, k:2, l:5, m:1, n:2, o:4, p:0, q:0, r:1, s:1, t:1, u:7, v:1, w:1, x:0, y:1, z:2",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 24,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:4, b:3, c:0, d:4, e:5, f:3, g:1, h:1, i:4, j:5, k:4, l:5, m:1, n:2, o:4, p:0, q:0, r:1, s:2, t:2, u:7, v:1, w:2, x:0, y:1, z:3",
+			"NwfNumLettersCorrect": 53,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 13,
+			"NwfNumLettersAssessed": 65,
+			"NwfNumWordsAssessed": 24,
+			"NwfIsBenchmark": 1,
+			"NwfNumConsonantsCorrect": 30,
+			"NwfNumSBSWords": 0,
+			"NwfNumVowelsCorrect": 23,
+			"NwfNumConsonantsAssessed": 41,
+			"NwfNumSBSAndRecodedWords": 0
+		},
+		"eStudentSid": 154006699,
+		"gradeSidResult": 3,
+		"score": 53,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69451872,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 2,
+			"IsfTotalTimeTaken": 50,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 0,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 11,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 154006836,
+		"gradeSidResult": 2,
+		"score": 13,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451873,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 3,
+			"PsfNumMissedPhonemes": 5,
+			"PsfNumMissedPhonemesInBlend": 1,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 1,
+			"PsfNumSegmentedFinalSounds": 9,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 1,
+			"PsfNumAttemptedWords": 9,
+			"PsfNumSegmentedMiddleSounds": 9,
+			"PsfNumAttemptedInitialSounds": 9,
+			"PsfNumAttemptedMiddleSounds": 12,
+			"PsfNumAttemptedFinalSounds": 9,
+			"PsfScore": 25,
+			"PsfNumSegmentedInitialSounds": 7,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 0,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154006836,
+		"gradeSidResult": 3,
+		"score": 25,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69451874,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 53,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 0,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 11,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 154006847,
+		"gradeSidResult": 2,
+		"score": 12,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451875,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 5,
+			"PsfNumMissedPhonemes": 10,
+			"PsfNumMissedPhonemesInBlend": 1,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 10,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 12,
+			"PsfNumSegmentedMiddleSounds": 15,
+			"PsfNumAttemptedInitialSounds": 12,
+			"PsfNumAttemptedMiddleSounds": 20,
+			"PsfNumAttemptedFinalSounds": 12,
+			"PsfScore": 35,
+			"PsfNumSegmentedInitialSounds": 9,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 1,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154006847,
+		"gradeSidResult": 3,
+		"score": 35,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69451870,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 54,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 0,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 9,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 154006849,
+		"gradeSidResult": 2,
+		"score": 10,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451871,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 3,
+			"PsfNumMissedPhonemes": 13,
+			"PsfNumMissedPhonemesInBlend": 1,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 8,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 13,
+			"PsfNumSegmentedMiddleSounds": 18,
+			"PsfNumAttemptedInitialSounds": 13,
+			"PsfNumAttemptedMiddleSounds": 21,
+			"PsfNumAttemptedFinalSounds": 13,
+			"PsfScore": 34,
+			"PsfNumSegmentedInitialSounds": 8,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 1,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154006849,
+		"gradeSidResult": 3,
+		"score": 34,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69451649,
+		"interpretation": 2,
+		"ilaDescriptives": {
+			"LnfNumAssessedLettersFromName": 5,
+			"LnfNumCorrectLettersFromName": 2,
+			"LnfNumAssessedFirstHalfLetters": 8,
+			"LnfNumCorrectUppercaseLetters": 8,
+			"LnfNumSkippedLines": 0,
+			"LnfNumCorrectFirstHalfLetters": 6,
+			"LnfNumCorrectLetters": 12
+		},
+		"eStudentSid": 154006849,
+		"gradeSidResult": 3,
+		"score": 12,
+		"measureSid": 2
+	},
+	{
+		"resultProbeSid": 69451651,
+		"interpretation": 3,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 4,
+			"PsfNumMissedPhonemes": 6,
+			"PsfNumMissedPhonemesInBlend": 1,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 2,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 1,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 4,
+			"PsfNumSegmentedMiddleSounds": 1,
+			"PsfNumAttemptedInitialSounds": 4,
+			"PsfNumAttemptedMiddleSounds": 5,
+			"PsfNumAttemptedFinalSounds": 4,
+			"PsfScore": 7,
+			"PsfNumSegmentedInitialSounds": 4,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 1,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154006849,
+		"gradeSidResult": 3,
+		"score": 7,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69451652,
+		"interpretation": 3,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:0, b:1, c:0, d:1, e:2, f:0, g:0, h:1, i:2, j:1, k:1, l:2, m:0, n:1, o:1, p:0, q:0, r:0, s:1, t:0, u:5, v:1, w:2, x:0, y:0, z:1",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 10,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:0, b:2, c:0, d:1, e:2, f:1, g:0, h:1, i:2, j:2, k:2, l:2, m:0, n:1, o:1, p:0, q:0, r:0, s:1, t:0, u:5, v:1, w:2, x:0, y:0, z:2",
+			"NwfNumLettersCorrect": 23,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 5,
+			"NwfNumLettersAssessed": 28,
+			"NwfNumWordsAssessed": 10,
+			"NwfIsBenchmark": 1,
+			"NwfNumConsonantsCorrect": 13,
+			"NwfNumSBSWords": 0,
+			"NwfNumVowelsCorrect": 10,
+			"NwfNumConsonantsAssessed": 18,
+			"NwfNumSBSAndRecodedWords": 0
+		},
+		"eStudentSid": 154006849,
+		"gradeSidResult": 3,
+		"score": 23,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69451646,
+		"interpretation": 3,
+		"ilaDescriptives": {
+			"LnfNumAssessedLettersFromName": 7,
+			"LnfNumCorrectLettersFromName": 6,
+			"LnfNumAssessedFirstHalfLetters": 17,
+			"LnfNumCorrectUppercaseLetters": 18,
+			"LnfNumSkippedLines": 0,
+			"LnfNumCorrectFirstHalfLetters": 15,
+			"LnfNumCorrectLetters": 33
+		},
+		"eStudentSid": 154006851,
+		"gradeSidResult": 3,
+		"score": 33,
+		"measureSid": 2
+	},
+	{
+		"resultProbeSid": 69451647,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 2,
+			"PsfNumMissedPhonemes": 8,
+			"PsfNumMissedPhonemesInBlend": 0,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 9,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 1,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 1,
+			"PsfNumAttemptedWords": 11,
+			"PsfNumSegmentedMiddleSounds": 10,
+			"PsfNumAttemptedInitialSounds": 11,
+			"PsfNumAttemptedMiddleSounds": 12,
+			"PsfNumAttemptedFinalSounds": 11,
+			"PsfScore": 26,
+			"PsfNumSegmentedInitialSounds": 7,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 0,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154006851,
+		"gradeSidResult": 3,
+		"score": 26,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69451648,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:1, b:3, c:0, d:0, e:2, f:2, g:0, h:1, i:3, j:3, k:3, l:2, m:1, n:2, o:2, p:0, q:0, r:1, s:1, t:0, u:5, v:1, w:2, x:0, y:0, z:2",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 15,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:1, b:3, c:0, d:2, e:2, f:2, g:0, h:1, i:3, j:3, k:3, l:2, m:1, n:2, o:2, p:0, q:0, r:1, s:2, t:0, u:7, v:1, w:2, x:0, y:0, z:3",
+			"NwfNumLettersCorrect": 37,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 10,
+			"NwfNumLettersAssessed": 43,
+			"NwfNumWordsAssessed": 15,
+			"NwfIsBenchmark": 1,
+			"NwfNumConsonantsCorrect": 24,
+			"NwfNumSBSWords": 0,
+			"NwfNumVowelsCorrect": 13,
+			"NwfNumConsonantsAssessed": 28,
+			"NwfNumSBSAndRecodedWords": 0
+		},
+		"eStudentSid": 154006851,
+		"gradeSidResult": 3,
+		"score": 37,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69451730,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 55,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 0,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 8,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 154486257,
+		"gradeSidResult": 2,
+		"score": 8,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451666,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 50,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 1,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 10,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 154486257,
+		"gradeSidResult": 2,
+		"score": 12,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451667,
+		"interpretation": 3,
+		"ilaDescriptives": {
+			"LnfNumAssessedLettersFromName": 1,
+			"LnfNumCorrectLettersFromName": 1,
+			"LnfNumAssessedFirstHalfLetters": 3,
+			"LnfNumCorrectUppercaseLetters": 4,
+			"LnfNumSkippedLines": 0,
+			"LnfNumCorrectFirstHalfLetters": 2,
+			"LnfNumCorrectLetters": 5
+		},
+		"eStudentSid": 154486257,
+		"gradeSidResult": 2,
+		"score": 5,
+		"measureSid": 2
+	},
+	{
+		"resultProbeSid": 69451729,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 62,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 0,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 6,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 154486259,
+		"gradeSidResult": 2,
+		"score": 5,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69452154,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 0,
+			"PsfNumMissedPhonemes": 6,
+			"PsfNumMissedPhonemesInBlend": 1,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 6,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 1,
+			"PsfNumAttemptedWords": 6,
+			"PsfNumSegmentedMiddleSounds": 7,
+			"PsfNumAttemptedInitialSounds": 6,
+			"PsfNumAttemptedMiddleSounds": 7,
+			"PsfNumAttemptedFinalSounds": 6,
+			"PsfScore": 13,
+			"PsfNumSegmentedInitialSounds": 0,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 0,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154486259,
+		"gradeSidResult": 2,
+		"score": 13,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69452157,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:1, b:0, c:2, d:0, e:0, f:0, g:0, h:0, i:0, j:2, k:1, l:0, m:2, n:0, o:3, p:0, q:0, r:0, s:0, t:0, u:1, v:0, w:0, x:0, y:0, z:1",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 5,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:1, b:0, c:2, d:0, e:0, f:0, g:0, h:0, i:0, j:2, k:1, l:0, m:2, n:0, o:3, p:0, q:0, r:0, s:0, t:0, u:1, v:0, w:0, x:0, y:0, z:1",
+			"NwfNumLettersCorrect": 13,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 5,
+			"NwfNumLettersAssessed": 13,
+			"NwfNumWordsAssessed": 5,
+			"NwfIsBenchmark": 0,
+			"NwfNumConsonantsCorrect": 8,
+			"NwfNumSBSWords": 5,
+			"NwfNumVowelsCorrect": 5,
+			"NwfNumConsonantsAssessed": 8,
+			"NwfNumSBSAndRecodedWords": 0
+		},
+		"eStudentSid": 154486259,
+		"gradeSidResult": 2,
+		"score": 13,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69451682,
+		"interpretation": 3,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 67,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 1,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 5,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 154486259,
+		"gradeSidResult": 2,
+		"score": 4,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451684,
+		"interpretation": 2,
+		"ilaDescriptives": {
+			"LnfNumAssessedLettersFromName": 0,
+			"LnfNumCorrectLettersFromName": 0,
+			"LnfNumAssessedFirstHalfLetters": 2,
+			"LnfNumCorrectUppercaseLetters": 0,
+			"LnfNumSkippedLines": 0,
+			"LnfNumCorrectFirstHalfLetters": 0,
+			"LnfNumCorrectLetters": 0
+		},
+		"eStudentSid": 154486259,
+		"gradeSidResult": 2,
+		"score": 0,
+		"measureSid": 2
+	},
+	{
+		"resultProbeSid": 69452156,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"OrfFinalGoalPeriod": "",
+			"OrfNumMonosyllabicWordsMissed": 2,
+			"OrfFinalGoalGrade": "1st Grade",
+			"OrfNumIrregularWordsAssessed": 4,
+			"OrfFinalGoalScore": 40,
+			"OrfNumMultisyllabicWordsMissed": 0,
+			"OrfIsBenchmark": 0,
+			"OrfNumMultisyllabicWordsAssessed": 0,
+			"OrfNumRegularWordsAssessed": 11,
+			"OrfNumIrregularWordsMissed": 1,
+			"OrfNumRegularWordsMissed": 1,
+			"OrfNumMonosyllabicWordsAssessed": 15
+		},
+		"eStudentSid": 154486259,
+		"gradeSidResult": 3,
+		"score": 13,
+		"measureSid": 5
+	},
+	{
+		"resultProbeSid": 69451728,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 45,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 0,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 11,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 154486261,
+		"gradeSidResult": 2,
+		"score": 14,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451771,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 2,
+			"PsfNumMissedPhonemes": 5,
+			"PsfNumMissedPhonemesInBlend": 2,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 6,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 7,
+			"PsfNumSegmentedMiddleSounds": 11,
+			"PsfNumAttemptedInitialSounds": 7,
+			"PsfNumAttemptedMiddleSounds": 13,
+			"PsfNumAttemptedFinalSounds": 7,
+			"PsfScore": 22,
+			"PsfNumSegmentedInitialSounds": 5,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 0,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154486261,
+		"gradeSidResult": 2,
+		"score": 22,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69451668,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 49,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 1,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 9,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 154486261,
+		"gradeSidResult": 2,
+		"score": 11,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451669,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"LnfNumAssessedLettersFromName": 0,
+			"LnfNumCorrectLettersFromName": 0,
+			"LnfNumAssessedFirstHalfLetters": 6,
+			"LnfNumCorrectUppercaseLetters": 6,
+			"LnfNumSkippedLines": 0,
+			"LnfNumCorrectFirstHalfLetters": 6,
+			"LnfNumCorrectLetters": 10
+		},
+		"eStudentSid": 154486261,
+		"gradeSidResult": 2,
+		"score": 10,
+		"measureSid": 2
+	},
+	{
+		"resultProbeSid": 69452152,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 49,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 1,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 8,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 154486265,
+		"gradeSidResult": 2,
+		"score": 9,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69452153,
+		"interpretation": 3,
+		"ilaDescriptives": {
+			"LnfNumAssessedLettersFromName": 4,
+			"LnfNumCorrectLettersFromName": 3,
+			"LnfNumAssessedFirstHalfLetters": 3,
+			"LnfNumCorrectUppercaseLetters": 3,
+			"LnfNumSkippedLines": 0,
+			"LnfNumCorrectFirstHalfLetters": 3,
+			"LnfNumCorrectLetters": 5
+		},
+		"eStudentSid": 154486265,
+		"gradeSidResult": 2,
+		"score": 5,
+		"measureSid": 2
+	},
+	{
+		"resultProbeSid": 69451726,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 54,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 0,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 11,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 154486271,
+		"gradeSidResult": 2,
+		"score": 12,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451773,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 1,
+			"PsfNumMissedPhonemes": 5,
+			"PsfNumMissedPhonemesInBlend": 1,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 5,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 7,
+			"PsfNumSegmentedMiddleSounds": 12,
+			"PsfNumAttemptedInitialSounds": 7,
+			"PsfNumAttemptedMiddleSounds": 13,
+			"PsfNumAttemptedFinalSounds": 7,
+			"PsfScore": 22,
+			"PsfNumSegmentedInitialSounds": 5,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 1,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154486271,
+		"gradeSidResult": 2,
+		"score": 22,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69451676,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 59,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 1,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 9,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 154486271,
+		"gradeSidResult": 2,
+		"score": 9,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451677,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"LnfNumAssessedLettersFromName": 5,
+			"LnfNumCorrectLettersFromName": 4,
+			"LnfNumAssessedFirstHalfLetters": 5,
+			"LnfNumCorrectUppercaseLetters": 7,
+			"LnfNumSkippedLines": 0,
+			"LnfNumCorrectFirstHalfLetters": 3,
+			"LnfNumCorrectLetters": 9
+		},
+		"eStudentSid": 154486271,
+		"gradeSidResult": 2,
+		"score": 9,
+		"measureSid": 2
+	},
+	{
+		"resultProbeSid": 69451727,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 60,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 0,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 6,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 154486281,
+		"gradeSidResult": 2,
+		"score": 6,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451772,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 6,
+			"PsfNumMissedPhonemes": 10,
+			"PsfNumMissedPhonemesInBlend": 3,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 3,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 6,
+			"PsfNumSegmentedMiddleSounds": 4,
+			"PsfNumAttemptedInitialSounds": 6,
+			"PsfNumAttemptedMiddleSounds": 10,
+			"PsfNumAttemptedFinalSounds": 6,
+			"PsfScore": 12,
+			"PsfNumSegmentedInitialSounds": 5,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 0,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154486281,
+		"gradeSidResult": 2,
+		"score": 12,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69451670,
+		"interpretation": 2,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 75,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 1,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 4,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 154486281,
+		"gradeSidResult": 2,
+		"score": 3,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451671,
+		"interpretation": 3,
+		"ilaDescriptives": {
+			"LnfNumAssessedLettersFromName": 0,
+			"LnfNumCorrectLettersFromName": 0,
+			"LnfNumAssessedFirstHalfLetters": 2,
+			"LnfNumCorrectUppercaseLetters": 1,
+			"LnfNumSkippedLines": 0,
+			"LnfNumCorrectFirstHalfLetters": 2,
+			"LnfNumCorrectLetters": 2
+		},
+		"eStudentSid": 154486281,
+		"gradeSidResult": 2,
+		"score": 2,
+		"measureSid": 2
+	},
+	{
+		"resultProbeSid": 69451680,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 53,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 1,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 10,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 154486285,
+		"gradeSidResult": 2,
+		"score": 11,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451681,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"LnfNumAssessedLettersFromName": 1,
+			"LnfNumCorrectLettersFromName": 1,
+			"LnfNumAssessedFirstHalfLetters": 6,
+			"LnfNumCorrectUppercaseLetters": 8,
+			"LnfNumSkippedLines": 0,
+			"LnfNumCorrectFirstHalfLetters": 6,
+			"LnfNumCorrectLetters": 13
+		},
+		"eStudentSid": 154486285,
+		"gradeSidResult": 2,
+		"score": 13,
+		"measureSid": 2
+	},
+	{
+		"resultProbeSid": 69451678,
+		"interpretation": 3,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 56,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 1,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 7,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 154486287,
+		"gradeSidResult": 2,
+		"score": 7,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451679,
+		"interpretation": 3,
+		"ilaDescriptives": {
+			"LnfNumAssessedLettersFromName": 1,
+			"LnfNumCorrectLettersFromName": 0,
+			"LnfNumAssessedFirstHalfLetters": 5,
+			"LnfNumCorrectUppercaseLetters": 5,
+			"LnfNumSkippedLines": 0,
+			"LnfNumCorrectFirstHalfLetters": 3,
+			"LnfNumCorrectLetters": 6
+		},
+		"eStudentSid": 154486287,
+		"gradeSidResult": 2,
+		"score": 6,
+		"measureSid": 2
+	},
+	{
+		"resultProbeSid": 69451674,
+		"interpretation": 3,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 62,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 1,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 6,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 154486291,
+		"gradeSidResult": 2,
+		"score": 5,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451675,
+		"interpretation": 3,
+		"ilaDescriptives": {
+			"LnfNumAssessedLettersFromName": 1,
+			"LnfNumCorrectLettersFromName": 1,
+			"LnfNumAssessedFirstHalfLetters": 3,
+			"LnfNumCorrectUppercaseLetters": 2,
+			"LnfNumSkippedLines": 0,
+			"LnfNumCorrectFirstHalfLetters": 3,
+			"LnfNumCorrectLetters": 4
+		},
+		"eStudentSid": 154486291,
+		"gradeSidResult": 2,
+		"score": 4,
+		"measureSid": 2
+	},
+	{
+		"resultProbeSid": 69451672,
+		"interpretation": 2,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 70,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 1,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 4,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 154486293,
+		"gradeSidResult": 2,
+		"score": 3,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451673,
+		"interpretation": 3,
+		"ilaDescriptives": {
+			"LnfNumAssessedLettersFromName": 2,
+			"LnfNumCorrectLettersFromName": 2,
+			"LnfNumAssessedFirstHalfLetters": 2,
+			"LnfNumCorrectUppercaseLetters": 3,
+			"LnfNumSkippedLines": 0,
+			"LnfNumCorrectFirstHalfLetters": 2,
+			"LnfNumCorrectLetters": 4
+		},
+		"eStudentSid": 154486293,
+		"gradeSidResult": 2,
+		"score": 4,
+		"measureSid": 2
+	},
+	{
+		"resultProbeSid": 69451759,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 6,
+			"PsfNumMissedPhonemes": 11,
+			"PsfNumMissedPhonemesInBlend": 2,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 14,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 16,
+			"PsfNumSegmentedMiddleSounds": 19,
+			"PsfNumAttemptedInitialSounds": 16,
+			"PsfNumAttemptedMiddleSounds": 25,
+			"PsfNumAttemptedFinalSounds": 16,
+			"PsfScore": 46,
+			"PsfNumSegmentedInitialSounds": 13,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 0,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154486678,
+		"gradeSidResult": 3,
+		"score": 46,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69452179,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 0,
+			"PsfNumMissedPhonemes": 1,
+			"PsfNumMissedPhonemesInBlend": 0,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 1,
+			"PsfNumSegmentedFinalSounds": 5,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 1,
+			"PsfNumAttemptedWords": 6,
+			"PsfNumSegmentedMiddleSounds": 7,
+			"PsfNumAttemptedInitialSounds": 6,
+			"PsfNumAttemptedMiddleSounds": 7,
+			"PsfNumAttemptedFinalSounds": 6,
+			"PsfScore": 18,
+			"PsfNumSegmentedInitialSounds": 6,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 0,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154486678,
+		"gradeSidResult": 3,
+		"score": 18,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69452180,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:1, b:1, c:1, d:1, e:0, f:3, g:0, h:0, i:3, j:0, k:0, l:0, m:1, n:0, o:1, p:1, q:0, r:0, s:1, t:0, u:0, v:1, w:0, x:0, y:0, z:0",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 9,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:1, b:1, c:1, d:1, e:1, f:4, g:0, h:1, i:4, j:0, k:0, l:1, m:2, n:0, o:3, p:1, q:0, r:0, s:1, t:0, u:0, v:3, w:0, x:0, y:0, z:0",
+			"NwfNumLettersCorrect": 15,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 5,
+			"NwfNumLettersAssessed": 25,
+			"NwfNumWordsAssessed": 9,
+			"NwfIsBenchmark": 0,
+			"NwfNumConsonantsCorrect": 10,
+			"NwfNumSBSWords": 0,
+			"NwfNumVowelsCorrect": 5,
+			"NwfNumConsonantsAssessed": 16,
+			"NwfNumSBSAndRecodedWords": 5
+		},
+		"eStudentSid": 154486678,
+		"gradeSidResult": 3,
+		"score": 15,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69452181,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"OrfFinalGoalPeriod": "",
+			"OrfNumMonosyllabicWordsMissed": 0,
+			"OrfFinalGoalGrade": "1st Grade",
+			"OrfNumIrregularWordsAssessed": 10,
+			"OrfFinalGoalScore": 40,
+			"OrfNumMultisyllabicWordsMissed": 0,
+			"OrfIsBenchmark": 0,
+			"OrfNumMultisyllabicWordsAssessed": 3,
+			"OrfNumRegularWordsAssessed": 10,
+			"OrfNumIrregularWordsMissed": 0,
+			"OrfNumRegularWordsMissed": 0,
+			"OrfNumMonosyllabicWordsAssessed": 17
+		},
+		"eStudentSid": 154486678,
+		"gradeSidResult": 3,
+		"score": 20,
+		"measureSid": 5
+	},
+	{
+		"resultProbeSid": 69451760,
+		"interpretation": 3,
+		"ilaDescriptives": {
+			"LnfNumAssessedLettersFromName": 4,
+			"LnfNumCorrectLettersFromName": 3,
+			"LnfNumAssessedFirstHalfLetters": 13,
+			"LnfNumCorrectUppercaseLetters": 12,
+			"LnfNumSkippedLines": 0,
+			"LnfNumCorrectFirstHalfLetters": 12,
+			"LnfNumCorrectLetters": 25
+		},
+		"eStudentSid": 154486678,
+		"gradeSidResult": 3,
+		"score": 25,
+		"measureSid": 2
+	},
+	{
+		"resultProbeSid": 69451761,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 1,
+			"PsfNumMissedPhonemes": 8,
+			"PsfNumMissedPhonemesInBlend": 1,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 1,
+			"PsfNumSegmentedFinalSounds": 8,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 1,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 1,
+			"PsfNumAttemptedWords": 12,
+			"PsfNumSegmentedMiddleSounds": 12,
+			"PsfNumAttemptedInitialSounds": 12,
+			"PsfNumAttemptedMiddleSounds": 13,
+			"PsfNumAttemptedFinalSounds": 12,
+			"PsfScore": 29,
+			"PsfNumSegmentedInitialSounds": 9,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 1,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154486678,
+		"gradeSidResult": 3,
+		"score": 29,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69451763,
+		"interpretation": 3,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:0, b:1, c:0, d:1, e:1, f:1, g:0, h:0, i:1, j:1, k:1, l:2, m:0, n:1, o:1, p:0, q:0, r:0, s:0, t:0, u:5, v:0, w:2, x:0, y:0, z:0",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 9,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:0, b:2, c:0, d:1, e:2, f:1, g:0, h:0, i:1, j:2, k:2, l:2, m:0, n:1, o:1, p:0, q:0, r:0, s:1, t:0, u:5, v:1, w:2, x:0, y:0, z:1",
+			"NwfNumLettersCorrect": 18,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 4,
+			"NwfNumLettersAssessed": 25,
+			"NwfNumWordsAssessed": 9,
+			"NwfIsBenchmark": 1,
+			"NwfNumConsonantsCorrect": 10,
+			"NwfNumSBSWords": 0,
+			"NwfNumVowelsCorrect": 8,
+			"NwfNumConsonantsAssessed": 16,
+			"NwfNumSBSAndRecodedWords": 0
+		},
+		"eStudentSid": 154486678,
+		"gradeSidResult": 3,
+		"score": 18,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69451957,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 4,
+			"PsfNumMissedPhonemes": 10,
+			"PsfNumMissedPhonemesInBlend": 1,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 7,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 11,
+			"PsfNumSegmentedMiddleSounds": 11,
+			"PsfNumAttemptedInitialSounds": 11,
+			"PsfNumAttemptedMiddleSounds": 15,
+			"PsfNumAttemptedFinalSounds": 11,
+			"PsfScore": 27,
+			"PsfNumSegmentedInitialSounds": 9,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 0,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154486680,
+		"gradeSidResult": 3,
+		"score": 27,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69452087,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 3,
+			"PsfNumMissedPhonemes": 7,
+			"PsfNumMissedPhonemesInBlend": 0,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 1,
+			"PsfNumSegmentedFinalSounds": 12,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 1,
+			"PsfNumAttemptedWords": 13,
+			"PsfNumSegmentedMiddleSounds": 14,
+			"PsfNumAttemptedInitialSounds": 13,
+			"PsfNumAttemptedMiddleSounds": 17,
+			"PsfNumAttemptedFinalSounds": 13,
+			"PsfScore": 36,
+			"PsfNumSegmentedInitialSounds": 10,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 0,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154486680,
+		"gradeSidResult": 3,
+		"score": 36,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69452160,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 3,
+			"PsfNumMissedPhonemes": 4,
+			"PsfNumMissedPhonemesInBlend": 0,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 3,
+			"PsfNumSegmentedFinalSounds": 10,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 3,
+			"PsfNumAttemptedWords": 11,
+			"PsfNumSegmentedMiddleSounds": 6,
+			"PsfNumAttemptedInitialSounds": 11,
+			"PsfNumAttemptedMiddleSounds": 9,
+			"PsfNumAttemptedFinalSounds": 11,
+			"PsfScore": 27,
+			"PsfNumSegmentedInitialSounds": 11,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 2,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154486680,
+		"gradeSidResult": 3,
+		"score": 27,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69452176,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 0,
+			"PsfNumMissedPhonemes": 3,
+			"PsfNumMissedPhonemesInBlend": 0,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 1,
+			"PsfNumSegmentedFinalSounds": 5,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 1,
+			"PsfNumAttemptedWords": 5,
+			"PsfNumSegmentedMiddleSounds": 4,
+			"PsfNumAttemptedInitialSounds": 5,
+			"PsfNumAttemptedMiddleSounds": 4,
+			"PsfNumAttemptedFinalSounds": 5,
+			"PsfScore": 11,
+			"PsfNumSegmentedInitialSounds": 2,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 0,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154486680,
+		"gradeSidResult": 3,
+		"score": 11,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69451958,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:2, b:1, c:2, d:0, e:2, f:0, g:1, h:0, i:2, j:1, k:2, l:1, m:2, n:1, o:3, p:0, q:0, r:0, s:1, t:0, u:1, v:0, w:0, x:0, y:0, z:2",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 11,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:2, b:1, c:3, d:0, e:2, f:0, g:1, h:0, i:2, j:3, k:2, l:1, m:3, n:1, o:4, p:0, q:0, r:1, s:1, t:0, u:1, v:0, w:0, x:0, y:0, z:2",
+			"NwfNumLettersCorrect": 24,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 5,
+			"NwfNumLettersAssessed": 30,
+			"NwfNumWordsAssessed": 11,
+			"NwfIsBenchmark": 0,
+			"NwfNumConsonantsCorrect": 14,
+			"NwfNumSBSWords": 0,
+			"NwfNumVowelsCorrect": 10,
+			"NwfNumConsonantsAssessed": 19,
+			"NwfNumSBSAndRecodedWords": 0
+		},
+		"eStudentSid": 154486680,
+		"gradeSidResult": 3,
+		"score": 24,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69452086,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:2, b:4, c:0, d:2, e:0, f:3, g:1, h:0, i:3, j:2, k:1, l:0, m:1, n:1, o:1, p:0, q:0, r:0, s:3, t:1, u:3, v:2, w:1, x:0, y:0, z:1",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 13,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:5, b:4, c:0, d:3, e:1, f:3, g:1, h:0, i:3, j:2, k:1, l:0, m:2, n:1, o:1, p:0, q:0, r:0, s:3, t:1, u:3, v:2, w:1, x:0, y:0, z:1",
+			"NwfNumLettersCorrect": 32,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 7,
+			"NwfNumLettersAssessed": 38,
+			"NwfNumWordsAssessed": 13,
+			"NwfIsBenchmark": 0,
+			"NwfNumConsonantsCorrect": 23,
+			"NwfNumSBSWords": 4,
+			"NwfNumVowelsCorrect": 9,
+			"NwfNumConsonantsAssessed": 25,
+			"NwfNumSBSAndRecodedWords": 0
+		},
+		"eStudentSid": 154486680,
+		"gradeSidResult": 3,
+		"score": 32,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69452158,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:3, b:2, c:1, d:1, e:1, f:1, g:0, h:0, i:2, j:0, k:2, l:0, m:0, n:0, o:1, p:1, q:0, r:0, s:0, t:1, u:1, v:1, w:1, x:0, y:0, z:2",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 8,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:3, b:2, c:1, d:1, e:1, f:1, g:0, h:0, i:2, j:0, k:2, l:0, m:0, n:0, o:1, p:1, q:0, r:0, s:0, t:1, u:1, v:1, w:1, x:0, y:0, z:2",
+			"NwfNumLettersCorrect": 21,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 8,
+			"NwfNumLettersAssessed": 21,
+			"NwfNumWordsAssessed": 8,
+			"NwfIsBenchmark": 0,
+			"NwfNumConsonantsCorrect": 13,
+			"NwfNumSBSWords": 8,
+			"NwfNumVowelsCorrect": 8,
+			"NwfNumConsonantsAssessed": 13,
+			"NwfNumSBSAndRecodedWords": 0
+		},
+		"eStudentSid": 154486680,
+		"gradeSidResult": 3,
+		"score": 21,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69452177,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:5, b:1, c:0, d:0, e:1, f:0, g:0, h:0, i:0, j:1, k:2, l:2, m:1, n:1, o:0, p:0, q:0, r:0, s:0, t:0, u:0, v:2, w:1, x:0, y:0, z:0",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 11,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:6, b:2, c:0, d:1, e:3, f:2, g:0, h:0, i:0, j:2, k:2, l:2, m:2, n:1, o:1, p:1, q:0, r:0, s:1, t:0, u:1, v:2, w:1, x:0, y:0, z:0",
+			"NwfNumLettersCorrect": 17,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 6,
+			"NwfNumLettersAssessed": 30,
+			"NwfNumWordsAssessed": 11,
+			"NwfIsBenchmark": 0,
+			"NwfNumConsonantsCorrect": 11,
+			"NwfNumSBSWords": 0,
+			"NwfNumVowelsCorrect": 6,
+			"NwfNumConsonantsAssessed": 19,
+			"NwfNumSBSAndRecodedWords": 5
+		},
+		"eStudentSid": 154486680,
+		"gradeSidResult": 3,
+		"score": 17,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69452178,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"OrfFinalGoalPeriod": "",
+			"OrfNumMonosyllabicWordsMissed": 8,
+			"OrfFinalGoalGrade": "1st Grade",
+			"OrfNumIrregularWordsAssessed": 5,
+			"OrfFinalGoalScore": 40,
+			"OrfNumMultisyllabicWordsMissed": 0,
+			"OrfIsBenchmark": 0,
+			"OrfNumMultisyllabicWordsAssessed": 0,
+			"OrfNumRegularWordsAssessed": 16,
+			"OrfNumIrregularWordsMissed": 2,
+			"OrfNumRegularWordsMissed": 6,
+			"OrfNumMonosyllabicWordsAssessed": 21
+		},
+		"eStudentSid": 154486680,
+		"gradeSidResult": 3,
+		"score": 13,
+		"measureSid": 5
+	},
+	{
+		"resultProbeSid": 69451917,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"LnfNumAssessedLettersFromName": 6,
+			"LnfNumCorrectLettersFromName": 6,
+			"LnfNumAssessedFirstHalfLetters": 18,
+			"LnfNumCorrectUppercaseLetters": 20,
+			"LnfNumSkippedLines": 0,
+			"LnfNumCorrectFirstHalfLetters": 18,
+			"LnfNumCorrectLetters": 38
+		},
+		"eStudentSid": 154486680,
+		"gradeSidResult": 3,
+		"score": 38,
+		"measureSid": 2
+	},
+	{
+		"resultProbeSid": 69451920,
+		"interpretation": 2,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 1,
+			"PsfNumMissedPhonemes": 4,
+			"PsfNumMissedPhonemesInBlend": 0,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 14,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 1,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 14,
+			"PsfNumSegmentedMiddleSounds": 21,
+			"PsfNumAttemptedInitialSounds": 14,
+			"PsfNumAttemptedMiddleSounds": 22,
+			"PsfNumAttemptedFinalSounds": 14,
+			"PsfScore": 47,
+			"PsfNumSegmentedInitialSounds": 11,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 1,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154486680,
+		"gradeSidResult": 3,
+		"score": 47,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69451921,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:3, b:2, c:0, d:2, e:2, f:3, g:0, h:1, i:3, j:4, k:2, l:2, m:1, n:2, o:1, p:0, q:0, r:0, s:2, t:0, u:7, v:1, w:2, x:0, y:0, z:3",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 17,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:3, b:3, c:0, d:3, e:2, f:3, g:0, h:1, i:3, j:4, k:3, l:2, m:1, n:2, o:2, p:0, q:0, r:1, s:2, t:0, u:7, v:1, w:2, x:0, y:0, z:3",
+			"NwfNumLettersCorrect": 43,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 13,
+			"NwfNumLettersAssessed": 48,
+			"NwfNumWordsAssessed": 17,
+			"NwfIsBenchmark": 1,
+			"NwfNumConsonantsCorrect": 27,
+			"NwfNumSBSWords": 0,
+			"NwfNumVowelsCorrect": 16,
+			"NwfNumConsonantsAssessed": 31,
+			"NwfNumSBSAndRecodedWords": 0
+		},
+		"eStudentSid": 154486680,
+		"gradeSidResult": 3,
+		"score": 43,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69452171,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 5,
+			"PsfNumMissedPhonemes": 8,
+			"PsfNumMissedPhonemesInBlend": 1,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 0,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 3,
+			"PsfNumSegmentedMiddleSounds": 0,
+			"PsfNumAttemptedInitialSounds": 3,
+			"PsfNumAttemptedMiddleSounds": 5,
+			"PsfNumAttemptedFinalSounds": 3,
+			"PsfScore": 3,
+			"PsfNumSegmentedInitialSounds": 3,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 0,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154486682,
+		"gradeSidResult": 3,
+		"score": 3,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69452169,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:1, b:1, c:1, d:1, e:0, f:3, g:0, h:0, i:3, j:0, k:0, l:0, m:1, n:0, o:1, p:1, q:0, r:0, s:1, t:0, u:0, v:1, w:0, x:0, y:0, z:0",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 5,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:1, b:1, c:1, d:1, e:0, f:3, g:0, h:0, i:3, j:0, k:0, l:0, m:1, n:0, o:1, p:1, q:0, r:0, s:1, t:0, u:0, v:1, w:0, x:0, y:0, z:0",
+			"NwfNumLettersCorrect": 15,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 5,
+			"NwfNumLettersAssessed": 15,
+			"NwfNumWordsAssessed": 5,
+			"NwfIsBenchmark": 0,
+			"NwfNumConsonantsCorrect": 10,
+			"NwfNumSBSWords": 0,
+			"NwfNumVowelsCorrect": 5,
+			"NwfNumConsonantsAssessed": 10,
+			"NwfNumSBSAndRecodedWords": 5
+		},
+		"eStudentSid": 154486682,
+		"gradeSidResult": 3,
+		"score": 15,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69452170,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"OrfFinalGoalPeriod": "",
+			"OrfNumMonosyllabicWordsMissed": 1,
+			"OrfFinalGoalGrade": "1st Grade",
+			"OrfNumIrregularWordsAssessed": 11,
+			"OrfFinalGoalScore": 40,
+			"OrfNumMultisyllabicWordsMissed": 0,
+			"OrfIsBenchmark": 0,
+			"OrfNumMultisyllabicWordsAssessed": 2,
+			"OrfNumRegularWordsAssessed": 30,
+			"OrfNumIrregularWordsMissed": 1,
+			"OrfNumRegularWordsMissed": 0,
+			"OrfNumMonosyllabicWordsAssessed": 39
+		},
+		"eStudentSid": 154486682,
+		"gradeSidResult": 3,
+		"score": 40,
+		"measureSid": 5
+	},
+	{
+		"resultProbeSid": 69452172,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"OrfFinalGoalPeriod": "",
+			"OrfNumMonosyllabicWordsMissed": 5,
+			"OrfFinalGoalGrade": "1st Grade",
+			"OrfNumIrregularWordsAssessed": 14,
+			"OrfFinalGoalScore": 40,
+			"OrfNumMultisyllabicWordsMissed": 0,
+			"OrfIsBenchmark": 0,
+			"OrfNumMultisyllabicWordsAssessed": 5,
+			"OrfNumRegularWordsAssessed": 14,
+			"OrfNumIrregularWordsMissed": 5,
+			"OrfNumRegularWordsMissed": 0,
+			"OrfNumMonosyllabicWordsAssessed": 23
+		},
+		"eStudentSid": 154486682,
+		"gradeSidResult": 3,
+		"score": 23,
+		"measureSid": 5
+	},
+	{
+		"resultProbeSid": 69451764,
+		"interpretation": 2,
+		"ilaDescriptives": {
+			"LnfNumAssessedLettersFromName": 1,
+			"LnfNumCorrectLettersFromName": 1,
+			"LnfNumAssessedFirstHalfLetters": 9,
+			"LnfNumCorrectUppercaseLetters": 6,
+			"LnfNumSkippedLines": 0,
+			"LnfNumCorrectFirstHalfLetters": 6,
+			"LnfNumCorrectLetters": 12
+		},
+		"eStudentSid": 154486682,
+		"gradeSidResult": 3,
+		"score": 12,
+		"measureSid": 2
+	},
+	{
+		"resultProbeSid": 69451766,
+		"interpretation": 3,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 3,
+			"PsfNumMissedPhonemes": 5,
+			"PsfNumMissedPhonemesInBlend": 2,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 2,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 1,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 4,
+			"PsfNumSegmentedMiddleSounds": 2,
+			"PsfNumAttemptedInitialSounds": 4,
+			"PsfNumAttemptedMiddleSounds": 5,
+			"PsfNumAttemptedFinalSounds": 4,
+			"PsfScore": 8,
+			"PsfNumSegmentedInitialSounds": 4,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 2,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154486682,
+		"gradeSidResult": 3,
+		"score": 8,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69451768,
+		"interpretation": 2,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:0, b:0, c:0, d:1, e:0, f:0, g:0, h:0, i:1, j:1, k:1, l:0, m:0, n:1, o:1, p:0, q:0, r:0, s:1, t:0, u:3, v:1, w:1, x:0, y:0, z:0",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 5,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:0, b:1, c:0, d:1, e:0, f:0, g:0, h:0, i:1, j:1, k:2, l:0, m:0, n:1, o:1, p:0, q:0, r:0, s:1, t:0, u:3, v:1, w:1, x:0, y:0, z:0",
+			"NwfNumLettersCorrect": 12,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 3,
+			"NwfNumLettersAssessed": 14,
+			"NwfNumWordsAssessed": 5,
+			"NwfIsBenchmark": 1,
+			"NwfNumConsonantsCorrect": 7,
+			"NwfNumSBSWords": 0,
+			"NwfNumVowelsCorrect": 5,
+			"NwfNumConsonantsAssessed": 9,
+			"NwfNumSBSAndRecodedWords": 0
+		},
+		"eStudentSid": 154486682,
+		"gradeSidResult": 3,
+		"score": 12,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69451959,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 4,
+			"PsfNumMissedPhonemes": 8,
+			"PsfNumMissedPhonemesInBlend": 1,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 7,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 9,
+			"PsfNumSegmentedMiddleSounds": 12,
+			"PsfNumAttemptedInitialSounds": 9,
+			"PsfNumAttemptedMiddleSounds": 16,
+			"PsfNumAttemptedFinalSounds": 9,
+			"PsfScore": 26,
+			"PsfNumSegmentedInitialSounds": 7,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 1,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154486684,
+		"gradeSidResult": 3,
+		"score": 26,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69452089,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 3,
+			"PsfNumMissedPhonemes": 7,
+			"PsfNumMissedPhonemesInBlend": 3,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 7,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 7,
+			"PsfNumSegmentedMiddleSounds": 7,
+			"PsfNumAttemptedInitialSounds": 7,
+			"PsfNumAttemptedMiddleSounds": 10,
+			"PsfNumAttemptedFinalSounds": 7,
+			"PsfScore": 17,
+			"PsfNumSegmentedInitialSounds": 3,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 1,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154486684,
+		"gradeSidResult": 3,
+		"score": 17,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69452090,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 10,
+			"PsfNumMissedPhonemes": 25,
+			"PsfNumMissedPhonemesInBlend": 0,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 2,
+			"PsfNumSegmentedFinalSounds": 5,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 1,
+			"PsfNumSegmentedRimes": 2,
+			"PsfNumAttemptedWords": 11,
+			"PsfNumSegmentedMiddleSounds": 1,
+			"PsfNumAttemptedInitialSounds": 11,
+			"PsfNumAttemptedMiddleSounds": 11,
+			"PsfNumAttemptedFinalSounds": 11,
+			"PsfScore": 18,
+			"PsfNumSegmentedInitialSounds": 2,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 0,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 6,
+			"PsfNumRepeatedWords": 2
+		},
+		"eStudentSid": 154486684,
+		"gradeSidResult": 3,
+		"score": 18,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69452159,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 3,
+			"PsfNumMissedPhonemes": 5,
+			"PsfNumMissedPhonemesInBlend": 1,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 1,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 3,
+			"PsfNumSegmentedMiddleSounds": 1,
+			"PsfNumAttemptedInitialSounds": 3,
+			"PsfNumAttemptedMiddleSounds": 4,
+			"PsfNumAttemptedFinalSounds": 3,
+			"PsfScore": 5,
+			"PsfNumSegmentedInitialSounds": 3,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 1,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154486684,
+		"gradeSidResult": 3,
+		"score": 5,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69452173,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 0,
+			"PsfNumMissedPhonemes": 1,
+			"PsfNumMissedPhonemesInBlend": 0,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 1,
+			"PsfNumSegmentedFinalSounds": 5,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 1,
+			"PsfNumAttemptedWords": 6,
+			"PsfNumSegmentedMiddleSounds": 5,
+			"PsfNumAttemptedInitialSounds": 6,
+			"PsfNumAttemptedMiddleSounds": 5,
+			"PsfNumAttemptedFinalSounds": 6,
+			"PsfScore": 16,
+			"PsfNumSegmentedInitialSounds": 6,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 0,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154486684,
+		"gradeSidResult": 3,
+		"score": 16,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69451960,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:1, b:2, c:1, d:0, e:2, f:1, g:0, h:0, i:3, j:1, k:0, l:1, m:1, n:0, o:3, p:1, q:0, r:0, s:0, t:0, u:0, v:2, w:0, x:0, y:0, z:1",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 10,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:1, b:2, c:1, d:1, e:2, f:4, g:0, h:1, i:4, j:1, k:0, l:1, m:2, n:0, o:3, p:1, q:0, r:0, s:1, t:0, u:0, v:3, w:0, x:0, y:0, z:1",
+			"NwfNumLettersCorrect": 20,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 3,
+			"NwfNumLettersAssessed": 29,
+			"NwfNumWordsAssessed": 10,
+			"NwfIsBenchmark": 0,
+			"NwfNumConsonantsCorrect": 11,
+			"NwfNumSBSWords": 0,
+			"NwfNumVowelsCorrect": 9,
+			"NwfNumConsonantsAssessed": 19,
+			"NwfNumSBSAndRecodedWords": 0
+		},
+		"eStudentSid": 154486684,
+		"gradeSidResult": 3,
+		"score": 20,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69451969,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:4, b:1, c:0, d:2, e:0, f:1, g:1, h:0, i:2, j:2, k:0, l:0, m:1, n:1, o:1, p:0, q:0, r:0, s:2, t:0, u:2, v:1, w:1, x:0, y:0, z:1",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 10,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:4, b:3, c:0, d:2, e:1, f:2, g:1, h:0, i:2, j:2, k:1, l:0, m:1, n:1, o:1, p:0, q:0, r:0, s:2, t:0, u:2, v:2, w:1, x:0, y:0, z:1",
+			"NwfNumLettersCorrect": 23,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 4,
+			"NwfNumLettersAssessed": 29,
+			"NwfNumWordsAssessed": 10,
+			"NwfIsBenchmark": 0,
+			"NwfNumConsonantsCorrect": 14,
+			"NwfNumSBSWords": 0,
+			"NwfNumVowelsCorrect": 9,
+			"NwfNumConsonantsAssessed": 19,
+			"NwfNumSBSAndRecodedWords": 0
+		},
+		"eStudentSid": 154486684,
+		"gradeSidResult": 3,
+		"score": 23,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69452088,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:2, b:2, c:0, d:2, e:3, f:1, g:0, h:0, i:4, j:1, k:1, l:2, m:0, n:0, o:2, p:1, q:0, r:0, s:0, t:1, u:0, v:0, w:2, x:0, y:1, z:2",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 13,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:3, b:3, c:1, d:2, e:3, f:1, g:1, h:0, i:4, j:1, k:2, l:2, m:0, n:0, o:2, p:1, q:0, r:0, s:1, t:1, u:1, v:1, w:2, x:0, y:1, z:2",
+			"NwfNumLettersCorrect": 27,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 6,
+			"NwfNumLettersAssessed": 35,
+			"NwfNumWordsAssessed": 13,
+			"NwfIsBenchmark": 0,
+			"NwfNumConsonantsCorrect": 16,
+			"NwfNumSBSWords": 0,
+			"NwfNumVowelsCorrect": 11,
+			"NwfNumConsonantsAssessed": 22,
+			"NwfNumSBSAndRecodedWords": 0
+		},
+		"eStudentSid": 154486684,
+		"gradeSidResult": 3,
+		"score": 27,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69452174,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:1, b:3, c:0, d:1, e:2, f:4, g:0, h:0, i:5, j:0, k:0, l:2, m:0, n:1, o:1, p:2, q:0, r:2, s:0, t:0, u:1, v:3, w:0, x:0, y:1, z:1",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 10,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:1, b:3, c:0, d:1, e:2, f:4, g:0, h:0, i:5, j:0, k:0, l:2, m:0, n:1, o:1, p:2, q:0, r:2, s:0, t:0, u:1, v:3, w:0, x:0, y:1, z:1",
+			"NwfNumLettersCorrect": 30,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 10,
+			"NwfNumLettersAssessed": 30,
+			"NwfNumWordsAssessed": 10,
+			"NwfIsBenchmark": 0,
+			"NwfNumConsonantsCorrect": 20,
+			"NwfNumSBSWords": 0,
+			"NwfNumVowelsCorrect": 10,
+			"NwfNumConsonantsAssessed": 20,
+			"NwfNumSBSAndRecodedWords": 0
+		},
+		"eStudentSid": 154486684,
+		"gradeSidResult": 3,
+		"score": 30,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69452175,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"OrfFinalGoalPeriod": "",
+			"OrfNumMonosyllabicWordsMissed": 0,
+			"OrfFinalGoalGrade": "1st Grade",
+			"OrfNumIrregularWordsAssessed": 12,
+			"OrfFinalGoalScore": 40,
+			"OrfNumMultisyllabicWordsMissed": 0,
+			"OrfIsBenchmark": 0,
+			"OrfNumMultisyllabicWordsAssessed": 2,
+			"OrfNumRegularWordsAssessed": 33,
+			"OrfNumIrregularWordsMissed": 0,
+			"OrfNumRegularWordsMissed": 0,
+			"OrfNumMonosyllabicWordsAssessed": 43
+		},
+		"eStudentSid": 154486684,
+		"gradeSidResult": 3,
+		"score": 45,
+		"measureSid": 5
+	},
+	{
+		"resultProbeSid": 69451926,
+		"interpretation": 3,
+		"ilaDescriptives": {
+			"LnfNumAssessedLettersFromName": 3,
+			"LnfNumCorrectLettersFromName": 3,
+			"LnfNumAssessedFirstHalfLetters": 15,
+			"LnfNumCorrectUppercaseLetters": 15,
+			"LnfNumSkippedLines": 0,
+			"LnfNumCorrectFirstHalfLetters": 13,
+			"LnfNumCorrectLetters": 27
+		},
+		"eStudentSid": 154486684,
+		"gradeSidResult": 3,
+		"score": 27,
+		"measureSid": 2
+	},
+	{
+		"resultProbeSid": 69451927,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 3,
+			"PsfNumMissedPhonemes": 5,
+			"PsfNumMissedPhonemesInBlend": 1,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 5,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 1,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 6,
+			"PsfNumSegmentedMiddleSounds": 3,
+			"PsfNumAttemptedInitialSounds": 6,
+			"PsfNumAttemptedMiddleSounds": 6,
+			"PsfNumAttemptedFinalSounds": 6,
+			"PsfScore": 13,
+			"PsfNumSegmentedInitialSounds": 5,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 1,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154486684,
+		"gradeSidResult": 3,
+		"score": 13,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69451929,
+		"interpretation": 3,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:0, b:1, c:2, d:0, e:0, f:0, g:0, h:0, i:1, j:2, k:2, l:1, m:2, n:1, o:4, p:0, q:0, r:0, s:0, t:0, u:1, v:0, w:0, x:0, y:0, z:1",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 9,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:2, b:1, c:3, d:0, e:1, f:0, g:0, h:0, i:1, j:3, k:2, l:1, m:2, n:1, o:4, p:0, q:0, r:1, s:0, t:0, u:1, v:0, w:0, x:0, y:0, z:2",
+			"NwfNumLettersCorrect": 18,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 6,
+			"NwfNumLettersAssessed": 25,
+			"NwfNumWordsAssessed": 9,
+			"NwfIsBenchmark": 1,
+			"NwfNumConsonantsCorrect": 12,
+			"NwfNumSBSWords": 0,
+			"NwfNumVowelsCorrect": 6,
+			"NwfNumConsonantsAssessed": 16,
+			"NwfNumSBSAndRecodedWords": 0
+		},
+		"eStudentSid": 154486684,
+		"gradeSidResult": 3,
+		"score": 18,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69451866,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 46,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 0,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 9,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 154486686,
+		"gradeSidResult": 2,
+		"score": 11,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451867,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 5,
+			"PsfNumMissedPhonemes": 10,
+			"PsfNumMissedPhonemesInBlend": 2,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 14,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 16,
+			"PsfNumSegmentedMiddleSounds": 20,
+			"PsfNumAttemptedInitialSounds": 16,
+			"PsfNumAttemptedMiddleSounds": 25,
+			"PsfNumAttemptedFinalSounds": 16,
+			"PsfScore": 47,
+			"PsfNumSegmentedInitialSounds": 13,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 1,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154486686,
+		"gradeSidResult": 3,
+		"score": 47,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69451961,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 2,
+			"PsfNumMissedPhonemes": 6,
+			"PsfNumMissedPhonemesInBlend": 1,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 1,
+			"PsfNumSegmentedFinalSounds": 4,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 1,
+			"PsfNumAttemptedWords": 6,
+			"PsfNumSegmentedMiddleSounds": 5,
+			"PsfNumAttemptedInitialSounds": 6,
+			"PsfNumAttemptedMiddleSounds": 7,
+			"PsfNumAttemptedFinalSounds": 6,
+			"PsfScore": 13,
+			"PsfNumSegmentedInitialSounds": 4,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 0,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154486686,
+		"gradeSidResult": 3,
+		"score": 13,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69452092,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 5,
+			"PsfNumMissedPhonemes": 11,
+			"PsfNumMissedPhonemesInBlend": 2,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 3,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 5,
+			"PsfNumSegmentedMiddleSounds": 1,
+			"PsfNumAttemptedInitialSounds": 5,
+			"PsfNumAttemptedMiddleSounds": 6,
+			"PsfNumAttemptedFinalSounds": 5,
+			"PsfScore": 10,
+			"PsfNumSegmentedInitialSounds": 1,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 2,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154486686,
+		"gradeSidResult": 3,
+		"score": 10,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69452126,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 3,
+			"PsfNumMissedPhonemes": 5,
+			"PsfNumMissedPhonemesInBlend": 0,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 5,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 5,
+			"PsfNumSegmentedMiddleSounds": 2,
+			"PsfNumAttemptedInitialSounds": 5,
+			"PsfNumAttemptedMiddleSounds": 5,
+			"PsfNumAttemptedFinalSounds": 5,
+			"PsfScore": 10,
+			"PsfNumSegmentedInitialSounds": 3,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 0,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154486686,
+		"gradeSidResult": 3,
+		"score": 10,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69452147,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 4,
+			"PsfNumMissedPhonemes": 7,
+			"PsfNumMissedPhonemesInBlend": 1,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 0,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 3,
+			"PsfNumSegmentedMiddleSounds": 0,
+			"PsfNumAttemptedInitialSounds": 3,
+			"PsfNumAttemptedMiddleSounds": 4,
+			"PsfNumAttemptedFinalSounds": 3,
+			"PsfScore": 3,
+			"PsfNumSegmentedInitialSounds": 3,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 2,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154486686,
+		"gradeSidResult": 3,
+		"score": 3,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69452166,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 1,
+			"PsfNumMissedPhonemes": 3,
+			"PsfNumMissedPhonemesInBlend": 0,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 3,
+			"PsfNumSegmentedFinalSounds": 9,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 3,
+			"PsfNumAttemptedWords": 10,
+			"PsfNumSegmentedMiddleSounds": 7,
+			"PsfNumAttemptedInitialSounds": 10,
+			"PsfNumAttemptedMiddleSounds": 8,
+			"PsfNumAttemptedFinalSounds": 10,
+			"PsfScore": 25,
+			"PsfNumSegmentedInitialSounds": 9,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 0,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154486686,
+		"gradeSidResult": 3,
+		"score": 25,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69451915,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:1, b:1, c:2, d:1, e:3, f:0, g:1, h:1, i:3, j:5, k:2, l:2, m:4, n:2, o:6, p:0, q:0, r:0, s:1, t:1, u:3, v:1, w:1, x:0, y:0, z:2",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 20,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:2, b:1, c:4, d:1, e:3, f:0, g:1, h:1, i:5, j:7, k:3, l:2, m:5, n:3, o:6, p:0, q:0, r:1, s:1, t:1, u:4, v:1, w:1, x:0, y:0, z:2",
+			"NwfNumLettersCorrect": 43,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 9,
+			"NwfNumLettersAssessed": 55,
+			"NwfNumWordsAssessed": 20,
+			"NwfIsBenchmark": 0,
+			"NwfNumConsonantsCorrect": 27,
+			"NwfNumSBSWords": 0,
+			"NwfNumVowelsCorrect": 16,
+			"NwfNumConsonantsAssessed": 35,
+			"NwfNumSBSAndRecodedWords": 0
+		},
+		"eStudentSid": 154486686,
+		"gradeSidResult": 3,
+		"score": 43,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69451962,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:1, b:0, c:0, d:1, e:0, f:2, g:0, h:0, i:2, j:0, k:0, l:0, m:1, n:0, o:0, p:1, q:0, r:0, s:1, t:0, u:0, v:1, w:0, x:0, y:0, z:0",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 5,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:1, b:1, c:1, d:1, e:0, f:3, g:0, h:0, i:3, j:0, k:0, l:0, m:1, n:0, o:1, p:1, q:0, r:0, s:1, t:0, u:0, v:1, w:0, x:0, y:0, z:0",
+			"NwfNumLettersCorrect": 10,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 1,
+			"NwfNumLettersAssessed": 15,
+			"NwfNumWordsAssessed": 5,
+			"NwfIsBenchmark": 0,
+			"NwfNumConsonantsCorrect": 7,
+			"NwfNumSBSWords": 0,
+			"NwfNumVowelsCorrect": 3,
+			"NwfNumConsonantsAssessed": 10,
+			"NwfNumSBSAndRecodedWords": 0
+		},
+		"eStudentSid": 154486686,
+		"gradeSidResult": 3,
+		"score": 10,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69452091,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:3, b:2, c:0, d:1, e:1, f:0, g:1, h:0, i:2, j:0, k:0, l:0, m:1, n:1, o:1, p:0, q:0, r:0, s:1, t:0, u:2, v:1, w:0, x:0, y:0, z:1",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 10,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:4, b:3, c:0, d:2, e:1, f:2, g:1, h:0, i:2, j:2, k:1, l:0, m:1, n:1, o:1, p:0, q:0, r:0, s:2, t:0, u:2, v:2, w:1, x:0, y:0, z:1",
+			"NwfNumLettersCorrect": 18,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 3,
+			"NwfNumLettersAssessed": 29,
+			"NwfNumWordsAssessed": 10,
+			"NwfIsBenchmark": 0,
+			"NwfNumConsonantsCorrect": 9,
+			"NwfNumSBSWords": 1,
+			"NwfNumVowelsCorrect": 9,
+			"NwfNumConsonantsAssessed": 19,
+			"NwfNumSBSAndRecodedWords": 0
+		},
+		"eStudentSid": 154486686,
+		"gradeSidResult": 3,
+		"score": 18,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69452151,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:1, b:1, c:1, d:0, e:1, f:1, g:0, h:0, i:2, j:0, k:0, l:0, m:0, n:0, o:1, p:1, q:0, r:0, s:0, t:0, u:0, v:1, w:1, x:0, y:0, z:1",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 5,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:1, b:1, c:1, d:0, e:1, f:1, g:0, h:0, i:2, j:0, k:0, l:0, m:0, n:0, o:1, p:1, q:0, r:0, s:0, t:0, u:0, v:1, w:1, x:0, y:0, z:1",
+			"NwfNumLettersCorrect": 12,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 5,
+			"NwfNumLettersAssessed": 12,
+			"NwfNumWordsAssessed": 5,
+			"NwfIsBenchmark": 0,
+			"NwfNumConsonantsCorrect": 7,
+			"NwfNumSBSWords": 0,
+			"NwfNumVowelsCorrect": 5,
+			"NwfNumConsonantsAssessed": 7,
+			"NwfNumSBSAndRecodedWords": 0
+		},
+		"eStudentSid": 154486686,
+		"gradeSidResult": 3,
+		"score": 12,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69452167,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:1, b:2, c:1, d:0, e:0, f:0, g:0, h:0, i:2, j:0, k:1, l:0, m:0, n:0, o:1, p:1, q:0, r:0, s:0, t:1, u:1, v:1, w:0, x:0, y:0, z:1",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 8,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:3, b:2, c:1, d:1, e:1, f:1, g:0, h:0, i:2, j:0, k:2, l:0, m:0, n:0, o:1, p:1, q:0, r:0, s:0, t:1, u:1, v:1, w:1, x:0, y:0, z:2",
+			"NwfNumLettersCorrect": 13,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 5,
+			"NwfNumLettersAssessed": 21,
+			"NwfNumWordsAssessed": 8,
+			"NwfIsBenchmark": 0,
+			"NwfNumConsonantsCorrect": 8,
+			"NwfNumSBSWords": 0,
+			"NwfNumVowelsCorrect": 5,
+			"NwfNumConsonantsAssessed": 13,
+			"NwfNumSBSAndRecodedWords": 0
+		},
+		"eStudentSid": 154486686,
+		"gradeSidResult": 3,
+		"score": 13,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69451933,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"OrfFinalGoalPeriod": "",
+			"OrfNumMonosyllabicWordsMissed": 2,
+			"OrfFinalGoalGrade": "1st Grade",
+			"OrfNumIrregularWordsAssessed": 6,
+			"OrfFinalGoalScore": 40,
+			"OrfNumMultisyllabicWordsMissed": 0,
+			"OrfIsBenchmark": 0,
+			"OrfNumMultisyllabicWordsAssessed": 0,
+			"OrfNumRegularWordsAssessed": 21,
+			"OrfNumIrregularWordsMissed": 1,
+			"OrfNumRegularWordsMissed": 1,
+			"OrfNumMonosyllabicWordsAssessed": 27
+		},
+		"eStudentSid": 154486686,
+		"gradeSidResult": 3,
+		"score": 25,
+		"measureSid": 5
+	},
+	{
+		"resultProbeSid": 69452168,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"OrfFinalGoalPeriod": "",
+			"OrfNumMonosyllabicWordsMissed": 7,
+			"OrfFinalGoalGrade": "1st Grade",
+			"OrfNumIrregularWordsAssessed": 9,
+			"OrfFinalGoalScore": 40,
+			"OrfNumMultisyllabicWordsMissed": 1,
+			"OrfIsBenchmark": 0,
+			"OrfNumMultisyllabicWordsAssessed": 2,
+			"OrfNumRegularWordsAssessed": 8,
+			"OrfNumIrregularWordsMissed": 0,
+			"OrfNumRegularWordsMissed": 8,
+			"OrfNumMonosyllabicWordsAssessed": 15
+		},
+		"eStudentSid": 154486686,
+		"gradeSidResult": 3,
+		"score": 9,
+		"measureSid": 5
+	},
+	{
+		"resultProbeSid": 69451922,
+		"interpretation": 2,
+		"ilaDescriptives": {
+			"LnfNumAssessedLettersFromName": 4,
+			"LnfNumCorrectLettersFromName": 4,
+			"LnfNumAssessedFirstHalfLetters": 4,
+			"LnfNumCorrectUppercaseLetters": 5,
+			"LnfNumSkippedLines": 0,
+			"LnfNumCorrectFirstHalfLetters": 3,
+			"LnfNumCorrectLetters": 8
+		},
+		"eStudentSid": 154486686,
+		"gradeSidResult": 3,
+		"score": 8,
+		"measureSid": 2
+	},
+	{
+		"resultProbeSid": 69451923,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 1,
+			"PsfNumMissedPhonemes": 3,
+			"PsfNumMissedPhonemesInBlend": 1,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 4,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 1,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 1,
+			"PsfNumAttemptedWords": 5,
+			"PsfNumSegmentedMiddleSounds": 4,
+			"PsfNumAttemptedInitialSounds": 5,
+			"PsfNumAttemptedMiddleSounds": 5,
+			"PsfNumAttemptedFinalSounds": 5,
+			"PsfScore": 12,
+			"PsfNumSegmentedInitialSounds": 4,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 1,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 154486686,
+		"gradeSidResult": 3,
+		"score": 12,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69451924,
+		"interpretation": 2,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:0, b:0, c:0, d:1, e:0, f:0, g:0, h:0, i:1, j:0, k:1, l:0, m:0, n:1, o:1, p:0, q:0, r:0, s:0, t:0, u:3, v:1, w:1, x:0, y:0, z:0",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 5,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:0, b:1, c:0, d:1, e:0, f:0, g:0, h:0, i:1, j:1, k:2, l:0, m:0, n:1, o:1, p:0, q:0, r:0, s:1, t:0, u:3, v:1, w:1, x:0, y:0, z:0",
+			"NwfNumLettersCorrect": 10,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 1,
+			"NwfNumLettersAssessed": 14,
+			"NwfNumWordsAssessed": 5,
+			"NwfIsBenchmark": 1,
+			"NwfNumConsonantsCorrect": 5,
+			"NwfNumSBSWords": 0,
+			"NwfNumVowelsCorrect": 5,
+			"NwfNumConsonantsAssessed": 9,
+			"NwfNumSBSAndRecodedWords": 0
+		},
+		"eStudentSid": 154486686,
+		"gradeSidResult": 3,
+		"score": 10,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69451889,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 60,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 0,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 7,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 160286889,
+		"gradeSidResult": 2,
+		"score": 7,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451898,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 57,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 0,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 6,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 160286889,
+		"gradeSidResult": 2,
+		"score": 6,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451909,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 56,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 0,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 9,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 160286889,
+		"gradeSidResult": 2,
+		"score": 9,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69452135,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 55,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 0,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 8,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 160286889,
+		"gradeSidResult": 2,
+		"score": 8,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451899,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 4,
+			"PsfNumMissedPhonemes": 8,
+			"PsfNumMissedPhonemesInBlend": 3,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 9,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 11,
+			"PsfNumSegmentedMiddleSounds": 15,
+			"PsfNumAttemptedInitialSounds": 11,
+			"PsfNumAttemptedMiddleSounds": 19,
+			"PsfNumAttemptedFinalSounds": 11,
+			"PsfScore": 33,
+			"PsfNumSegmentedInitialSounds": 9,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 4,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 160286889,
+		"gradeSidResult": 2,
+		"score": 33,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69451910,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 1,
+			"PsfNumMissedPhonemes": 4,
+			"PsfNumMissedPhonemesInBlend": 1,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 5,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 1,
+			"PsfNumAttemptedWords": 6,
+			"PsfNumSegmentedMiddleSounds": 6,
+			"PsfNumAttemptedInitialSounds": 6,
+			"PsfNumAttemptedMiddleSounds": 7,
+			"PsfNumAttemptedFinalSounds": 6,
+			"PsfScore": 15,
+			"PsfNumSegmentedInitialSounds": 4,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 0,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 160286889,
+		"gradeSidResult": 2,
+		"score": 15,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69452136,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 2,
+			"PsfNumMissedPhonemes": 8,
+			"PsfNumMissedPhonemesInBlend": 3,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 1,
+			"PsfNumSegmentedFinalSounds": 7,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 1,
+			"PsfNumAttemptedWords": 8,
+			"PsfNumSegmentedMiddleSounds": 8,
+			"PsfNumAttemptedInitialSounds": 8,
+			"PsfNumAttemptedMiddleSounds": 10,
+			"PsfNumAttemptedFinalSounds": 8,
+			"PsfScore": 18,
+			"PsfNumSegmentedInitialSounds": 3,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 1,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 160286889,
+		"gradeSidResult": 2,
+		"score": 18,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69452137,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:2, b:0, c:3, d:0, e:0, f:0, g:0, h:0, i:1, j:1, k:2, l:0, m:1, n:0, o:2, p:0, q:0, r:1, s:0, t:0, u:1, v:0, w:0, x:0, y:0, z:1",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 7,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:2, b:0, c:3, d:0, e:0, f:0, g:0, h:0, i:1, j:3, k:2, l:0, m:2, n:0, o:3, p:0, q:0, r:1, s:0, t:0, u:1, v:0, w:0, x:0, y:0, z:1",
+			"NwfNumLettersCorrect": 15,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 4,
+			"NwfNumLettersAssessed": 19,
+			"NwfNumWordsAssessed": 7,
+			"NwfIsBenchmark": 0,
+			"NwfNumConsonantsCorrect": 9,
+			"NwfNumSBSWords": 0,
+			"NwfNumVowelsCorrect": 6,
+			"NwfNumConsonantsAssessed": 12,
+			"NwfNumSBSAndRecodedWords": 0
+		},
+		"eStudentSid": 160286889,
+		"gradeSidResult": 2,
+		"score": 15,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69451876,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 49,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 1,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 10,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 160286889,
+		"gradeSidResult": 2,
+		"score": 12,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451877,
+		"interpretation": 3,
+		"ilaDescriptives": {
+			"LnfNumAssessedLettersFromName": 2,
+			"LnfNumCorrectLettersFromName": 1,
+			"LnfNumAssessedFirstHalfLetters": 4,
+			"LnfNumCorrectUppercaseLetters": 4,
+			"LnfNumSkippedLines": 0,
+			"LnfNumCorrectFirstHalfLetters": 3,
+			"LnfNumCorrectLetters": 7
+		},
+		"eStudentSid": 160286889,
+		"gradeSidResult": 2,
+		"score": 7,
+		"measureSid": 2
+	},
+	{
+		"resultProbeSid": 69451885,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 51,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 0,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 8,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 160286891,
+		"gradeSidResult": 2,
+		"score": 9,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451893,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 45,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 0,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 9,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 160286891,
+		"gradeSidResult": 2,
+		"score": 12,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451913,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 56,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 0,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 9,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 160286891,
+		"gradeSidResult": 2,
+		"score": 9,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69452141,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 50,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 0,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 10,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 160286891,
+		"gradeSidResult": 2,
+		"score": 12,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451886,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 4,
+			"PsfNumMissedPhonemes": 8,
+			"PsfNumMissedPhonemesInBlend": 2,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 8,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 10,
+			"PsfNumSegmentedMiddleSounds": 14,
+			"PsfNumAttemptedInitialSounds": 10,
+			"PsfNumAttemptedMiddleSounds": 18,
+			"PsfNumAttemptedFinalSounds": 10,
+			"PsfScore": 30,
+			"PsfNumSegmentedInitialSounds": 8,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 1,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 160286891,
+		"gradeSidResult": 2,
+		"score": 30,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69451894,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 3,
+			"PsfNumMissedPhonemes": 6,
+			"PsfNumMissedPhonemesInBlend": 1,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 1,
+			"PsfNumSegmentedFinalSounds": 9,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 1,
+			"PsfNumAttemptedWords": 10,
+			"PsfNumSegmentedMiddleSounds": 11,
+			"PsfNumAttemptedInitialSounds": 10,
+			"PsfNumAttemptedMiddleSounds": 14,
+			"PsfNumAttemptedFinalSounds": 10,
+			"PsfScore": 28,
+			"PsfNumSegmentedInitialSounds": 8,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 0,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 160286891,
+		"gradeSidResult": 2,
+		"score": 28,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69451914,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 2,
+			"PsfNumMissedPhonemes": 2,
+			"PsfNumMissedPhonemesInBlend": 0,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 1,
+			"PsfNumSegmentedFinalSounds": 9,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 1,
+			"PsfNumAttemptedWords": 9,
+			"PsfNumSegmentedMiddleSounds": 10,
+			"PsfNumAttemptedInitialSounds": 9,
+			"PsfNumAttemptedMiddleSounds": 12,
+			"PsfNumAttemptedFinalSounds": 9,
+			"PsfScore": 28,
+			"PsfNumSegmentedInitialSounds": 9,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 0,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 160286891,
+		"gradeSidResult": 2,
+		"score": 28,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69452142,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 0,
+			"PsfNumMissedPhonemes": 6,
+			"PsfNumMissedPhonemesInBlend": 0,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 2,
+			"PsfNumSegmentedFinalSounds": 8,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 2,
+			"PsfNumAttemptedWords": 10,
+			"PsfNumSegmentedMiddleSounds": 9,
+			"PsfNumAttemptedInitialSounds": 10,
+			"PsfNumAttemptedMiddleSounds": 9,
+			"PsfNumAttemptedFinalSounds": 10,
+			"PsfScore": 23,
+			"PsfNumSegmentedInitialSounds": 6,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 0,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 160286891,
+		"gradeSidResult": 2,
+		"score": 23,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69452143,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:2, b:0, c:3, d:0, e:1, f:0, g:1, h:0, i:2, j:3, k:2, l:1, m:2, n:0, o:4, p:0, q:0, r:1, s:0, t:0, u:1, v:0, w:0, x:0, y:0, z:2",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 10,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:2, b:1, c:3, d:0, e:1, f:0, g:1, h:0, i:2, j:3, k:2, l:1, m:2, n:1, o:4, p:0, q:0, r:1, s:0, t:0, u:1, v:0, w:0, x:0, y:0, z:2",
+			"NwfNumLettersCorrect": 25,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 8,
+			"NwfNumLettersAssessed": 27,
+			"NwfNumWordsAssessed": 10,
+			"NwfIsBenchmark": 0,
+			"NwfNumConsonantsCorrect": 15,
+			"NwfNumSBSWords": 7,
+			"NwfNumVowelsCorrect": 10,
+			"NwfNumConsonantsAssessed": 17,
+			"NwfNumSBSAndRecodedWords": 0
+		},
+		"eStudentSid": 160286891,
+		"gradeSidResult": 2,
+		"score": 25,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69452146,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:1, b:1, c:1, d:1, e:0, f:3, g:0, h:0, i:3, j:0, k:0, l:1, m:2, n:0, o:2, p:1, q:0, r:0, s:1, t:0, u:0, v:1, w:0, x:0, y:0, z:0",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 6,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:1, b:1, c:1, d:1, e:0, f:3, g:0, h:0, i:3, j:0, k:0, l:1, m:2, n:0, o:2, p:1, q:0, r:0, s:1, t:0, u:0, v:1, w:0, x:0, y:0, z:0",
+			"NwfNumLettersCorrect": 18,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 6,
+			"NwfNumLettersAssessed": 18,
+			"NwfNumWordsAssessed": 6,
+			"NwfIsBenchmark": 0,
+			"NwfNumConsonantsCorrect": 12,
+			"NwfNumSBSWords": 0,
+			"NwfNumVowelsCorrect": 6,
+			"NwfNumConsonantsAssessed": 12,
+			"NwfNumSBSAndRecodedWords": 0
+		},
+		"eStudentSid": 160286891,
+		"gradeSidResult": 2,
+		"score": 18,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69451878,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 54,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 1,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 9,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 160286891,
+		"gradeSidResult": 2,
+		"score": 10,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451879,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"LnfNumAssessedLettersFromName": 2,
+			"LnfNumCorrectLettersFromName": 2,
+			"LnfNumAssessedFirstHalfLetters": 5,
+			"LnfNumCorrectUppercaseLetters": 7,
+			"LnfNumSkippedLines": 0,
+			"LnfNumCorrectFirstHalfLetters": 5,
+			"LnfNumCorrectLetters": 10
+		},
+		"eStudentSid": 160286891,
+		"gradeSidResult": 2,
+		"score": 10,
+		"measureSid": 2
+	},
+	{
+		"resultProbeSid": 69451890,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 52,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 0,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 6,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 160286893,
+		"gradeSidResult": 2,
+		"score": 6,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451900,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 69,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 0,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 3,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 160286893,
+		"gradeSidResult": 2,
+		"score": 2,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451906,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 58,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 0,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 8,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 160286893,
+		"gradeSidResult": 2,
+		"score": 8,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69452130,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 64,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 0,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 6,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 160286893,
+		"gradeSidResult": 2,
+		"score": 5,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451891,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 4,
+			"PsfNumMissedPhonemes": 6,
+			"PsfNumMissedPhonemesInBlend": 0,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 3,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 4,
+			"PsfNumSegmentedMiddleSounds": 3,
+			"PsfNumAttemptedInitialSounds": 4,
+			"PsfNumAttemptedMiddleSounds": 7,
+			"PsfNumAttemptedFinalSounds": 4,
+			"PsfScore": 9,
+			"PsfNumSegmentedInitialSounds": 3,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 1,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 160286893,
+		"gradeSidResult": 2,
+		"score": 9,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69451901,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 2,
+			"PsfNumMissedPhonemes": 3,
+			"PsfNumMissedPhonemesInBlend": 1,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 3,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 3,
+			"PsfNumSegmentedMiddleSounds": 3,
+			"PsfNumAttemptedInitialSounds": 3,
+			"PsfNumAttemptedMiddleSounds": 5,
+			"PsfNumAttemptedFinalSounds": 3,
+			"PsfScore": 8,
+			"PsfNumSegmentedInitialSounds": 2,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 0,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 160286893,
+		"gradeSidResult": 2,
+		"score": 8,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69451908,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 3,
+			"PsfNumMissedPhonemes": 5,
+			"PsfNumMissedPhonemesInBlend": 0,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 1,
+			"PsfNumSegmentedFinalSounds": 8,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 2,
+			"PsfNumAttemptedWords": 9,
+			"PsfNumSegmentedMiddleSounds": 5,
+			"PsfNumAttemptedInitialSounds": 9,
+			"PsfNumAttemptedMiddleSounds": 8,
+			"PsfNumAttemptedFinalSounds": 9,
+			"PsfScore": 21,
+			"PsfNumSegmentedInitialSounds": 8,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 0,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 160286893,
+		"gradeSidResult": 2,
+		"score": 21,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69452131,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 2,
+			"PsfNumMissedPhonemes": 8,
+			"PsfNumMissedPhonemesInBlend": 0,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 3,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 7,
+			"PsfNumSegmentedMiddleSounds": 4,
+			"PsfNumAttemptedInitialSounds": 7,
+			"PsfNumAttemptedMiddleSounds": 6,
+			"PsfNumAttemptedFinalSounds": 7,
+			"PsfScore": 12,
+			"PsfNumSegmentedInitialSounds": 5,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 1,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 160286893,
+		"gradeSidResult": 2,
+		"score": 12,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69452132,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:1, b:0, c:2, d:0, e:0, f:0, g:0, h:0, i:0, j:3, k:2, l:1, m:1, n:1, o:3, p:0, q:0, r:1, s:0, t:0, u:1, v:0, w:0, x:0, y:0, z:1",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 8,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:2, b:0, c:3, d:0, e:0, f:0, g:0, h:0, i:1, j:3, k:2, l:1, m:2, n:1, o:4, p:0, q:0, r:1, s:0, t:0, u:1, v:0, w:0, x:0, y:0, z:1",
+			"NwfNumLettersCorrect": 17,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 4,
+			"NwfNumLettersAssessed": 22,
+			"NwfNumWordsAssessed": 8,
+			"NwfIsBenchmark": 0,
+			"NwfNumConsonantsCorrect": 12,
+			"NwfNumSBSWords": 4,
+			"NwfNumVowelsCorrect": 5,
+			"NwfNumConsonantsAssessed": 14,
+			"NwfNumSBSAndRecodedWords": 0
+		},
+		"eStudentSid": 160286893,
+		"gradeSidResult": 2,
+		"score": 17,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69451880,
+		"interpretation": 2,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 77,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 1,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 5,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 160286893,
+		"gradeSidResult": 2,
+		"score": 3,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451881,
+		"interpretation": 2,
+		"ilaDescriptives": {
+			"LnfNumAssessedLettersFromName": 0,
+			"LnfNumCorrectLettersFromName": 0,
+			"LnfNumAssessedFirstHalfLetters": 0,
+			"LnfNumCorrectUppercaseLetters": 0,
+			"LnfNumSkippedLines": 0,
+			"LnfNumCorrectFirstHalfLetters": 0,
+			"LnfNumCorrectLetters": 0
+		},
+		"eStudentSid": 160286893,
+		"gradeSidResult": 2,
+		"score": 1,
+		"measureSid": 2
+	},
+	{
+		"resultProbeSid": 69451902,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 60,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 0,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 5,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 160286895,
+		"gradeSidResult": 2,
+		"score": 5,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451904,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 55,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 0,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 9,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 160286895,
+		"gradeSidResult": 2,
+		"score": 9,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451892,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 3,
+			"PsfNumMissedPhonemes": 5,
+			"PsfNumMissedPhonemesInBlend": 1,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 6,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 7,
+			"PsfNumSegmentedMiddleSounds": 10,
+			"PsfNumAttemptedInitialSounds": 7,
+			"PsfNumAttemptedMiddleSounds": 13,
+			"PsfNumAttemptedFinalSounds": 7,
+			"PsfScore": 22,
+			"PsfNumSegmentedInitialSounds": 6,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 1,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 160286895,
+		"gradeSidResult": 2,
+		"score": 22,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69451903,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 3,
+			"PsfNumMissedPhonemes": 8,
+			"PsfNumMissedPhonemesInBlend": 1,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 5,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 1,
+			"PsfNumAttemptedWords": 7,
+			"PsfNumSegmentedMiddleSounds": 5,
+			"PsfNumAttemptedInitialSounds": 7,
+			"PsfNumAttemptedMiddleSounds": 8,
+			"PsfNumAttemptedFinalSounds": 7,
+			"PsfScore": 14,
+			"PsfNumSegmentedInitialSounds": 4,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 0,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 160286895,
+		"gradeSidResult": 2,
+		"score": 14,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69451905,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 3,
+			"PsfNumMissedPhonemes": 5,
+			"PsfNumMissedPhonemesInBlend": 0,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 6,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 7,
+			"PsfNumSegmentedMiddleSounds": 7,
+			"PsfNumAttemptedInitialSounds": 7,
+			"PsfNumAttemptedMiddleSounds": 10,
+			"PsfNumAttemptedFinalSounds": 7,
+			"PsfScore": 19,
+			"PsfNumSegmentedInitialSounds": 6,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 0,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 160286895,
+		"gradeSidResult": 2,
+		"score": 19,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69452133,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 3,
+			"PsfNumMissedPhonemes": 5,
+			"PsfNumMissedPhonemesInBlend": 0,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 1,
+			"PsfNumSegmentedFinalSounds": 5,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 1,
+			"PsfNumAttemptedWords": 6,
+			"PsfNumSegmentedMiddleSounds": 2,
+			"PsfNumAttemptedInitialSounds": 6,
+			"PsfNumAttemptedMiddleSounds": 5,
+			"PsfNumAttemptedFinalSounds": 6,
+			"PsfScore": 12,
+			"PsfNumSegmentedInitialSounds": 5,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 0,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 160286895,
+		"gradeSidResult": 2,
+		"score": 12,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69452144,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 0,
+			"PsfNumMissedPhonemes": 6,
+			"PsfNumMissedPhonemesInBlend": 1,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 4,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 1,
+			"PsfNumAttemptedWords": 5,
+			"PsfNumSegmentedMiddleSounds": 5,
+			"PsfNumAttemptedInitialSounds": 5,
+			"PsfNumAttemptedMiddleSounds": 5,
+			"PsfNumAttemptedFinalSounds": 5,
+			"PsfScore": 9,
+			"PsfNumSegmentedInitialSounds": 0,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 1,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 160286895,
+		"gradeSidResult": 2,
+		"score": 9,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69452134,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:1, b:0, c:0, d:0, e:0, f:0, g:0, h:0, i:0, j:1, k:1, l:0, m:0, n:0, o:3, p:0, q:0, r:0, s:0, t:0, u:1, v:0, w:0, x:0, y:0, z:1",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 5,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:1, b:0, c:2, d:0, e:0, f:0, g:0, h:0, i:0, j:2, k:1, l:0, m:2, n:0, o:3, p:0, q:0, r:0, s:0, t:0, u:1, v:0, w:0, x:0, y:0, z:1",
+			"NwfNumLettersCorrect": 8,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 0,
+			"NwfNumLettersAssessed": 13,
+			"NwfNumWordsAssessed": 5,
+			"NwfIsBenchmark": 0,
+			"NwfNumConsonantsCorrect": 3,
+			"NwfNumSBSWords": 0,
+			"NwfNumVowelsCorrect": 5,
+			"NwfNumConsonantsAssessed": 8,
+			"NwfNumSBSAndRecodedWords": 0
+		},
+		"eStudentSid": 160286895,
+		"gradeSidResult": 2,
+		"score": 8,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69452145,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:1, b:0, c:0, d:0, e:0, f:0, g:0, h:0, i:3, j:0, k:0, l:0, m:0, n:0, o:1, p:0, q:0, r:0, s:0, t:0, u:0, v:0, w:0, x:0, y:0, z:0",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 5,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:1, b:1, c:1, d:1, e:0, f:3, g:0, h:0, i:3, j:0, k:0, l:0, m:1, n:0, o:1, p:1, q:0, r:0, s:1, t:0, u:0, v:1, w:0, x:0, y:0, z:0",
+			"NwfNumLettersCorrect": 5,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 0,
+			"NwfNumLettersAssessed": 15,
+			"NwfNumWordsAssessed": 5,
+			"NwfIsBenchmark": 0,
+			"NwfNumConsonantsCorrect": 0,
+			"NwfNumSBSWords": 0,
+			"NwfNumVowelsCorrect": 5,
+			"NwfNumConsonantsAssessed": 10,
+			"NwfNumSBSAndRecodedWords": 0
+		},
+		"eStudentSid": 160286895,
+		"gradeSidResult": 2,
+		"score": 5,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69452128,
+		"interpretation": 2,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 74,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 1,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 3,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 160286895,
+		"gradeSidResult": 2,
+		"score": 2,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69452129,
+		"interpretation": 2,
+		"ilaDescriptives": {
+			"LnfNumAssessedLettersFromName": 2,
+			"LnfNumCorrectLettersFromName": 0,
+			"LnfNumAssessedFirstHalfLetters": 2,
+			"LnfNumCorrectUppercaseLetters": 0,
+			"LnfNumSkippedLines": 0,
+			"LnfNumCorrectFirstHalfLetters": 1,
+			"LnfNumCorrectLetters": 1
+		},
+		"eStudentSid": 160286895,
+		"gradeSidResult": 2,
+		"score": 1,
+		"measureSid": 2
+	},
+	{
+		"resultProbeSid": 69451887,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 53,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 0,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 6,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 160286897,
+		"gradeSidResult": 2,
+		"score": 6,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451895,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 53,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 0,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 9,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 160286897,
+		"gradeSidResult": 2,
+		"score": 10,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451911,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 57,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 0,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 8,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 160286897,
+		"gradeSidResult": 2,
+		"score": 8,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69452138,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 51,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 0,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 10,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 160286897,
+		"gradeSidResult": 2,
+		"score": 11,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451888,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 3,
+			"PsfNumMissedPhonemes": 7,
+			"PsfNumMissedPhonemesInBlend": 2,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 10,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 11,
+			"PsfNumSegmentedMiddleSounds": 16,
+			"PsfNumAttemptedInitialSounds": 11,
+			"PsfNumAttemptedMiddleSounds": 19,
+			"PsfNumAttemptedFinalSounds": 11,
+			"PsfScore": 34,
+			"PsfNumSegmentedInitialSounds": 8,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 1,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 160286897,
+		"gradeSidResult": 2,
+		"score": 34,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69451896,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 5,
+			"PsfNumMissedPhonemes": 9,
+			"PsfNumMissedPhonemesInBlend": 2,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 1,
+			"PsfNumSegmentedFinalSounds": 8,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 1,
+			"PsfNumAttemptedWords": 10,
+			"PsfNumSegmentedMiddleSounds": 9,
+			"PsfNumAttemptedInitialSounds": 10,
+			"PsfNumAttemptedMiddleSounds": 14,
+			"PsfNumAttemptedFinalSounds": 10,
+			"PsfScore": 25,
+			"PsfNumSegmentedInitialSounds": 8,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 0,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 160286897,
+		"gradeSidResult": 2,
+		"score": 25,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69451912,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 3,
+			"PsfNumMissedPhonemes": 4,
+			"PsfNumMissedPhonemesInBlend": 0,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 0,
+			"PsfNumSegmentedFinalSounds": 5,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 0,
+			"PsfNumAttemptedWords": 6,
+			"PsfNumSegmentedMiddleSounds": 2,
+			"PsfNumAttemptedInitialSounds": 6,
+			"PsfNumAttemptedMiddleSounds": 5,
+			"PsfNumAttemptedFinalSounds": 6,
+			"PsfScore": 13,
+			"PsfNumSegmentedInitialSounds": 6,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 0,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 160286897,
+		"gradeSidResult": 2,
+		"score": 13,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69452139,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"PsfNumMissedMiddlePhonemes": 2,
+			"PsfNumMissedPhonemes": 5,
+			"PsfNumMissedPhonemesInBlend": 0,
+			"PsfNumWordsWithSegmentedOnsetAndRime": 1,
+			"PsfNumSegmentedFinalSounds": 9,
+			"PsfFinalGoalScore": 35,
+			"PsfIsBenchmark": 0,
+			"PsfNumMissedMiddlePhonemesInSegBlendOrRepeat": 0,
+			"PsfNumSegmentedRimes": 2,
+			"PsfNumAttemptedWords": 10,
+			"PsfNumSegmentedMiddleSounds": 6,
+			"PsfNumAttemptedInitialSounds": 10,
+			"PsfNumAttemptedMiddleSounds": 8,
+			"PsfNumAttemptedFinalSounds": 10,
+			"PsfScore": 23,
+			"PsfNumSegmentedInitialSounds": 8,
+			"PsfFinalGoalPeriod": "",
+			"PsfNumMissedPhonemesInFinalBlend": 1,
+			"PsfFinalGoalGrade": "Kindergarten",
+			"PsfNumMissedPhonemesInSegBlendOrRepeat": 0,
+			"PsfNumRepeatedWords": 0
+		},
+		"eStudentSid": 160286897,
+		"gradeSidResult": 2,
+		"score": 23,
+		"measureSid": 3
+	},
+	{
+		"resultProbeSid": 69452140,
+		"interpretation": 1,
+		"ilaDescriptives": {
+			"NwfNumGivenLettersCorrect": "a:2, b:0, c:2, d:0, e:0, f:0, g:0, h:0, i:1, j:0, k:1, l:1, m:2, n:0, o:4, p:0, q:0, r:1, s:0, t:0, u:1, v:0, w:0, x:0, y:0, z:1",
+			"NwfFinalGoalPeriod": "",
+			"NwfNumVowelsAssessed": 8,
+			"NwfFinalGoalGrade": "1st Grade",
+			"NwfNumGivenLettersAssessed": "a:2, b:0, c:3, d:0, e:0, f:0, g:0, h:0, i:1, j:3, k:2, l:1, m:2, n:1, o:4, p:0, q:0, r:1, s:0, t:0, u:1, v:0, w:0, x:0, y:0, z:1",
+			"NwfNumLettersCorrect": 16,
+			"NwfFinalGoalScore": 50,
+			"NwfNumWordsCorrect": 3,
+			"NwfNumLettersAssessed": 22,
+			"NwfNumWordsAssessed": 8,
+			"NwfIsBenchmark": 0,
+			"NwfNumConsonantsCorrect": 8,
+			"NwfNumSBSWords": 0,
+			"NwfNumVowelsCorrect": 8,
+			"NwfNumConsonantsAssessed": 14,
+			"NwfNumSBSAndRecodedWords": 0
+		},
+		"eStudentSid": 160286897,
+		"gradeSidResult": 2,
+		"score": 16,
+		"measureSid": 4
+	},
+	{
+		"resultProbeSid": 69451882,
+		"interpretation": 3,
+		"ilaDescriptives": {
+			"IsfFinalGoalPeriod": "",
+			"IsfNum123Correct4Incorrect": 0,
+			"IsfTotalTimeTaken": 61,
+			"IsfNumResponses": 16,
+			"IsfBenchmarkValue": 8,
+			"IsfIsBenchmark": 1,
+			"IsfFinalGoalGrade": "Kindergarten",
+			"IsfNumCorrectResponses": 5,
+			"IsfFinalGoalScore": 25
+		},
+		"eStudentSid": 160286897,
+		"gradeSidResult": 2,
+		"score": 4,
+		"measureSid": 1
+	},
+	{
+		"resultProbeSid": 69451883,
+		"interpretation": 3,
+		"ilaDescriptives": {
+			"LnfNumAssessedLettersFromName": 2,
+			"LnfNumCorrectLettersFromName": 2,
+			"LnfNumAssessedFirstHalfLetters": 3,
+			"LnfNumCorrectUppercaseLetters": 3,
+			"LnfNumSkippedLines": 0,
+			"LnfNumCorrectFirstHalfLetters": 2,
+			"LnfNumCorrectLetters": 4
+		},
+		"eStudentSid": 160286897,
+		"gradeSidResult": 2,
+		"score": 4,
+		"measureSid": 2
+	}
+]
+},
+"Thu Aug 28 14:20:33 EDT 2008 | Starting calling algorithm 'feature'",
+"Thu Aug 28 14:20:33 EDT 2008 | Finished calling algorithm 'feature'",
+"Thu Aug 28 14:20:33 EDT 2008 | algoOutput",
+{
+"results": [
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 1
+			},
+			{
+				"sid": 3,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 1
+			},
+			{
+				"sid": 3,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 1
+			},
+			{
+				"sid": 3,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 0
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 2
+			},
+			{
+				"sid": 3,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 4,
+				"level": 2
+			},
+			{
+				"sid": 5,
+				"level": 1
+			},
+			{
+				"sid": 6,
+				"level": null
+			},
+			{
+				"sid": 7,
+				"level": null
+			},
+			{
+				"sid": 8,
+				"level": 0
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 1
+			},
+			{
+				"sid": 3,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 4,
+				"level": 2
+			},
+			{
+				"sid": 5,
+				"level": 2
+			},
+			{
+				"sid": 6,
+				"level": null
+			},
+			{
+				"sid": 7,
+				"level": null
+			},
+			{
+				"sid": 8,
+				"level": 0
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 1
+			},
+			{
+				"sid": 3,
+				"level": 0
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 0
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 1
+			},
+			{
+				"sid": 3,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 1
+			},
+			{
+				"sid": 3,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 2
+			},
+			{
+				"sid": 3,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 1
+			},
+			{
+				"sid": 3,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 4,
+				"level": 1
+			},
+			{
+				"sid": 5,
+				"level": 1
+			},
+			{
+				"sid": 6,
+				"level": null
+			},
+			{
+				"sid": 7,
+				"level": null
+			},
+			{
+				"sid": 8,
+				"level": 0
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 1
+			},
+			{
+				"sid": 3,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 2
+			},
+			{
+				"sid": 3,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 4,
+				"level": 2
+			},
+			{
+				"sid": 5,
+				"level": 2
+			},
+			{
+				"sid": 6,
+				"level": null
+			},
+			{
+				"sid": 7,
+				"level": null
+			},
+			{
+				"sid": 8,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 4,
+				"level": 2
+			},
+			{
+				"sid": 5,
+				"level": 1
+			},
+			{
+				"sid": 6,
+				"level": null
+			},
+			{
+				"sid": 7,
+				"level": null
+			},
+			{
+				"sid": 8,
+				"level": 0
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 1
+			},
+			{
+				"sid": 3,
+				"level": 0
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 0
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 1
+			},
+			{
+				"sid": 3,
+				"level": 0
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 1
+			},
+			{
+				"sid": 3,
+				"level": 0
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 1
+			},
+			{
+				"sid": 3,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 2
+			},
+			{
+				"sid": 3,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 4,
+				"level": 2
+			},
+			{
+				"sid": 5,
+				"level": 2
+			},
+			{
+				"sid": 6,
+				"level": null
+			},
+			{
+				"sid": 7,
+				"level": null
+			},
+			{
+				"sid": 8,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 1
+			},
+			{
+				"sid": 3,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 0
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 1
+			},
+			{
+				"sid": 3,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 1
+			},
+			{
+				"sid": 3,
+				"level": 0
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 1
+			},
+			{
+				"sid": 3,
+				"level": 0
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 2
+			},
+			{
+				"sid": 3,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 1
+			},
+			{
+				"sid": 3,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 4,
+				"level": 2
+			},
+			{
+				"sid": 5,
+				"level": 1
+			},
+			{
+				"sid": 6,
+				"level": null
+			},
+			{
+				"sid": 7,
+				"level": null
+			},
+			{
+				"sid": 8,
+				"level": 0
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 4,
+				"level": 0
+			},
+			{
+				"sid": 5,
+				"level": 2
+			},
+			{
+				"sid": 6,
+				"level": null
+			},
+			{
+				"sid": 7,
+				"level": null
+			},
+			{
+				"sid": 8,
+				"level": 0
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 1
+			},
+			{
+				"sid": 3,
+				"level": 0
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 1
+			},
+			{
+				"sid": 3,
+				"level": 0
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 2
+			},
+			{
+				"sid": 3,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 2
+			},
+			{
+				"sid": 3,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 0
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 1
+			},
+			{
+				"sid": 3,
+				"level": 0
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 0
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 1
+			},
+			{
+				"sid": 3,
+				"level": 0
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 0
+			},
+			{
+				"sid": 3,
+				"level": 0
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 1
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 1,
+				"level": 2
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [
+			{
+				"sid": 2,
+				"level": 1
+			},
+			{
+				"sid": 3,
+				"level": 0
+			}
+		],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	},
+	{
+		"skills": [],
+		"wasError": 0
+	}
+]
+}

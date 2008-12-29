@@ -1,0 +1,3034 @@
+{
+  "forceUnderperfStudentsIntoGroups": 0,
+  "maxNbOfGroups": 3,
+  "students": [
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 65410997,
+      "scores": [
+        {
+          "score": 4,
+          "measure": 3
+        },
+        {
+          "score": 0,
+          "measure": 4
+        },
+        {
+          "score": 0,
+          "measure": 5
+        }
+      ],
+      "classeSid": 724932,
+      "skills": [
+        {
+          "bestLevel": 1,
+          "sid": 1,
+          "lastLevel": 1
+        },
+        {
+          "bestLevel": 0,
+          "sid": 2,
+          "lastLevel": 0
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 65611097,
+      "scores": [
+        {
+          "score": 12,
+          "measure": 3
+        },
+        {
+          "score": 37,
+          "measure": 4
+        },
+        {
+          "score": 0,
+          "measure": 5
+        }
+      ],
+      "classeSid": 724932,
+      "skills": [
+        {
+          "bestLevel": 1,
+          "sid": 1,
+          "lastLevel": 1
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 65697117,
+      "scores": [
+        {
+          "score": 13,
+          "measure": 3
+        },
+        {
+          "score": 31,
+          "measure": 4
+        },
+        {
+          "score": 0,
+          "measure": 5
+        }
+      ],
+      "classeSid": 724932,
+      "skills": [
+        {
+          "bestLevel": 1,
+          "sid": 1,
+          "lastLevel": 1
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 65997105,
+      "scores": [
+        {
+          "score": 32,
+          "measure": 3
+        },
+        {
+          "score": 62,
+          "measure": 4
+        },
+        {
+          "score": 1,
+          "measure": 5
+        }
+      ],
+      "classeSid": 724932,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 656119101,
+      "scores": [
+        {
+          "score": 48,
+          "measure": 3
+        },
+        {
+          "score": 41,
+          "measure": 4
+        },
+        {
+          "score": 6,
+          "measure": 5
+        }
+      ],
+      "classeSid": 724932,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 655108101,
+      "scores": [
+        {
+          "score": 50,
+          "measure": 3
+        },
+        {
+          "score": 41,
+          "measure": 4
+        },
+        {
+          "score": 0,
+          "measure": 5
+        }
+      ],
+      "classeSid": 724932,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 657111100,
+      "scores": [
+        {
+          "score": 55,
+          "measure": 3
+        },
+        {
+          "score": 35,
+          "measure": 4
+        },
+        {
+          "score": 4,
+          "measure": 5
+        }
+      ],
+      "classeSid": 724932,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 656121101,
+      "scores": [
+        {
+          "score": 39,
+          "measure": 3
+        },
+        {
+          "score": 62,
+          "measure": 4
+        },
+        {
+          "score": 23,
+          "measure": 5
+        }
+      ],
+      "classeSid": 725032,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 1
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 667110101,
+      "scores": [
+        {
+          "score": 35,
+          "measure": 3
+        },
+        {
+          "score": 14,
+          "measure": 4
+        },
+        {
+          "score": 9,
+          "measure": 5
+        }
+      ],
+      "classeSid": 725032,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 1
+        },
+        {
+          "bestLevel": 0,
+          "sid": 2,
+          "lastLevel": 0
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 677110111,
+      "scores": [
+        {
+          "score": 43,
+          "measure": 3
+        },
+        {
+          "score": 63,
+          "measure": 4
+        },
+        {
+          "score": 35,
+          "measure": 5
+        }
+      ],
+      "classeSid": 725032,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 1
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 3,
+          "lastLevel": 2
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 67410097,
+      "scores": [
+        {
+          "score": 43,
+          "measure": 3
+        },
+        {
+          "score": 34,
+          "measure": 4
+        },
+        {
+          "score": 8,
+          "measure": 5
+        }
+      ],
+      "classeSid": 725032,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 1
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 3,
+          "lastLevel": 2
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 678101110,
+      "scores": [
+        {
+          "score": 36,
+          "measure": 3
+        },
+        {
+          "score": 42,
+          "measure": 4
+        },
+        {
+          "score": 15,
+          "measure": 5
+        }
+      ],
+      "classeSid": 725032,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 1
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 1,
+          "sid": 3,
+          "lastLevel": 1
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 67797105,
+      "scores": [
+        {
+          "score": 49,
+          "measure": 3
+        },
+        {
+          "score": 41,
+          "measure": 4
+        },
+        {
+          "score": 11,
+          "measure": 5
+        }
+      ],
+      "classeSid": 725032,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 1
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 1,
+          "sid": 3,
+          "lastLevel": 1
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 674121100,
+      "scores": [
+        {
+          "score": 46,
+          "measure": 3
+        },
+        {
+          "score": 58,
+          "measure": 4
+        },
+        {
+          "score": 18,
+          "measure": 5
+        }
+      ],
+      "classeSid": 725032,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 1
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 3,
+          "lastLevel": 2
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 676110111,
+      "scores": [
+        {
+          "score": 44,
+          "measure": 3
+        },
+        {
+          "score": 30,
+          "measure": 4
+        },
+        {
+          "score": 24,
+          "measure": 5
+        }
+      ],
+      "classeSid": 725032,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 1
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 675115117,
+      "scores": [
+        {
+          "score": 47,
+          "measure": 3
+        },
+        {
+          "score": 53,
+          "measure": 4
+        },
+        {
+          "score": 27,
+          "measure": 5
+        }
+      ],
+      "classeSid": 725032,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 1
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 3,
+          "lastLevel": 2
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 688110117,
+      "scores": [
+        {
+          "score": 49,
+          "measure": 3
+        },
+        {
+          "score": 67,
+          "measure": 4
+        },
+        {
+          "score": 18,
+          "measure": 5
+        }
+      ],
+      "classeSid": 725032,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 1
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 3,
+          "lastLevel": 2
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 686108101,
+      "scores": [
+        {
+          "score": 0,
+          "measure": 3
+        },
+        {
+          "score": 2,
+          "measure": 4
+        },
+        {
+          "score": 0,
+          "measure": 5
+        }
+      ],
+      "classeSid": 83116101,
+      "skills": [
+        {
+          "bestLevel": 0,
+          "sid": 1,
+          "lastLevel": 0
+        },
+        {
+          "bestLevel": 0,
+          "sid": 2,
+          "lastLevel": 0
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 685110111,
+      "scores": [
+        {
+          "score": 51,
+          "measure": 3
+        },
+        {
+          "score": 53,
+          "measure": 4
+        },
+        {
+          "score": 27,
+          "measure": 5
+        }
+      ],
+      "classeSid": 83116101,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 685111103,
+      "scores": [
+        {
+          "score": 47,
+          "measure": 3
+        },
+        {
+          "score": 56,
+          "measure": 4
+        },
+        {
+          "score": 50,
+          "measure": 5
+        }
+      ],
+      "classeSid": 83116101,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 1,
+          "sid": 3,
+          "lastLevel": 1
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 688101117,
+      "scores": [
+        {
+          "score": 49,
+          "measure": 3
+        },
+        {
+          "score": 56,
+          "measure": 4
+        },
+        {
+          "score": 24,
+          "measure": 5
+        }
+      ],
+      "classeSid": 83116101,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 1,
+          "sid": 3,
+          "lastLevel": 1
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 69511497,
+      "scores": [
+        {
+          "score": 58,
+          "measure": 3
+        },
+        {
+          "score": 40,
+          "measure": 4
+        },
+        {
+          "score": 13,
+          "measure": 5
+        }
+      ],
+      "classeSid": 83116101,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 699104116,
+      "scores": [
+        {
+          "score": 52,
+          "measure": 3
+        },
+        {
+          "score": 46,
+          "measure": 4
+        },
+        {
+          "score": 29,
+          "measure": 5
+        }
+      ],
+      "classeSid": 83116101,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 1,
+          "sid": 3,
+          "lastLevel": 1
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 69697105,
+      "scores": [
+        {
+          "score": 53,
+          "measure": 3
+        },
+        {
+          "score": 14,
+          "measure": 4
+        },
+        {
+          "score": 2,
+          "measure": 5
+        }
+      ],
+      "classeSid": 83116101,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 2,
+          "lastLevel": 0
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 695121108,
+      "scores": [
+        {
+          "score": 53,
+          "measure": 3
+        },
+        {
+          "score": 78,
+          "measure": 4
+        },
+        {
+          "score": 55,
+          "measure": 5
+        }
+      ],
+      "classeSid": 83116101,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 1,
+          "sid": 3,
+          "lastLevel": 1
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 697111116,
+      "scores": [
+        {
+          "score": 60,
+          "measure": 3
+        },
+        {
+          "score": 72,
+          "measure": 4
+        },
+        {
+          "score": 30,
+          "measure": 5
+        }
+      ],
+      "classeSid": 83116101,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 1,
+          "sid": 3,
+          "lastLevel": 1
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 696101107,
+      "scores": [
+        {
+          "score": 61,
+          "measure": 3
+        },
+        {
+          "score": 48,
+          "measure": 4
+        },
+        {
+          "score": 44,
+          "measure": 5
+        }
+      ],
+      "classeSid": 83116101,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 1,
+          "sid": 3,
+          "lastLevel": 1
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 69711097,
+      "scores": [
+        {
+          "score": 63,
+          "measure": 3
+        },
+        {
+          "score": 43,
+          "measure": 4
+        },
+        {
+          "score": 7,
+          "measure": 5
+        }
+      ],
+      "classeSid": 83116101,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 1,
+          "sid": 3,
+          "lastLevel": 1
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 70610199,
+      "scores": [
+        {
+          "score": 64,
+          "measure": 3
+        },
+        {
+          "score": 49,
+          "measure": 4
+        },
+        {
+          "score": 33,
+          "measure": 5
+        }
+      ],
+      "classeSid": 83116101,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 1,
+          "sid": 3,
+          "lastLevel": 1
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 71897108,
+      "scores": [
+        {
+          "score": 24,
+          "measure": 3
+        },
+        {
+          "score": 46,
+          "measure": 4
+        },
+        {
+          "score": 7,
+          "measure": 5
+        }
+      ],
+      "classeSid": 78116101,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 716111110,
+      "scores": [
+        {
+          "score": 57,
+          "measure": 3
+        },
+        {
+          "score": 40,
+          "measure": 4
+        },
+        {
+          "score": 8,
+          "measure": 5
+        }
+      ],
+      "classeSid": 78116101,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 719101112,
+      "scores": [
+        {
+          "score": 48,
+          "measure": 3
+        },
+        {
+          "score": 51,
+          "measure": 4
+        },
+        {
+          "score": 6,
+          "measure": 5
+        }
+      ],
+      "classeSid": 78116101,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 726114101,
+      "scores": [
+        {
+          "score": 49,
+          "measure": 3
+        },
+        {
+          "score": 59,
+          "measure": 4
+        },
+        {
+          "score": 18,
+          "measure": 5
+        }
+      ],
+      "classeSid": 78116101,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 736108101,
+      "scores": [
+        {
+          "score": 38,
+          "measure": 3
+        },
+        {
+          "score": 55,
+          "measure": 4
+        },
+        {
+          "score": 18,
+          "measure": 5
+        }
+      ],
+      "classeSid": 78116101,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 73610497,
+      "scores": [
+        {
+          "score": 46,
+          "measure": 3
+        },
+        {
+          "score": 77,
+          "measure": 4
+        },
+        {
+          "score": 23,
+          "measure": 5
+        }
+      ],
+      "classeSid": 78116101,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 73611597,
+      "scores": [
+        {
+          "score": 51,
+          "measure": 3
+        },
+        {
+          "score": 88,
+          "measure": 4
+        },
+        {
+          "score": 24,
+          "measure": 5
+        }
+      ],
+      "classeSid": 78116101,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 748115117,
+      "scores": [
+        {
+          "score": 46,
+          "measure": 3
+        },
+        {
+          "score": 61,
+          "measure": 4
+        },
+        {
+          "score": 38,
+          "measure": 5
+        }
+      ],
+      "classeSid": 78116101,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 3,
+          "lastLevel": 2
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 748114101,
+      "scores": [
+        {
+          "score": 56,
+          "measure": 3
+        },
+        {
+          "score": 83,
+          "measure": 4
+        },
+        {
+          "score": 37,
+          "measure": 5
+        }
+      ],
+      "classeSid": 78116101,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 3,
+          "lastLevel": 2
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 7486597,
+      "scores": [
+        {
+          "score": 10,
+          "measure": 3
+        },
+        {
+          "score": 36,
+          "measure": 4
+        },
+        {
+          "score": 1,
+          "measure": 5
+        }
+      ],
+      "classeSid": 844945,
+      "skills": [
+        {
+          "bestLevel": 1,
+          "sid": 1,
+          "lastLevel": 1
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 7486697,
+      "scores": [
+        {
+          "score": 11,
+          "measure": 3
+        },
+        {
+          "score": 25,
+          "measure": 4
+        },
+        {
+          "score": 2,
+          "measure": 5
+        }
+      ],
+      "classeSid": 844945,
+      "skills": [
+        {
+          "bestLevel": 1,
+          "sid": 1,
+          "lastLevel": 1
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 746101105,
+      "scores": [
+        {
+          "score": 35,
+          "measure": 3
+        },
+        {
+          "score": 35,
+          "measure": 4
+        },
+        {
+          "score": 3,
+          "measure": 5
+        }
+      ],
+      "classeSid": 844945,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 1,
+          "sid": 2,
+          "lastLevel": 1
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 748110111,
+      "scores": [
+        {
+          "score": 30,
+          "measure": 3
+        },
+        {
+          "score": 43,
+          "measure": 4
+        },
+        {
+          "score": 11,
+          "measure": 5
+        }
+      ],
+      "classeSid": 844945,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 744110104,
+      "scores": [
+        {
+          "score": 34,
+          "measure": 3
+        },
+        {
+          "score": 22,
+          "measure": 4
+        },
+        {
+          "score": 0,
+          "measure": 5
+        }
+      ],
+      "classeSid": 844945,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 1,
+          "sid": 2,
+          "lastLevel": 1
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 74611097,
+      "scores": [
+        {
+          "score": 43,
+          "measure": 3
+        },
+        {
+          "score": 55,
+          "measure": 4
+        },
+        {
+          "score": 8,
+          "measure": 5
+        }
+      ],
+      "classeSid": 844945,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 3,
+          "lastLevel": 2
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 744101115,
+      "scores": [
+        {
+          "score": 44,
+          "measure": 3
+        },
+        {
+          "score": 44,
+          "measure": 4
+        },
+        {
+          "score": 11,
+          "measure": 5
+        }
+      ],
+      "classeSid": 844945,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 755121115,
+      "scores": [
+        {
+          "score": 49,
+          "measure": 3
+        },
+        {
+          "score": 54,
+          "measure": 4
+        },
+        {
+          "score": 9,
+          "measure": 5
+        }
+      ],
+      "classeSid": 844945,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 755110111,
+      "scores": [
+        {
+          "score": 54,
+          "measure": 3
+        },
+        {
+          "score": 51,
+          "measure": 4
+        },
+        {
+          "score": 11,
+          "measure": 5
+        }
+      ],
+      "classeSid": 844945,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 766104116,
+      "scores": [
+        {
+          "score": 9,
+          "measure": 3
+        },
+        {
+          "score": 31,
+          "measure": 4
+        },
+        {
+          "score": 4,
+          "measure": 5
+        }
+      ],
+      "classeSid": 845045,
+      "skills": [
+        {
+          "bestLevel": 1,
+          "sid": 1,
+          "lastLevel": 1
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 765115117,
+      "scores": [
+        {
+          "score": 15,
+          "measure": 3
+        },
+        {
+          "score": 49,
+          "measure": 4
+        },
+        {
+          "score": 7,
+          "measure": 5
+        }
+      ],
+      "classeSid": 845045,
+      "skills": [
+        {
+          "bestLevel": 1,
+          "sid": 1,
+          "lastLevel": 1
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 76511597,
+      "scores": [
+        {
+          "score": 53,
+          "measure": 3
+        },
+        {
+          "score": 43,
+          "measure": 4
+        },
+        {
+          "score": 3,
+          "measure": 5
+        }
+      ],
+      "classeSid": 845045,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 3,
+          "lastLevel": 2
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 77997116,
+      "scores": [
+        {
+          "score": 60,
+          "measure": 3
+        },
+        {
+          "score": 33,
+          "measure": 4
+        },
+        {
+          "score": 5,
+          "measure": 5
+        }
+      ],
+      "classeSid": 845045,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 775110111,
+      "scores": [
+        {
+          "score": 56,
+          "measure": 3
+        },
+        {
+          "score": 32,
+          "measure": 4
+        },
+        {
+          "score": 4,
+          "measure": 5
+        }
+      ],
+      "classeSid": 845045,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 7786597,
+      "scores": [
+        {
+          "score": 51,
+          "measure": 3
+        },
+        {
+          "score": 43,
+          "measure": 4
+        },
+        {
+          "score": 9,
+          "measure": 5
+        }
+      ],
+      "classeSid": 845045,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 7786697,
+      "scores": [
+        {
+          "score": 45,
+          "measure": 3
+        },
+        {
+          "score": 36,
+          "measure": 4
+        },
+        {
+          "score": 2,
+          "measure": 5
+        }
+      ],
+      "classeSid": 845045,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 776108101,
+      "scores": [
+        {
+          "score": 45,
+          "measure": 3
+        },
+        {
+          "score": 51,
+          "measure": 4
+        },
+        {
+          "score": 9,
+          "measure": 5
+        }
+      ],
+      "classeSid": 845045,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 788101105,
+      "scores": [
+        {
+          "score": 47,
+          "measure": 3
+        },
+        {
+          "score": 54,
+          "measure": 4
+        },
+        {
+          "score": 19,
+          "measure": 5
+        }
+      ],
+      "classeSid": 845045,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 78611097,
+      "scores": [
+        {
+          "score": 53,
+          "measure": 3
+        },
+        {
+          "score": 76,
+          "measure": 4
+        },
+        {
+          "score": 16,
+          "measure": 5
+        }
+      ],
+      "classeSid": 845045,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 78497122,
+      "scores": [
+        {
+          "score": 55,
+          "measure": 3
+        },
+        {
+          "score": 59,
+          "measure": 4
+        },
+        {
+          "score": 17,
+          "measure": 5
+        }
+      ],
+      "classeSid": 845045,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 80597108,
+      "scores": [
+        {
+          "score": 9,
+          "measure": 3
+        },
+        {
+          "score": 24,
+          "measure": 4
+        },
+        {
+          "score": 3,
+          "measure": 5
+        }
+      ],
+      "classeSid": 89116111,
+      "skills": [
+        {
+          "bestLevel": 1,
+          "sid": 1,
+          "lastLevel": 1
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 807112105,
+      "scores": [
+        {
+          "score": 33,
+          "measure": 3
+        },
+        {
+          "score": 63,
+          "measure": 4
+        },
+        {
+          "score": 16,
+          "measure": 5
+        }
+      ],
+      "classeSid": 89116111,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 3,
+          "lastLevel": 2
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 825108101,
+      "scores": [
+        {
+          "score": 37,
+          "measure": 3
+        },
+        {
+          "score": 35,
+          "measure": 4
+        },
+        {
+          "score": 9,
+          "measure": 5
+        }
+      ],
+      "classeSid": 89116111,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 824101110,
+      "scores": [
+        {
+          "score": 46,
+          "measure": 3
+        },
+        {
+          "score": 40,
+          "measure": 4
+        },
+        {
+          "score": 8,
+          "measure": 5
+        }
+      ],
+      "classeSid": 89116111,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 82497115,
+      "scores": [
+        {
+          "score": 74,
+          "measure": 3
+        },
+        {
+          "score": 46,
+          "measure": 4
+        },
+        {
+          "score": 16,
+          "measure": 5
+        }
+      ],
+      "classeSid": 89116111,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 1,
+          "sid": 3,
+          "lastLevel": 1
+        }
+      ]
+    },
+	
+	
+	
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 823121111,
+      "scores": [
+        {
+          "score": 39,
+          "measure": 3
+        },
+        {
+          "score": 24,
+          "measure": 4
+        },
+        {
+          "score": 14,
+          "measure": 5
+        }
+      ],
+      "classeSid": 7398111,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ],
+	  "instructionHistory":[
+		{
+			"processedDate":"2007-11-19 02:34:28",
+			"skills":[4,2],"content":[
+			{
+				"pace":1,"strand":2,"sequence":10
+			}
+			,
+			{
+				"pace":1,"strand":1,"sequence":0
+			}
+			],"measures":[3,1]
+		}
+		,
+		{
+			"processedDate":"2008-02-10 02:34:28",
+			"skills":[4,2],"content":[
+			{
+				"pace":1,"strand":2,"sequence":20
+			}
+			,
+			{
+				"pace":1,"strand":1,"sequence":10
+			}
+			],"measures":[3,1]
+		}]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 827115117,
+      "scores": [
+        {
+          "score": 46,
+          "measure": 3
+        },
+        {
+          "score": 62,
+          "measure": 4
+        },
+        {
+          "score": 32,
+          "measure": 5
+        }
+      ],
+      "classeSid": 7398111,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 3,
+          "lastLevel": 2
+        }
+      ],
+	  "instructionHistory":[
+		{
+			"processedDate":"2007-11-19 02:34:28",
+			"skills":[4,2],"content":[
+			{
+				"pace":1,"strand":2,"sequence":10
+			}
+			,
+			{
+				"pace":1,"strand":1,"sequence":0
+			}
+			],"measures":[3,1]
+		}
+		,
+		{
+			"processedDate":"2008-02-10 02:34:28",
+			"skills":[4,2],"content":[
+			{
+				"pace":1,"strand":2,"sequence":20
+			}
+			,
+			{
+				"pace":1,"strand":1,"sequence":10
+			}
+			],"measures":[3,1]
+		}]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 838114111,
+      "scores": [
+        {
+          "score": 25,
+          "measure": 3
+        },
+        {
+          "score": 46,
+          "measure": 4
+        },
+        {
+          "score": 16,
+          "measure": 5
+        }
+      ],
+      "classeSid": 7398111,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ],
+	  "instructionHistory":[
+		{
+			"processedDate":"2007-11-19 02:34:28",
+			"skills":[4,2],"content":[
+			{
+				"pace":1,"strand":2,"sequence":10
+			}
+			,
+			{
+				"pace":1,"strand":1,"sequence":0
+			}
+			],"measures":[3,1]
+		}
+		,
+		{
+			"processedDate":"2008-02-10 02:34:28",
+			"skills":[4,2],"content":[
+			{
+				"pace":1,"strand":2,"sequence":20
+			}
+			,
+			{
+				"pace":1,"strand":1,"sequence":10
+			}
+			],"measures":[3,1]
+		}]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 838121116,
+      "scores": [
+        {
+          "score": 35,
+          "measure": 3
+        },
+        {
+          "score": 23,
+          "measure": 4
+        },
+        {
+          "score": 6,
+          "measure": 5
+        }
+      ],
+      "classeSid": 7398111,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 2,
+          "lastLevel": 0
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ],
+	  "instructionHistory":[
+		{
+			"processedDate":"2007-11-19 02:34:28",
+			"skills":[4,2],"content":[
+			{
+				"pace":1,"strand":2,"sequence":10
+			}
+			,
+			{
+				"pace":1,"strand":1,"sequence":0
+			}
+			],"measures":[3,1]
+		}
+		,
+		{
+			"processedDate":"2008-02-10 02:34:28",
+			"skills":[4,2],"content":[
+			{
+				"pace":1,"strand":2,"sequence":20
+			}
+			,
+			{
+				"pace":1,"strand":1,"sequence":10
+			}
+			],"measures":[3,1]
+		}]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 84797104,
+      "scores": [
+        {
+          "score": 50,
+          "measure": 3
+        },
+        {
+          "score": 51,
+          "measure": 4
+        },
+        {
+          "score": 27,
+          "measure": 5
+        }
+      ],
+      "classeSid": 7398111,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ],
+	  "instructionHistory":[
+		{
+			"processedDate":"2007-11-19 02:34:28",
+			"skills":[4,2],"content":[
+			{
+				"pace":1,"strand":2,"sequence":10
+			}
+			,
+			{
+				"pace":1,"strand":1,"sequence":0
+			}
+			],"measures":[3,1]
+		}
+		,
+		{
+			"processedDate":"2008-02-10 02:34:28",
+			"skills":[4,2],"content":[
+			{
+				"pace":1,"strand":2,"sequence":20
+			}
+			,
+			{
+				"pace":1,"strand":1,"sequence":10
+			}
+			],"measures":[3,1]
+		}]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 84497101,
+      "scores": [
+        {
+          "score": 44,
+          "measure": 3
+        },
+        {
+          "score": 46,
+          "measure": 4
+        },
+        {
+          "score": 20,
+          "measure": 5
+        }
+      ],
+      "classeSid": 7398111,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ],
+	  "instructionHistory":[
+		{
+			"processedDate":"2007-11-19 02:34:28",
+			"skills":[4,2],"content":[
+			{
+				"pace":1,"strand":2,"sequence":10
+			}
+			,
+			{
+				"pace":1,"strand":1,"sequence":0
+			}
+			],"measures":[3,1]
+		}
+		,
+		{
+			"processedDate":"2008-02-10 02:34:28",
+			"skills":[4,2],"content":[
+			{
+				"pace":1,"strand":2,"sequence":20
+			}
+			,
+			{
+				"pace":1,"strand":1,"sequence":10
+			}
+			],"measures":[3,1]
+		}]
+    },
+    {
+      "lastSupportRecTypeSid": 1,
+      "gradeSid": 3,
+      "sid": 84811097,
+      "scores": [
+        {
+          "score": 33,
+          "measure": 3
+        },
+        {
+          "score": 26,
+          "measure": 4
+        },
+        {
+          "score": 11,
+          "measure": 5
+        }
+      ],
+      "classeSid": 7398111,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 0,
+          "sid": 3,
+          "lastLevel": 0
+        }
+      ],
+	  "instructionHistory":[
+		{
+			"processedDate":"2007-11-19 02:34:28",
+			"skills":[4,2],"content":[
+			{
+				"pace":1,"strand":2,"sequence":10
+			}
+			,
+			{
+				"pace":1,"strand":1,"sequence":0
+			}
+			],"measures":[3,1]
+		}
+		,
+		{
+			"processedDate":"2008-02-10 02:34:28",
+			"skills":[4,2],"content":[
+			{
+				"pace":1,"strand":2,"sequence":20
+			}
+			,
+			{
+				"pace":1,"strand":1,"sequence":10
+			}
+			],"measures":[3,1]
+		}]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 86797115,
+      "scores": [
+        {
+          "score": 37,
+          "measure": 3
+        },
+        {
+          "score": 37,
+          "measure": 4
+        },
+        {
+          "score": 26,
+          "measure": 5
+        }
+      ],
+      "classeSid": 7398111,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 1,
+          "sid": 3,
+          "lastLevel": 1
+        }
+      ],
+	  "instructionHistory":[
+		{
+			"processedDate":"2007-11-19 02:34:28",
+			"skills":[4,2],"content":[
+			{
+				"pace":1,"strand":2,"sequence":10
+			}
+			,
+			{
+				"pace":1,"strand":1,"sequence":0
+			}
+			],"measures":[3,1]
+		}
+		,
+		{
+			"processedDate":"2008-02-10 02:34:28",
+			"skills":[4,2],"content":[
+			{
+				"pace":1,"strand":2,"sequence":20
+			}
+			,
+			{
+				"pace":1,"strand":1,"sequence":10
+			}
+			],"measures":[3,1]
+		}]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 87911197,
+      "scores": [
+        {
+          "score": 45,
+          "measure": 3
+        },
+        {
+          "score": 47,
+          "measure": 4
+        },
+        {
+          "score": 13,
+          "measure": 5
+        }
+      ],
+      "classeSid": 7398111,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 1,
+          "sid": 3,
+          "lastLevel": 1
+        }
+      ],
+	  "instructionHistory":[
+		{
+			"processedDate":"2007-11-19 02:34:28",
+			"skills":[4,2],"content":[
+			{
+				"pace":1,"strand":2,"sequence":10
+			}
+			,
+			{
+				"pace":1,"strand":1,"sequence":0
+			}
+			],"measures":[3,1]
+		}
+		,
+		{
+			"processedDate":"2008-02-10 02:34:28",
+			"skills":[4,2],"content":[
+			{
+				"pace":1,"strand":2,"sequence":20
+			}
+			,
+			{
+				"pace":1,"strand":1,"sequence":10
+			}
+			],"measures":[3,1]
+		}]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 896121108,
+      "scores": [
+        {
+          "score": 48,
+          "measure": 3
+        },
+        {
+          "score": 35,
+          "measure": 4
+        },
+        {
+          "score": 13,
+          "measure": 5
+        }
+      ],
+      "classeSid": 7398111,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 1,
+          "sid": 3,
+          "lastLevel": 1
+        }
+      ],
+	  "instructionHistory":[
+		{
+			"processedDate":"2007-11-19 02:34:28",
+			"skills":[4,2],"content":[
+			{
+				"pace":1,"strand":2,"sequence":10
+			}
+			,
+			{
+				"pace":1,"strand":1,"sequence":0
+			}
+			],"measures":[3,1]
+		}
+		,
+		{
+			"processedDate":"2008-02-10 02:34:28",
+			"skills":[4,2],"content":[
+			{
+				"pace":1,"strand":2,"sequence":20
+			}
+			,
+			{
+				"pace":1,"strand":1,"sequence":10
+			}
+			],"measures":[3,1]
+		}]
+    },
+    {
+      "lastSupportRecTypeSid": 2,
+      "gradeSid": 3,
+      "sid": 90910497,
+      "scores": [
+        {
+          "score": 51,
+          "measure": 3
+        },
+        {
+          "score": 44,
+          "measure": 4
+        },
+        {
+          "score": 26,
+          "measure": 5
+        }
+      ],
+      "classeSid": 7398111,
+      "skills": [
+        {
+          "bestLevel": 2,
+          "sid": 1,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 2,
+          "lastLevel": 2
+        },
+        {
+          "bestLevel": 2,
+          "sid": 3,
+          "lastLevel": 2
+        }
+      ],
+	  "instructionHistory":[
+		{
+			"processedDate":"2007-11-19 02:34:28",
+			"skills":[4,2],"content":[
+			{
+				"pace":1,"strand":2,"sequence":10
+			}
+			,
+			{
+				"pace":1,"strand":1,"sequence":0
+			}
+			],"measures":[3,1]
+		}
+		,
+		{
+			"processedDate":"2008-02-10 02:34:28",
+			"skills":[4,2],"content":[
+			{
+				"pace":1,"strand":2,"sequence":20
+			}
+			,
+			{
+				"pace":1,"strand":1,"sequence":10
+			}
+			],"measures":[3,1]
+		}]
+    }
+  ],
+  "maxStudentsPerGroups": 5
+}

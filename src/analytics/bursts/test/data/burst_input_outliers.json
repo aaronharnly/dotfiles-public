@@ -1,0 +1,285 @@
+ {
+	"students": [
+		{
+			"skills": [
+				{
+					"lastLevel": 2,
+					"bestLevel": 2,
+					"sid": 1
+				},
+				{
+					"lastLevel": 2,
+					"bestLevel": 2,
+					"sid": 2
+				},
+				{
+					"lastLevel": 2,
+					"bestLevel": 2,
+					"sid": 3
+				},
+				{
+					"lastLevel": 2,
+					"bestLevel": 2,
+					"sid": 4
+				},
+				{
+					"lastLevel": 2,
+					"bestLevel": 2,
+					"sid": 5
+				},
+				{
+					"lastLevel": 2,
+					"bestLevel": 2,
+					"sid": 8
+				}
+			],
+			"sid": 126568178,
+			"classeSid": 129460610,
+			"gradeSid": 3,
+			"lastSupportRecTypeSid": 3,
+			"scores": [
+				{
+					"score": 40,
+					"measure": 1
+				},
+				{
+					"score": 38,
+					"measure": 2
+				},
+				{
+					"score": 30,
+					"measure": 3
+				},
+				{
+					"score": 49,
+					"measure": 4
+				},
+				{
+					"score": 32,
+					"measure": 5
+				}
+			]
+		},
+		{
+			"skills": [
+				{
+					"lastLevel": 1,
+					"bestLevel": 2,
+					"sid": 1
+				},
+				{
+					"lastLevel": 2,
+					"bestLevel": 2,
+					"sid": 2
+				},
+				{
+					"lastLevel": 2,
+					"bestLevel": 2,
+					"sid": 3
+				},
+				{
+					"lastLevel": 2,
+					"bestLevel": 2,
+					"sid": 4
+				},
+				{
+					"lastLevel": 1,
+					"bestLevel": 1,
+					"sid": 5
+				},
+				{
+					"lastLevel": 1,
+					"bestLevel": 1,
+					"sid": 8
+				}
+			],
+			"sid": 129573781,
+			"classeSid": 129458686,
+			"gradeSid": 3,
+			"lastSupportRecTypeSid": 3,
+			"scores": [
+				{
+					"score": 45,
+					"measure": 2
+				},
+				{
+					"score": 40,
+					"measure": 3
+				},
+				{
+					"score": 65,
+					"measure": 4
+				},
+				{
+					"score": 33,
+					"measure": 5
+				}
+			]
+		},
+		{
+			"skills": [
+				{
+					"lastLevel": 2,
+					"bestLevel": 2,
+					"sid": 1
+				},
+				{
+					"lastLevel": 2,
+					"bestLevel": 2,
+					"sid": 2
+				},
+				{
+					"lastLevel": 2,
+					"bestLevel": 2,
+					"sid": 3
+				},
+				{
+					"lastLevel": 2,
+					"bestLevel": 2,
+					"sid": 4
+				},
+				{
+					"lastLevel": 1,
+					"bestLevel": 1,
+					"sid": 5
+				},
+				{
+					"lastLevel": 1,
+					"bestLevel": 1,
+					"sid": 8
+				}
+			],
+			"sid": 158068553,
+			"classeSid": 129458686,
+			"gradeSid": 3,
+			"lastSupportRecTypeSid": 3,
+			"scores": [
+				{
+					"score": 45,
+					"measure": 3
+				},
+				{
+					"score": 66,
+					"measure": 4
+				},
+				{
+					"score": 32,
+					"measure": 5
+				}
+			]
+		},
+		{
+			"skills": [
+				{
+					"lastLevel": 2,
+					"bestLevel": 2,
+					"sid": 1
+				},
+				{
+					"lastLevel": 2,
+					"bestLevel": 2,
+					"sid": 2
+				},
+				{
+					"lastLevel": 0,
+					"bestLevel": 0,
+					"sid": 3
+				},
+				{
+					"lastLevel": 1,
+					"bestLevel": 2,
+					"sid": 4
+				},
+				{
+					"lastLevel": 1,
+					"bestLevel": 1,
+					"sid": 5
+				},
+				{
+					"lastLevel": 0,
+					"bestLevel": 0,
+					"sid": 8
+				}
+			],
+			"sid": 126568066,
+			"classeSid": 129460610,
+			"gradeSid": 3,
+			"lastSupportRecTypeSid": 3,
+			"scores": [
+				{
+					"score": 8,
+					"measure": 1
+				},
+				{
+					"score": 46,
+					"measure": 2
+				},
+				{
+					"score": 48,
+					"measure": 3
+				},
+				{
+					"score": 40,
+					"measure": 4
+				},
+				{
+					"score": 21,
+					"measure": 5
+				}
+			]
+		},
+		{
+			"skills": [
+				{
+					"lastLevel": 2,
+					"bestLevel": 2,
+					"sid": 1
+				},
+				{
+					"lastLevel": 2,
+					"bestLevel": 2,
+					"sid": 2
+				},
+				{
+					"lastLevel": 2,
+					"bestLevel": 2,
+					"sid": 3
+				},
+				{
+					"lastLevel": 1,
+					"bestLevel": 1,
+					"sid": 4
+				},
+				{
+					"lastLevel": 1,
+					"bestLevel": 1,
+					"sid": 5
+				},
+				{
+					"lastLevel": 0,
+					"bestLevel": 0,
+					"sid": 8
+				}
+			],
+			"sid": 159883803,
+			"classeSid": 129458686,
+			"gradeSid": 3,
+			"lastSupportRecTypeSid": 3,
+			"scores": [
+				{
+					"score": 56,
+					"measure": 3
+				},
+				{
+					"score": 61,
+					"measure": 4
+				},
+				{
+					"score": 35,
+					"measure": 5
+				}
+			]
+		}
+	],
+	"instructionHistory": []
+}

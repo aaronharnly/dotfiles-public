@@ -1,0 +1,74 @@
+{
+    "results": [                                         
+        {
+			"resultProbeSid": 69451853,
+            "skills": [                                  
+                {
+                    "sid":   2
+                  , "level": 2                           
+                },
+				 {
+                    "sid":   3
+                  , "level": 0                           
+                } 
+            ]
+			, "wasError": 0
+        },
+		 {
+            "resultProbeSid": 69451854,
+			"skills": [                                  
+                {
+                    "sid":   4
+                  , "level": 1                           
+                },
+				{
+                    "sid":   5
+                  , "level": 2                           
+                },
+				{
+                    "sid":   6
+                  , "level": null                           
+                },
+				{
+                    "sid":   7
+                  , "level": null                           
+                },
+				{
+                    "sid":   8
+                  , "level": 0                           
+                }
+            ]
+			, "wasError": 0
+        },
+		 {
+            "resultProbeSid": 69451855,
+			"skills": [ 
+				{
+                    "sid":   2
+                  , "level": 0                           
+                }
+            ]
+			, "wasError": 0
+        },
+		 {
+            "resultProbeSid": 69451856,
+			"skills": [                                  
+                {
+                    "sid":   1
+                  , "level": 2                           
+                }
+            ]
+			, "wasError": 0
+        },
+		 {
+            "resultProbeSid": 69451857,
+			"skills": [ 
+				{
+                    "sid":   1
+                  , "level": 0
+                }			
+            ]
+			, "wasError": 0
+        } 
+    ]
+}

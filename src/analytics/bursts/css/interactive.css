@@ -1,0 +1,29 @@
+body {
+}
+
+h1 {
+  font-size: 1.5em;
+  text-align: center;
+  background-color: white;
+}
+
+#input, #output {
+  position: absolute;
+  top: 3em;
+  width: 50%;
+  height: 100%;
+  background-color: #eee;
+}
+
+#input textarea {
+  background-color: #f9fff9;
+}
+
+#output {
+  left: 50%;
+}
+
+#output textarea {
+  background-color: #fffff9;
+}
+

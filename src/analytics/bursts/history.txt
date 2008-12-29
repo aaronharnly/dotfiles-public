@@ -1,0 +1,1 @@
+C:\Documents and Settings\jds\My Documents\devworld\analytics\bursts>curl -X POST -H "Content-type: application/json" -H "Accept: application/json" -d @test\data\feature_error.txt http://localhost:11201/feature
