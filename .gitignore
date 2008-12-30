@@ -1,40 +1,34 @@
-#
-# A standard .gitignore
-#
+# ignore non-dotfiles in the root directory
+/[^.]*
 
-### Project
-
-### OS files
-# Mac OS X
+# ignore these files in any directory
 .DS_Store
-Icon
-._*
+*.swp
 
-### Build products
-# Java
-*.class
-# C
-*.o
-# Python
-*.pyc
+# ignore these dotfiles in the root directory
+/.*_history
+/.Trash
+/.Xauthority
+/.aap
+/.cups
+/.fontconfig
+/.gdbinit
+/.private.git
+/.public.git
+/.inkscape
+/.inkscape-etc
+/.lesshst
+/.neverball
+/.parallels_settings
+/.rnd
+/.viminfo
 
-### Editor files
-# CVS
-.#*
+# ignore these files in subdirs
+/.ssh/config
 
-# Emacs
-*~
-# Vim
-.*.swp
-# Eclipse
-.project
-.classpath
-.manager
-.settings
-# IntelliJ IDEA
-*.iml
-*.ipr
-*.iws
-
-
-
+/.ssh/id_dsa
+/.ssh/id_dsa.pub
+/.mtr
+/.bash_profile
+/.macports
+/.m2/repository
