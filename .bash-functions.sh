@@ -158,9 +158,9 @@ choose()
       local value="$key"
     fi
     # set the target variable
-    eval export ${var_to_set}="$value"
+    eval export ${var_to_set}=\"$value\"
     if [ "$quiet" != "YES" ]; then
-      echo "export ${var_to_set}=$(eval echo \$${var_to_set})"
+      echo "export ${var_to_set}=\"$(eval echo \$${var_to_set})\""
     fi
   fi
 }
