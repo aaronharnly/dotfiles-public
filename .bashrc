@@ -217,6 +217,7 @@ function setup_app_prefs()
 
   # Python
   path_append "$HOME/external-software/crossplatform/common/etc/python" 
+  export PYTHONSTARTUP="$HOME/software/crossplatform/etc/python/startup.py"
 
   # R
   path_set "/Library/Frameworks/R.framework/Versions/Current/Resources" R_HOME
