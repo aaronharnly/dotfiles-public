@@ -324,13 +324,10 @@ function setup_aliases()
   alias more="less"
 
   # ----- ls -----
-  alias ll="ls -lh --color=auto"
-  alias l="ls -lh --color=auto"
-  alias ls="ls --color=auto"
+  alias ll="ls -lh"
+  alias l="ls -lh"
+  alias ls="ls"
 
-  # ---- mate ----
-  alias mate_wait="mate --wait"
-  
   # ---- open ----
   if [ "$OS" = "Linux" ]; then
     alias open="gnome-open"
