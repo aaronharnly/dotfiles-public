@@ -329,9 +329,6 @@ function setup_aliases()
   alias l="ls -lh"
   alias ls="ls"
 
-  # ---- mate ----
-  alias mate_wait="mate --wait"
-  
   # ---- open ----
   if [ "$OS" = "Linux" ]; then
     alias open="gnome-open"
