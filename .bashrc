@@ -229,6 +229,7 @@ function setup_app_prefs()
   export PERL_UNICODE="SDA"
 
   # Python
+  path_append "/Library/Frameworks/Python.framework/Versions/2.6/bin"
   path_append "$HOME/external-software/crossplatform/common/etc/python" 
   export PYTHONSTARTUP="$HOME/software/crossplatform/etc/python/startup.py"
 
@@ -324,9 +325,9 @@ function setup_aliases()
   alias more="less"
 
   # ----- ls -----
-  alias ll="ls -lh --color=auto"
-  alias l="ls -lh --color=auto"
-  alias ls="ls --color=auto"
+  alias ll="ls -lh"
+  alias l="ls -lh"
+  alias ls="ls"
 
   # ---- mate ----
   alias mate_wait="mate --wait"
