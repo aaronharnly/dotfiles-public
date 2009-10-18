@@ -313,9 +313,6 @@ function setup_aliases()
   alias ll="ls -lh --color=auto"
   alias l="ls -lh --color=auto"
   alias ls="ls --color=auto"
-
-  # ---- mate ----
-  alias mate_wait="mate --wait"
   
   # ---- open ----
   if [ "$OS" = "Linux" ]; then
