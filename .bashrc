@@ -177,6 +177,13 @@ function setup_general_prefs()
 # Maintained in alphabetical order by application name
 function setup_app_prefs()
 {
+  # Ant
+  path_set "$HOME/external-software/crossplatform/stow/apache-ant-1.7.1" ANT_HOME
+  path_prepend "$ANT_HOME/bin"
+
+  # Eclim
+  path_set "$HOME/external-software/$PLATFORM/stow/eclipse" ECLIM_ECLIPSE_HOME
+
   # GCC
   path_prepend "$HOME/external-software/$PLATFORM/lib" LD_LIBRARY_PATH  
 
@@ -189,6 +196,12 @@ function setup_app_prefs()
       fi
     fi
   fi
+
+  # Google depot_tools
+  path_append "$HOME/external-src/depot_tools"
+
+  # IDEA
+  path_set "/usr/lib/jvm/java-6-openjdk" IDEA_JDK
 
   # Java
   unset CLASSPATH
@@ -216,7 +229,9 @@ function setup_app_prefs()
   export PERL_UNICODE="SDA"
 
   # Python
+  path_append "/Library/Frameworks/Python.framework/Versions/2.6/bin"
   path_append "$HOME/external-software/crossplatform/common/etc/python" 
+  export PYTHONSTARTUP="$HOME/software/crossplatform/etc/python/startup.py"
 
   # R
   path_set "/Library/Frameworks/R.framework/Versions/Current/Resources" R_HOME
@@ -228,14 +243,14 @@ function setup_app_prefs()
   #path_prepend "$HOME/external-software/$PLATFORM/stow/ruby-1.8.6-p110/bin"
 
   # Scala
-  path_set "$HOME/external-software/crossplatform/stow/scala-2.7.1.final" SCALA_HOME
+  path_set "$HOME/external-software/crossplatform/stow/scala-2.7.5.final" SCALA_HOME
   path_append "$SCALA_HOME/lib/scala-library.jar" CLASSPATH
   export ANT_OPTS="$ANT_OPTS -Dscala.home=$SCALA_HOME"
   # some particular items for classpath
   local mvn_repo="$HOME/.m2/repository"
-  path_append "$mvn_repo/org/scalacheck/scalacheck/1.2/scalacheck-1.2.jar" CLASSPATH
-  path_append "$mvn_repo/org/specs/specs/1.2.5/specs-1.2.5.jar" CLASSPATH
-  path_append "$mvn_repo/junit/junit/4.4/junit-4.4.jar" CLASSPATH
+#  path_append "$mvn_repo/org/scalacheck/scalacheck/1.2/scalacheck-1.2.jar" CLASSPATH
+#  path_append "$mvn_repo/org/specs/specs/1.2.5/specs-1.2.5.jar" CLASSPATH
+#  path_append "$mvn_repo/junit/junit/4.4/junit-4.4.jar" CLASSPATH
   # Subversion
   path_append "/usr/local/subversion/bin"
 
@@ -310,10 +325,10 @@ function setup_aliases()
   alias more="less"
 
   # ----- ls -----
-  alias ll="ls -lh --color=auto"
-  alias l="ls -lh --color=auto"
-  alias ls="ls --color=auto"
-  
+  alias ll="ls -lh"
+  alias l="ls -lh"
+  alias ls="ls"
+
   # ---- open ----
   if [ "$OS" = "Linux" ]; then
     alias open="gnome-open"
