@@ -504,6 +504,16 @@ function is_git_dirty()
   fi
 }
 
+function is_git_ahead_of_remote()
+{
+  local is_ahead_result=$(git status  2>/dev/null | grep "Your branch is ahead" &>/dev/null; echo $?)
+  if [ $is_ahead_result -eq 0 ]; then
+    echo "true"
+  else
+    echo "false"
+  fi
+}
+
 function git_branch_name()
 {
   local branch_name=$(git name-rev --name-only HEAD 2>/dev/null)
@@ -514,19 +524,30 @@ function git_dirty_display()
 {
   local no_control_sequences="$1"
   local is_dirty=$(is_git_dirty)
-  if [ "$is_dirty" = "true" ]; then
-    if [ ! -z "$no_control_sequences" ]; then
-      echo "(*)"
-    else
-      echo "${TERM_WHITE}(${TERM_RED}*${TERM_WHITE})"
-    fi
-  else
-    if [ ! -z "$no_control_sequences" ]; then
-      echo "( )"
-    else
-      echo "${TERM_WHITE}( )"
-    fi
+  local is_ahead=$(is_git_ahead_of_remote)
+  
+  if [ -z "$no_control_sequences" ]; then
+    local left_color="${TERM_WHITE}"
+    local right_color="${TERM_WHITE}"
+    local dirty_color="${TERM_RED}"
+    local ahead_color="${TERM_GREEN}"
   fi
+  
+  if [ "$is_dirty" = "true" ]; then
+    local dirty="*"
+  else
+    local dirty=" "
+  fi
+  
+  if [ "$is_ahead" = "true" ]; then
+    local ahead="@"
+  else
+    local ahead=" "
+  fi
+
+  local left="["
+  local right="]"
+  echo "${left_color}${left}${dirty_color}${dirty}${ahead_color}${ahead}${right_color}${right}"
 }
 
 function git_info()
