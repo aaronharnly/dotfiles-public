@@ -228,6 +228,9 @@ function setup_app_prefs()
   path_append "$HOME/external-software/crossplatform/lib/site_perl" PERL5LIB
   export PERL_UNICODE="SDA"
 
+  # Postgres
+  path_append "/Library/PostgreSQL/8.4/bin"
+
   # Python
   path_append "/Library/Frameworks/Python.framework/Versions/2.6/bin"
   path_append "$HOME/external-software/crossplatform/common/etc/python" 
