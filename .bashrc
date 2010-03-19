@@ -162,9 +162,9 @@ function setup_general_prefs()
   export LC_CTYPE="en_US.UTF-8"
 
   # X11
-  if [ -z $DISPLAY ]; then
-   export DISPLAY=:0.0
-  fi
+#  if [ -z $DISPLAY ]; then
+#   export DISPLAY=:0.0
+#  fi
 
   # Temporary file path; uses $HOME/tmp if it exists
   path_set "/tmp" TMP
