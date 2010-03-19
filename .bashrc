@@ -122,6 +122,7 @@ function setup_path()
 
   # darwinports
   path_prepend /opt/local/bin 
+  path_prepend /opt/local/sbin
 
   # Fink
   source_if "/sw/bin/init.sh"
