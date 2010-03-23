@@ -496,7 +496,7 @@ function update_ps1()
   local ps_userpath_clean="${userpath}"
   local ps_userpath="${TERM_WHITE}${ps_userpath_clean}"
 
-  local prefix="# "
+  local prefix=""
   local ps_prefix_clean="${prefix}"
   local ps_prefix="${TERM_BG_COLOR}${TERM_WHITE}${ps_prefix_clean}"
 
