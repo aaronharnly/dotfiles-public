@@ -41,3 +41,9 @@ set backspace=indent,eol,start " allow insert-mode to delete whitespace, but not
 " ********** Bindings
 map <C-o> :split
 
+" ********** SBT support
+set makeprg=sbt-noformat\ test
+set efm=%E\ %#[error]\ %f:%l:\ %m,%C\ %#[error]\ %p^,%-C%.%#,%Z,
+       \%W\ %#[warn]\ %f:%l:\ %m,%C\ %#[warn]\ %p^,%-C%.%#,%Z,
+       \%-G%.%#
+
