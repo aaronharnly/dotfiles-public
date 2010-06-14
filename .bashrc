@@ -222,6 +222,7 @@ function setup_app_prefs()
 
   # MacVim
   path_append "$HOME/external-software/$PLATFORM/stow/macvim/bin"
+  path_set "/Applications/3rdPartyApplications/Develop" VIM_APP_DIR
 
   # MySQL
   path_append "/usr/local/mysql/bin"
