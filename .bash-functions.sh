@@ -516,7 +516,7 @@ function is_git_ahead_of_remote()
 
 function git_branch_name()
 {
-  local branch_name=$(git name-rev --name-only HEAD 2>/dev/null)
+  local branch_name=$(git status 2>/dev/null | perl -ne 'if (m/On branch (.+)/) { print $1}')
   echo $branch_name
 }
 
