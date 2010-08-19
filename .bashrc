@@ -224,6 +224,7 @@ function setup_app_prefs()
   path_set "$HOME/software/crossplatform/etc/lynx.cfg" LYNX_CFG  
 
   # MacVim
+  path_append "$HOME/external-software/$PLATFORM/stow/macvim/bin"
   path_set "/Applications/3rdPartyApplications/Develop" VIM_APP_DIR
 
   # MySQL
