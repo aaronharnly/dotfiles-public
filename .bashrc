@@ -214,6 +214,9 @@ function setup_app_prefs()
   path_prepend "/usr/local/java/java1.5/bin"
   export JAVA_OPTS="-Xmx1024m"
 
+  # Jython
+  path_append "$HOME/external-software/crossplatform/stow/jython-2.5.1/bin"
+
   # Less  
   export LESSCHARSET="utf-8"
 
