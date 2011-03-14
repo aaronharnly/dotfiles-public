@@ -9,9 +9,12 @@ set cmitmode tree
 set wrapcomment none
 set autoselect 1
 set showneartags 1
+set hideremotes 0
 set showlocalchanges 1
 set datetimeformat {%Y-%m-%d %H:%M:%S}
 set limitdiffs 1
+set uicolor grey85
+set want_ttk 1
 set bgcolor white
 set fgcolor black
 set colors {green red blue magenta darkgrey brown orange}
@@ -21,12 +24,12 @@ set diffcontext 1
 set selectbgcolor gray85
 set extdifftool meld
 set perfile_attrs 0
-set geometry(main) 985x778+23+0
+set geometry(main) 985x778+5+27
 set geometry(state) normal
-set geometry(topwidth) 983
+set geometry(topwidth) 985
 set geometry(topheight) 150
 set geometry(pwsash0) "348 1"
 set geometry(pwsash1) "523 1"
 set geometry(botwidth) 536
-set geometry(botheight) 616
+set geometry(botheight) 623
 set permviews {}
