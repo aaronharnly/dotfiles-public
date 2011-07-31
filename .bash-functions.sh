@@ -43,7 +43,7 @@ doalias()
 path_append()
 {
    local target="$1"
-  if [ -z $2 ]; then
+  if [ -z "$2" ]; then
     local pathvar=PATH
   else
     local pathvar=$2
@@ -51,7 +51,7 @@ path_append()
 
   if [ -e "$target" ]; then
      if [[ ! $(eval echo \${$pathvar}) == *$target* ]]; then
-       eval export ${pathvar}=\${$pathvar}:$target
+       eval export ${pathvar}=\"\${$pathvar}:$target\"
     fi
   fi
 }
