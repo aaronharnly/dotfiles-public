@@ -283,6 +283,16 @@ function mycd()
       export DONT_RUN_PFF="true"
     fi
   fi
+
+  # if we're entering a project directory, check for a virtualenv
+  this_dir=$(basename "$PWD")
+  parent_dir=$(dirname "$PWD")
+  if [ "$parent_dir" == "$HOME/projects" ]; then
+    if [ -d "$HOME/virtualenvs/${this_dir}" ]; then
+        echo "Activating virtualenv: $this_dir..."
+        source "$HOME/virtualenvs/${this_dir}/bin/activate"
+    fi
+  fi
 }
 
 #
