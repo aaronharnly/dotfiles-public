@@ -149,11 +149,7 @@ function setup_general_prefs()
   # ------------ Application selection ------------
   #
   
-  if [ "$OS" = "Darwin" ]; then
-   export EDITOR="mate_wait"
-  else
-   export EDITOR="vim"
-  fi
+  export EDITOR="vim"
   export PAGER="less"
 
   #
