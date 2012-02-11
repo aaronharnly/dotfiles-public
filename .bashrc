@@ -486,11 +486,9 @@ function update_location_vars()
   # in the home dir, show the status of pubgit
   if [ "$PWD" = "$HOME" ]; then
     export GIT_DIR="$PUBGIT_DIR"
-    export GIT_WORK_TREE="$PWD"
   else
     if [ ! -z "$GIT_DIR" -a "$GIT_DIR" = "$PUBGIT_DIR" ]; then
       unset GIT_DIR
-      unset GIT_WORK_TREE
     fi
   fi
 }
