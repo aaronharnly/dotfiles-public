@@ -185,6 +185,9 @@ function setup_app_prefs()
   # Eclim
   path_set "$HOME/external-software/$PLATFORM/stow/eclipse" ECLIM_ECLIPSE_HOME
 
+  # Emscripten
+  path_append "$HOME/external-software/$PLATFORM/stow/emscripten"
+
   # GCC
   path_prepend "$HOME/external-software/$PLATFORM/lib" LD_LIBRARY_PATH  
 
