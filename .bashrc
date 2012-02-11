@@ -252,7 +252,8 @@ function setup_app_prefs()
 
   # Ruby
   # unset RUBYLIB
-  export RUBYOPT=rubygems
+  #export RUBYOPT=rubygems
+  source_if "$HOME/.rvm/scripts/rvm"
   #path_append "$HOME/software/crossplatform/lib/ruby" RUBYLIB
   #path_prepend "$HOME/external-software/$PLATFORM/stow/ruby-1.8.6-p110/bin"
 
