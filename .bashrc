@@ -149,7 +149,11 @@ function setup_general_prefs()
   # ------------ Application selection ------------
   #
   
-  export EDITOR="vim"
+  if [ "$OS" = "Darwin" ]; then
+   export EDITOR="vim"
+  else
+   export EDITOR="vim"
+  fi
   export PAGER="less"
 
   #
