@@ -77,7 +77,7 @@ function setup_whereami()
    export LOCALNESS="local"
   else
    SSH_REMOTE_IP="${SSH_COMBO%% *}"
-   SSH_REMOTE_HOST=$(host $SSH_REMOTE_IP 2>/dev/null | awk '/name pointer/ {print $5} /NXDOMAIN/ {print "$SSH_REMOTE_IP" }')
+   SSH_REMOTE_HOST=$(host $SSH_REMOTE_IP 2>/dev/null | awk -v SSH_REMOTE_IP=$SSH_REMOTE_IP '/name pointer/ {print $5} /NXDOMAIN/ {print SSH_REMOTE_IP }')
    if [ -z "$SSH_REMOTE_HOST" ]; then
      export SSH_REMOTE_HOST="$SSH_REMOTE_IP" 
    fi
