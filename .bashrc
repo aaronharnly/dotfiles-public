@@ -149,7 +149,11 @@ function setup_general_prefs()
   # ------------ Application selection ------------
   #
   
-  export EDITOR="vim"
+  if [ "$OS" = "Darwin" ]; then
+   export EDITOR="vim"
+  else
+   export EDITOR="vim"
+  fi
   export PAGER="less"
 
   #
@@ -180,6 +184,9 @@ function setup_app_prefs()
 
   # Eclim
   path_set "$HOME/external-software/$PLATFORM/stow/eclipse" ECLIM_ECLIPSE_HOME
+
+  # Emscripten
+  path_append "$HOME/external-software/$PLATFORM/stow/emscripten"
 
   # GCC
   path_prepend "$HOME/external-software/$PLATFORM/lib" LD_LIBRARY_PATH  
@@ -236,7 +243,7 @@ function setup_app_prefs()
   path_append "/Library/PostgreSQL/8.4/bin"
 
   # Python
-  path_append "/Library/Frameworks/Python.framework/Versions/2.6/bin"
+  # path_append "/Library/Frameworks/Python.framework/Versions/2.6/bin"
   path_append "$HOME/external-software/crossplatform/common/etc/python" 
   export PYTHONSTARTUP="$HOME/software/crossplatform/etc/python/startup.py"
 
@@ -245,7 +252,8 @@ function setup_app_prefs()
 
   # Ruby
   # unset RUBYLIB
-  export RUBYOPT=rubygems
+  #export RUBYOPT=rubygems
+  source_if "$HOME/.rvm/scripts/rvm"
   #path_append "$HOME/software/crossplatform/lib/ruby" RUBYLIB
   #path_prepend "$HOME/external-software/$PLATFORM/stow/ruby-1.8.6-p110/bin"
 
@@ -478,11 +486,9 @@ function update_location_vars()
   # in the home dir, show the status of pubgit
   if [ "$PWD" = "$HOME" ]; then
     export GIT_DIR="$PUBGIT_DIR"
-    export GIT_WORK_TREE="$PWD"
   else
     if [ ! -z "$GIT_DIR" -a "$GIT_DIR" = "$PUBGIT_DIR" ]; then
       unset GIT_DIR
-      unset GIT_WORK_TREE
     fi
   fi
 }
