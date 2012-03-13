@@ -578,3 +578,11 @@ function git_info()
   fi
 }
 
+#
+# ----------------------------- Web ---------------------------------
+#
+function wiki()
+{
+  dig +short txt "$*".wp.dg.cx
+}
+
