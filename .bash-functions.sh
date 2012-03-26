@@ -269,20 +269,13 @@ function mycd()
 {
   history -w # write current history file
   builtin cd "$@"  # do actual cd
-  local HISTDIR="$HOME/.dir_bash_history$PWD" # use nested folders for history
+  local HISTDIR="$HOME/.bash_history.d$PWD" # use nested folders for history
   if [ ! -d "$HISTDIR" ]; then # create folder if needed
     mkdir -p "$HISTDIR"
   fi
   export HISTFILE="$HISTDIR/${USER}_bash_history.txt" # set new history file
   history -c  # clear memory
   history -r #read from current histfile
-
-  if [ ! -z "$LAUNCHING_APP" ]; then
-    if [ "$LAUNCHING_APP" = "Path Finder" ]; then
-      pft
-      export DONT_RUN_PFF="true"
-    fi
-  fi
 
   # if we're entering a project directory, check for a virtualenv
   this_dir=$(basename "$PWD")
@@ -297,6 +290,7 @@ function mycd()
 
 #
 # back: toggle between current and previous directory.
+#  This is equivalent to: cd -
 #  It might be nice to implement this as an actual stack.
 #
 function back()
