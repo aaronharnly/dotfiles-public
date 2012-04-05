@@ -1,0 +1,4 @@
+color molokai
+set tw=0
+nmap <silent><leader>w :set wrap!<CR>
+nmap <silent><leader>x :!chmod +x %<CR>
