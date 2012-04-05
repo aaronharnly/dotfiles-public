@@ -14,11 +14,4 @@
 .public.files
 .pydistutils.cfg
 .screenrc
-.vim/colors/aaron.vim
-.vim/colors/aqua.vim
-.vim/colors/darkblue.vim
-.vim/doc/EnhancedCommentify.txt
-.vim/doc/tags
-.vim/ftplugin/php_enhcomm.vim
-.vim/plugin/EnhancedCommentify.vim
 .vimrc
