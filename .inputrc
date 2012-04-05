@@ -3,7 +3,12 @@
 
 # completion
 set show-all-if-ambiguous on
+set show-all-if-unmodified on
 set completion-ignore-case on
+set completion-map-case on
+set completion-prefix-display-length 2
+Control-j: menu-complete
+#Control-i: menu-complete-backward
 
 # history
 "\e[A": history-search-backward
