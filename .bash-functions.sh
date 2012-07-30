@@ -280,10 +280,10 @@ function mycd()
   # if we're entering a project directory, check for a virtualenv
   this_dir=$(basename "$PWD")
   parent_dir=$(dirname "$PWD")
-  if [ "$parent_dir" == "$HOME/projects" ]; then
-    if [ -d "$HOME/virtualenvs/${this_dir}" ]; then
-        echo "Activating virtualenv: $this_dir..."
-        source "$HOME/virtualenvs/${this_dir}/bin/activate"
+  if [ ! -z "$PROJECT_HOME" -a "$parent_dir" == "$PROJECT_HOME" ]; then
+    if [ -d "$WORKON_HOME/${this_dir}" ]; then
+        echo "Activating virtualenv $this_dir..."
+        workon "${this_dir}"
     fi
   fi
 }
