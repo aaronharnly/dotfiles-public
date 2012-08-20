@@ -491,6 +491,48 @@ function display_boxed()
 }
 
 #
+# -------------------------- Virtualenv --------------------------
+#
+function is_virtualenv()
+{
+  local status_result=$(showvirtualenv &>/dev/null; echo $?)
+  if [ $status_result -eq 0 ]; then
+    echo "true"
+  else
+    echo "false"
+  fi
+}
+
+function virtualenv_name()
+{
+  local is_venv=$(is_virtualenv)
+  if [ "$is_venv" = "true" ]; then
+    showvirtualenv
+  else
+    echo "<none>"
+  fi
+}
+
+function virtualenv_display()
+{
+  local no_control_sequences="$1"
+  if [ -z "$no_control_sequences" ]; then
+     local left_color="${TERM_WHITE}"
+     local main_color="${TERM_GREEN}"
+     local right_color="${TERM_WHITE}"
+  fi
+  local left="["
+  local right="]"
+
+  if [ $(is_virtualenv) = "true" ]; then
+    local venv_name=$(virtualenv_name)
+    echo "${left_color}${left}${main_color}${venv_name}${right_color}${right}"
+  else
+    echo ""
+  fi
+}
+
+#
 # ----------------------------- Git ---------------------------------
 #
 function is_git_dir()

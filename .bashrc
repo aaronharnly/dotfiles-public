@@ -204,6 +204,9 @@ function setup_app_prefs()
   # Google depot_tools
   path_append "$HOME/external-src/depot_tools"
 
+  # Homebrew
+  path_append "/usr/local/sbin"
+
   # IDEA
   path_set "/usr/lib/jvm/java-6-openjdk" IDEA_JDK
 
@@ -243,6 +246,7 @@ function setup_app_prefs()
   path_append "/Library/PostgreSQL/8.4/bin"
 
   # Python
+  path_prepend /usr/local/share/python
   # path_append "/Library/Frameworks/Python.framework/Versions/2.6/bin"
   path_append "$HOME/external-software/crossplatform/common/etc/python" 
   export PYTHONSTARTUP="$HOME/software/crossplatform/etc/python/startup.py"
@@ -486,9 +490,11 @@ function update_location_vars()
   # in the home dir, show the status of pubgit
   if [ "$PWD" = "$HOME" ]; then
     export GIT_DIR="$PUBGIT_DIR"
+    export GIT_WORK_TREE="$HOME"
   else
     if [ ! -z "$GIT_DIR" -a "$GIT_DIR" = "$PUBGIT_DIR" ]; then
       unset GIT_DIR
+      unset GIT_WORK_TREE
     fi
   fi
 }
@@ -503,6 +509,9 @@ function update_ps1()
   local ps_time_clean="[${now}]"
   local ps_time="${TERM_YELLOW}${ps_time_clean}"
 
+  local venv_display=$(virtualenv_display)
+  local venv_display_clean=$(virtualenv_display clean)
+
   local userpath="${USER}@${HOST_LONG}:${PWD}"
   local ps_userpath_clean="${userpath}"
   local ps_userpath="${TERM_WHITE}${ps_userpath_clean}"
@@ -511,8 +520,8 @@ function update_ps1()
   local ps_prefix_clean="${prefix}"
   local ps_prefix="${TERM_BG_COLOR}${TERM_WHITE}${ps_prefix_clean}"
 
-  local line_1_left_clean="${ps_prefix_clean}${ps_time_clean} ${ps_userpath_clean}"
-  local line_1_left="${ps_prefix}${ps_time} ${ps_userpath}"
+  local line_1_left_clean="${ps_prefix_clean}${ps_time_clean}${venv_display_clean} ${ps_userpath_clean}"
+  local line_1_left="${ps_prefix}${ps_time}${venv_display} ${ps_userpath}"
 
   # Line 1, right side
   local git_info_clean=$(git_info clean)
