@@ -283,7 +283,7 @@ function mycd()
   if [ ! -z "$PROJECT_HOME" -a "$parent_dir" == "$PROJECT_HOME" ]; then
     if [ -z "$WORKINGON" ]; then
       if [ -d "$WORKON_HOME/${this_dir}" ]; then
-          echo "Activating virtualenv $this_dir... (WORKINGON=$WORKINGON)"
+          echo "Activating virtualenv $this_dir..."
           export WORKINGON="$this_dir"
           workon "${this_dir}"
       fi
