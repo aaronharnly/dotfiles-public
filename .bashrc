@@ -477,6 +477,7 @@ function setup_term_settings()
 #
 function update_prompt()
 {
+  EXIT_STATUS="$?"
   update_location_vars
   update_ps1
 }
@@ -507,7 +508,12 @@ function update_ps1()
   # Line 1, left side
   local now=$(date +'%I:%M:%S %p')
   local ps_time_clean="[${now}]"
-  local ps_time="${TERM_YELLOW}${ps_time_clean}"
+  if [ "$EXIT_STATUS" -eq 0 ]; then
+    local ps_time_color=${TERM_YELLOW}
+  else
+    local ps_time_color=${TERM_RED}
+  fi
+  local ps_time="${ps_time_color}${ps_time_clean}"
 
   local venv_display=$(virtualenv_display)
   local venv_display_clean=$(virtualenv_display clean)
