@@ -506,13 +506,17 @@ function update_location_vars()
 function update_ps1()
 {
   # Line 1, left side
+  if [ "$EXIT_STATUS" -eq 0 ]; then
+    local exit_status_clean=""
+    local exit_status=""
+  else
+    local exit_status_clean="[FAILED: $EXIT_STATUS]"
+    local exit_status="${TERM_RED}${exit_status_clean}"
+  fi
+
   local now=$(date +'%I:%M:%S %p')
   local ps_time_clean="[${now}]"
-  if [ "$EXIT_STATUS" -eq 0 ]; then
-    local ps_time_color=${TERM_YELLOW}
-  else
-    local ps_time_color=${TERM_RED}
-  fi
+  local ps_time_color=${TERM_YELLOW}
   local ps_time="${ps_time_color}${ps_time_clean}"
 
   local venv_display=$(virtualenv_display)
@@ -526,8 +530,8 @@ function update_ps1()
   local ps_prefix_clean="${prefix}"
   local ps_prefix="${TERM_BG_COLOR}${TERM_WHITE}${ps_prefix_clean}"
 
-  local line_1_left_clean="${ps_prefix_clean}${ps_time_clean}${venv_display_clean} ${ps_userpath_clean}"
-  local line_1_left="${ps_prefix}${ps_time}${venv_display} ${ps_userpath}"
+  local line_1_left_clean="${exit_status_clean}${ps_prefix_clean}${ps_time_clean}${venv_display_clean} ${ps_userpath_clean}"
+  local line_1_left="${exit_status}${ps_prefix}${ps_time}${venv_display} ${ps_userpath}"
 
   # Line 1, right side
   local git_info_clean=$(git_info clean)
@@ -585,3 +589,5 @@ setup_interactive_shell
 source_if "$HOME/.bashrc.private"
 # Host-specific settings
 source_if "$HOME/.bashrc.${HOST}"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
