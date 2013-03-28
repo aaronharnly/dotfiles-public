@@ -43,10 +43,6 @@ bind n next
 bind ^n next
 bind h prev
 bind ^h prev
-bind p screen -t 'pine' bash -c "export TERM=ansi; pine"
-bind ^p screen -t 'pine' bash -c "export TERM=ansi; pine"
-bind s screen -t '@coral.cs' ssh -X aaron@coral.cs.columbia.edu
-bind ^s screen -t '@coral.cs' ssh -X aaron@coral.cs.columbia.edu
 
 bindkey "^[[5D" prev
 bindkey "^[[5C" next
