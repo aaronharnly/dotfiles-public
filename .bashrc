@@ -212,9 +212,8 @@ function setup_app_prefs()
 
   # Java
   unset CLASSPATH
-  path_set "/usr/local/java/java1.5" JAVA_HOME
   path_set "$HOME/external-software/$PLATFORM/stow/jdk" JAVA_HOME
-  path_set "$HOME/external-software/$PLATFORM/stow/jdk1.6.0_04" JAVA_HOME
+  path_set "/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home" JAVA_HOME
   path_set "/usr/local/java" JAVA_HOME
   path_prepend "/usr/local/java/bin"
   path_prepend "/usr/local/java/java1.5/bin"
