@@ -248,6 +248,7 @@ function setup_app_prefs()
   path_append "/Library/PostgreSQL/8.4/bin"
 
   # Python
+  path_append /usr/local/share/python3
   path_prepend /usr/local/share/python
   # path_append "/Library/Frameworks/Python.framework/Versions/2.6/bin"
   path_append "$HOME/external-software/crossplatform/common/etc/python" 
