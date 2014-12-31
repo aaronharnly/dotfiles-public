@@ -235,6 +235,9 @@ function setup_app_prefs()
   # MySQL
   path_append "/usr/local/mysql/bin"
 
+  # Node
+  path_append "/usr/local/share/npm/bin"
+
   # Perl
   unset PERL5LIB
   path_append "$HOME/software/crossplatform/lib/site_perl" PERL5LIB
@@ -590,3 +593,10 @@ source_if "$HOME/.bashrc.private"
 source_if "$HOME/.bashrc.${HOST}"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+unset TMPDIR
+
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "/Users/aharnly/.gvm/bin/gvm-init.sh" ]] && source "/Users/aharnly/.gvm/bin/gvm-init.sh"
+
+export NVM_DIR="/Users/aharnly/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
