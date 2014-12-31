@@ -347,8 +347,8 @@ function setup_aliases()
   alias more="less"
 
   # ----- ls -----
-  alias ll="ls -lh"
-  alias l="ls -lh"
+  alias ll="ls -lGh"
+  alias l="ls -lGh"
   alias ls="ls"
 
   # ---- open ----
@@ -441,6 +441,7 @@ function setup_term_colors()
   export TERM_RESET=$(tput sgr0)
 
   export TERM="$OLD_TERM"
+  export LSCOLORS="gxBxhxDxfxhxhxhxhxcxcx"
 }
 
 #
