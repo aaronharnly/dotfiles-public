@@ -265,7 +265,6 @@ function setup_app_prefs()
 
   # Scala
   path_set "$HOME/external-software/crossplatform/stow/scala-2.7.5.final" SCALA_HOME
-  path_append "$SCALA_HOME/lib/scala-library.jar" CLASSPATH
   export ANT_OPTS="$ANT_OPTS -Dscala.home=$SCALA_HOME"
   # some particular items for classpath
   local mvn_repo="$HOME/.m2/repository"
@@ -522,9 +521,6 @@ function update_ps1()
   local ps_time_color=${TERM_YELLOW}
   local ps_time="${ps_time_color}${ps_time_clean}"
 
-  local venv_display=$(virtualenv_display)
-  local venv_display_clean=$(virtualenv_display clean)
-
   local userpath="${USER}@${HOST_LONG}:${PWD}"
   local ps_userpath_clean="${userpath}"
   local ps_userpath="${TERM_WHITE}${ps_userpath_clean}"
@@ -533,8 +529,8 @@ function update_ps1()
   local ps_prefix_clean="${prefix}"
   local ps_prefix="${TERM_BG_COLOR}${TERM_WHITE}${ps_prefix_clean}"
 
-  local line_1_left_clean="${exit_status_clean}${ps_prefix_clean}${ps_time_clean}${venv_display_clean} ${ps_userpath_clean}"
-  local line_1_left="${exit_status}${ps_prefix}${ps_time}${venv_display} ${ps_userpath}"
+  local line_1_left_clean="${exit_status_clean}${ps_prefix_clean}${ps_time_clean}$ ${ps_userpath_clean}"
+  local line_1_left="${exit_status}${ps_prefix}${ps_time} ${ps_userpath}"
 
   # Line 1, right side
   local git_info_clean=$(git_info clean)
@@ -556,8 +552,10 @@ function update_ps1()
   local line_1="${line_1_left}${line_1_padding}${line_1_right}${TERM_RESET}"
 
   # Line 2
-  local virtualenv_info=""
-  local line_2="${prefix}${virtualenv_info}${USER_PROMPT}"
+  local venv_display=$(virtualenv_display)
+  local venv_display_clean=$(virtualenv_display clean)
+
+  local line_2="${prefix}${venv_display}${USER_PROMPT}"
 
   # Prompt
   PS1="${line_1}\n${line_2}"
@@ -602,18 +600,4 @@ function setup_term_prompt()
 ########################### The actual execution ######################
 
 setup_interactive_shell
-
-# ----------------- Additional files --------------------
-# Universal private settings
-source_if "$HOME/.bashrc.private"
-# Host-specific settings
-source_if "$HOME/.bashrc.${HOST}"
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-unset TMPDIR
-
-#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
-[[ -s "/Users/aharnly/.gvm/bin/gvm-init.sh" ]] && source "/Users/aharnly/.gvm/bin/gvm-init.sh"
-
-export NVM_DIR="/Users/aharnly/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+source_if "$HOME/.bashrc.$HOST"
