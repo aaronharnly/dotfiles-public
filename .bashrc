@@ -260,7 +260,6 @@ function setup_app_prefs()
   # Ruby
   # unset RUBYLIB
   #export RUBYOPT=rubygems
-  source_if "$HOME/.rvm/scripts/rvm"
   #path_append "$HOME/software/crossplatform/lib/ruby" RUBYLIB
   #path_prepend "$HOME/external-software/$PLATFORM/stow/ruby-1.8.6-p110/bin"
 
@@ -557,7 +556,8 @@ function update_ps1()
   local line_1="${line_1_left}${line_1_padding}${line_1_right}${TERM_RESET}"
 
   # Line 2
-  local line_2="${prefix}"
+  local virtualenv_info=""
+  local line_2="${prefix}${virtualenv_info}${USER_PROMPT}"
 
   # Prompt
   PS1="${line_1}\n${line_2}"
@@ -575,11 +575,26 @@ function setup_term_prompt()
   else
     TERM_BG_COLOR=${TERM_BG_BLUE}
   fi
-  
+
+  # Set the basic user prompt
+  if [[ "$OS" == "Darwin" ]]; then
+    if [ $UID = 0 ]; then
+      USER_PROMPT="‼️  "
+    else
+      USER_PROMPT="👀  "
+    fi
+  else
+    if [ $UID = 0 ]; then
+      USER_PROMPT="$ "
+    else
+      USER_PROMPT="# "
+    fi
+  fi
+
   # A basic prompt
-  export PS1="# "
-  export PS2="#| "
-  
+  export PS1="${USER_PROMPT} "
+  export PS2="${USER_PROMPT}| "
+
   # before each prompt, run a routine to set the prompt
   export PROMPT_COMMAND='update_prompt'
 }
